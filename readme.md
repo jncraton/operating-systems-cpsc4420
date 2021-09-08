@@ -15,6 +15,8 @@ PREREQUISITE: CPSC 2420 and CPSC 2500.
 Required Resources
 ------------------
 
+Operating Systems and Middleware. Freely [available online](https://gustavus.edu/mcs/max/os-book/).
+
 Optional Resources
 ------------------
 
