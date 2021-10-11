@@ -3,20 +3,21 @@ Grading Scale
 
 The following standard grading scale is used to map percentages to letter grades:
 
---- --------
-A   93-100%
-A-  90-93%
-B+  87-90%
-B   83-87%
-B-  80-83%
-C+  77-80%
-C   73-77%
-C-  70-73%
-D+  67-70%
-D   63-67%
-D-  60-63%
-F   0-60%
---- --------
+Letter Grade   Percentage
+------------   ----------
+A              93-100%
+A-             90-93%
+B+             87-90%
+B              83-87%
+B-             80-83%
+C+             77-80%
+C              73-77%
+C-             70-73%
+D+             67-70%
+D              63-67%
+D-             60-63%
+F              0-60%
+------------   --------
 
 Late Assignments
 ----------------
@@ -28,20 +29,16 @@ Anderson University Educational Commitment
 
 veritas - fidelitas - utilitas
 
-> The mission of Anderson University is to educate for a life of faith and service in the church and society. Across the curriculum students can expect faculty to guide learning experiences toward the development of excellence, integrity, servant leadership, responsibility, and generosity. As a student of the university you are expected to fully engage in vigorous intellectual and experiential activity where head, heart, and hands are equally engaged and a commitment to Christ is honored.
+> The mission of Anderson University is to educate for a life of faith and service in the church and society. Across the curriculum students can expect faculty to guide learning experiences toward the development of excellence, integrity, servant leadership, responsibility, and generosity.
+>
+> As a student of the university you are expected to fully engage in vigorous intellectual and experiential activity where head, heart, and hands are equally engaged and a commitment to Christ is honored.
 
 COVID-19
 --------
 
-As a member of the AU community, we acknowledge our covenant to protect and care for each other by embracing the following measures in this class: wearing a facial covering, maintaining 6’ physical distance from others, practicing good respiratory hygiene and hand hygiene. 
-
-COVID Concerns: Students who are attending class virtually will be marked present if they participate in the scheduled class meeting via Kaltura (or other online course meeting platform) and engage with activities for the entire class time.  If a student is excused from participating ahead of time, then she/he will be counted as present after submitting the assignments that are due that week by the deadline the instructor provides to you. 
-
-Students with possible COVID-19 symptoms should not attend class or attend any in-person gathering at Anderson University. They should report symptoms on the link provided at [https://anderson.edu/coronavirus/](https://anderson.edu/coronavirus/)
-
-If you need to miss class for health reasons, please contact your instructor for possible modified due dates, at his or her discretion. However, all students are responsible for all class assignments. 
-
-Guidelines may change as research and CDC guidelines are updated.  See the AU Coronavirus website for the most recent guidelines: [https://anderson.edu/coronavirus/](https://anderson.edu/coronavirus/)
+AU is operating as a fully open campus at this point, but we also acknowledge that in a pandemic we
+cannot predict conditions that may arise. For the most up-to-date information regarding mask requirements
+and COVID-19 policies please reference our web page [COVID-19 information](https://anderson.edu/coronavirus/).
 
 Academic Honesty
 ----------------
@@ -65,3 +62,4 @@ Attendance Policy
 -----------------
 
 Class attendance is fundamental to the teaching/learning process and any absence from a class results in a loss of learning for the student and learning community. It is the student's obligation to personally notify the course instructor about any absence, in advance if possible. Students may be directly penalized only after the number of absences exceeds the number of class meeting hours per week. Where a student misses more than the number of classes stated above, or additional absences as may be allotted by the course instructor, the instructor has the discretion to determine whether missed work may be completed, how much work will be evaluated, and consequences of excessive absences.
+</main>
