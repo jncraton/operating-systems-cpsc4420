@@ -28,21 +28,42 @@ ISA
 - Set of instructions provided by a CPU
 - Examples inlcude `x86`, `x86_64`, `ARM`, and `ARM64`
 
-Hello World
+System Call
 -----------
 
+- Used to run kernel code from userspace
+- `syscall` instruction triggers kernel
+- Values are picked up from appropriate registers
+
+System Call Registers
+---------------------
+
+Register  Purpose
+--------  ---------
+%rax      System call number
+%rdi      1st parameter
+%rsi      2nd parameter
+%rdx      3rd parameter
+%r10      4th parameter
+%r8       5th parameter
+%r9       6th parameter
+
+---
+
 ```asm
-.LC0:
- .string "Hello, world!\n"
- .globl _start
+.globl _start
 _start:
- leaq .LC0(%rip), %rsi
- movl $14, %edx
+ mov $1, %rdi
+ leaq .data(%rip), %rsi
+ mov $14, %rdx
  mov $1, %rax
  syscall
- xorl %edi, %edi
+ xor %rdi, %rdi
  mov $60, %rax
  syscall
+
+message:
+ .string "Hello, world!\n"
 ```
 
 Functions
@@ -64,23 +85,25 @@ Register  Purpose
 %rcx      used to pass 4th argument to functions
 %rsp      stack pointer
 
-Call Function
--------------
+---
 
 ```asm
-.LC0:
- .string "Hello, world!\n"
- .globl _start
-get_message:
- leaq .LC0(%rip), %rax
- ret
+.globl _start
 _start:
  call get_message
+ mov $1, %rdi
  mov %rax, %rsi
- movl $14, %edx
+ mov $14, %rdx
  mov $1, %rax
  syscall
- xorl %edi, %edi
+ xor %rdi, %rdi
  mov $60, %rax
  syscall
+
+get_message:
+ leaq message(%rip), %rax
+ ret
+
+message:
+ .string "Hello, world!\n"
 ```
