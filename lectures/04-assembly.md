@@ -52,6 +52,18 @@ Functions
 - `push` and `pop` access stack
 - `rax` register is used for return value is [x64 calling convention](https://raw.githubusercontent.com/wiki/hjl-tools/x86-psABI/x86-64-psABI-1.0.pdf)
 
+Common Function Registers
+-------------------------
+
+Register  Purpose
+--------  -------
+%rax      1st return register
+%rdi      used to pass 1st argument to functions
+%rsi      used to pass 2nd argument to functions
+%rdx      used to pass 3rd argument to functions
+%rcx      used to pass 4th argument to functions
+%rsp      stack pointer
+
 Call Function
 -------------
 
