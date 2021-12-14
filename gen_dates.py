@@ -22,5 +22,5 @@ for b in config["breaks"]:
     rules.exdate(datetime.fromisoformat(b))
 
 with open('topics.tsv') as f:
-    for i, day in enumerate(zip_longest(rules, csv.reader(f))):
-        print(f"{i+1:02d}. {day[1][0] if day[1] != None else 'Out of topics'} ({day[0].strftime('%A, %B %d')})")
+    for i, day in enumerate(zip_longest(rules, csv.DictReader(f, dialect='excel-tab'))):
+        print(f"{i+1:02d}. {day[1]['name'] if day[1] != None else 'Out of topics'} ({day[0].strftime('%A, %B %d')})")
