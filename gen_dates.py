@@ -2,6 +2,7 @@ from dateutil.rrule import rruleset, rrule, WEEKLY, MO, TU, WE, TH, FR
 from datetime import datetime
 import csv
 import json
+from itertools import zip_longest
 
 config = json.load(open('config.json'))
 
@@ -21,5 +22,5 @@ for b in config["breaks"]:
     rules.exdate(datetime.fromisoformat(b))
 
 with open('topics.tsv') as f:
-    for i, day in enumerate(zip(rules, csv.reader(f))):
-        print(f"{i+1}. {day[0].strftime('%A, %B %d')}: {day[1][0]}")
+    for i, day in enumerate(zip_longest(rules, csv.reader(f))):
+        print(f"{i+1}. {day[0].strftime('%A, %B %d')}: {day[1][0] if day[1] != None else 'Out of topics'}")
