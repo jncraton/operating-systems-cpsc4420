@@ -23,4 +23,4 @@ for b in config["breaks"]:
 
 with open('topics.tsv') as f:
     for i, day in enumerate(zip_longest(rules, csv.reader(f))):
-        print(f"{i+1}. {day[0].strftime('%A, %B %d')}: {day[1][0] if day[1] != None else 'Out of topics'}")
+        print(f"{i+1}. {day[1][0] if day[1] != None else 'Out of topics'} ({day[0].strftime('%A, %B %d')})")
