@@ -17,9 +17,6 @@ Required Resources
 
 Operating Systems and Middleware. [Free](https://gustavus.edu/mcs/max/os-book/).
 
-Optional Resources
-------------------
-
 Course objectives
 -----------------
 
