@@ -49,7 +49,7 @@ Students will complete several projects and/or presentations over the course of 
 
 ### Labs and Homework
 
-Students will complete regular labs using various data science technologies. Students will also complete homework assignments covering various topics from the course text.
+Students will complete regular labs using various technologies. Students will also complete homework assignments covering various topics from the course text.
 
 ### Quizzes
 
