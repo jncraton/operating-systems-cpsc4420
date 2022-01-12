@@ -46,6 +46,10 @@ What does the OS do?
 
 ![OS in use](media/1-1.png)
 
+---
+
+Can we have a computer without an operating system?
+
 Abstraction
 -----------
 
