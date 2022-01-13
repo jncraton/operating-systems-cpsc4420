@@ -29,3 +29,60 @@ How to use GCC
 gcc: fatal error: no input files
 compilation terminated.
 ```
+
+Compiling Files
+---------------
+
+
+Compile source files into executable
+
+```
+> gcc src1.c src2.c --output executable
+```
+
+Hello, world
+------------
+
+hello.c:
+
+```
+#include <unistd.h>
+
+int main() {
+  write(0, "Hello, world!\n", 14);
+  return 0;
+}
+```
+
+Compile
+-------
+
+Preprocess, compile, assemble, and link our program to the file `hello`
+
+```
+> gcc hello.c --output hello
+```
+
+Run
+---
+
+We now have a new executable file. We can run it in the shell as:
+
+```
+> ./hello
+```
+
+More advance operations
+-----------------------
+
+Compile source code into Assembler instructions:
+
+```
+> gcc -S src.c
+```
+
+Compile source code without linking:
+
+```
+> gcc -c src.c
+```
