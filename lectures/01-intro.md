@@ -11,8 +11,7 @@ Anything you want to know?
 Introductions
 -------------
 
-- Name
-- Favorite thing you ate over break?
+- Favorite thing you did over break?
 
 Syllabus
 --------
@@ -25,6 +24,12 @@ Quizzes
 - Given regularly at beginning and end of class
 - Should be easy for you
 - Allow me to confirm that everyone is keeping up with course material
+
+Labs
+----
+
+- Now 50% (up from 30%) of your grade
+- Code-based labs that do not parse or compile will be awarded zero credit
 
 1.2 What is an Operating System
 ===============================
@@ -40,6 +45,10 @@ What does the OS do?
 ---
 
 ![OS in use](media/1-1.png)
+
+---
+
+Can we have a computer without an operating system?
 
 Abstraction
 -----------
