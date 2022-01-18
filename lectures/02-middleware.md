@@ -5,7 +5,7 @@ Middleware
 ----------
 
 - Middleware is software that sits between application programs and the operating system
-- Databases, J2EE
+- Databases, Runtimes, etc
 
 ---
 
@@ -38,7 +38,7 @@ Process
 
 - Container for one or more threads
 - Protects threads from interactions from unrelated threads running on the same computer
-- Threads in different process do not share memory
+- Threads in different processes do not share memory
 
 Thread APIs
 -----------
