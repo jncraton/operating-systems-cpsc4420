@@ -26,7 +26,7 @@ ISA
 
 - Instruction set architecture
 - Set of instructions provided by a CPU
-- Examples inlcude `x86`, `x86_64`, `ARM`, and `ARM64`
+- Examples include `x86`, `x86_64`, `ARM`, and `ARM64`
 
 System Call
 -----------

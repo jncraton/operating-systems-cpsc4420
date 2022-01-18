@@ -1,4 +1,4 @@
-personal_ws-1.1 en 15 
+personal_ws-1.1 en 28 
 APIs
 CPSC
 CPUs
@@ -8,9 +8,22 @@ ISA
 MacOS
 Middleware
 Modularization
+Preprocess
+Runtimes
 Threadripper
+asm
 dereferences
+gcc
 interruptable
 journaling
 namespace
+nd
 px
+rax
+rcx
+rdi
+rdx
+rsi
+rsp
+th
+userspace
