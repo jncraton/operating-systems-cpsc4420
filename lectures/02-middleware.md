@@ -40,6 +40,10 @@ Process
 - Protects threads from interactions from unrelated threads running on the same computer
 - Threads in different processes do not share memory
 
+---
+
+![Process with 2 threads](https://upload.wikimedia.org/wikipedia/commons/a/a5/Multithreaded_process.svg)
+
 Thread APIs
 -----------
 
