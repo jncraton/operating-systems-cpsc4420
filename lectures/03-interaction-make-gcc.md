@@ -61,11 +61,6 @@ Socket Implementation
 ---
 
 ```c
-int sockfd;
-int n;
-struct serv_addr;
-char recvBuff[1024];
-
 if((sockfd = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
   return 1;
 }
