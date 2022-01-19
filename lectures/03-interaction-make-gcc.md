@@ -71,7 +71,6 @@ GCC
 - [GNU Compiler Collection](https://en.wikipedia.org/wiki/GNU_Compiler_Collection)
 - Main compiler, linker, and assembler used for this class
 - Free and open source optimizing compiler produced by the [GNU project](https://en.wikipedia.org/wiki/GNU_Project)
-
 What is GCC
 -----------
 
