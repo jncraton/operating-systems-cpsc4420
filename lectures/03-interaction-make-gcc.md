@@ -46,6 +46,41 @@ Sockets
 - Provides a standard and consistent API for applications to use for networking
 - Supports streaming and packet-based communication
 
+Socket types
+------------
+
+- Stream - provides a virtual circuit
+- Datagram - delivers individual packets
+
+Socket Implementation
+---------------------
+
+- Independent of network type
+- Most typically used with TCP/IP and UDP/IP
+
+---
+
+```c
+int sockfd;
+int n;
+struct serv_addr;
+char recvBuff[1024];
+
+if((sockfd = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
+  return 1;
+}
+
+if( connect(sockfd, &serv_addr, sizeof(serv_addr)) < 0) {
+  return 1;
+}
+
+if (n = read(sockfd, recvBuff, sizeof(recvBuff)-1)) <= 0) {
+  return 1;
+}
+
+printf("%s\n", recvBuff);
+```
+
 1.9 Security
 ============
 
