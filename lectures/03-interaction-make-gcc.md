@@ -25,6 +25,10 @@ Databases
 - Provide persistent storage
 - Allows related data to be access easily
 
+---
+
+What if the system goes down during a write?
+
 Crashes
 -------
 
