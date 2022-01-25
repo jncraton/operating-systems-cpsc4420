@@ -1,5 +1,5 @@
-Files
-=====
+Files in C
+==========
 
 What is a file?
 ---------------
@@ -99,9 +99,9 @@ Example
 -------
 
 - User read and write, group read, world read:
-    644
+    - 644
 - User read, write, exec, group read and exec, world nothing
-    750
+    - 750
 
 Modifying Permissions
 ---------------------
