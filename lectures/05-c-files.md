@@ -24,7 +24,8 @@ Virtual File Systems
 Using files
 -----------
 
-- Kernel provides system calls (`open`, `read`, `write`, `close`)
+- Kernel provides [system calls](https://github.com/torvalds/linux/blob/master/arch/x86/entry/syscalls/syscall_64.tbl) (`open`, `read`, `write`, `close`)
+- System call headers are available in the [kernel source](https://github.com/torvalds/linux/blob/master/include/linux/syscalls.h)
 - Files are accessed as streams of bytes
 - Bytes are read and written starting from the beginning of the file by default
 
@@ -89,9 +90,9 @@ Permission encoding
 -------------------
 
 - 3 bits
-- (4) - Read
-- (2) - Write
-- (1) - Execute
+    - Read (4)
+    - Write (2)
+    - Execute (1)
 - 3 numbers used to store user, group, and world respectively
 
 Example
@@ -101,6 +102,27 @@ Example
     644
 - User read, write, exec, group read and exec, world nothing
     750
+
+Modifying Permissions
+---------------------
+
+- `chmod` - change file mode bits
+
+```
+chmod 775 myfile.c
+```
+
+- `chown` - change file owner and group
+
+```
+chown user:group myfile.c
+```
+
+- `chgrp` - change group ownership
+
+```
+chgrp group myfile.c
+```
 
 cp implementation
 -----------------
