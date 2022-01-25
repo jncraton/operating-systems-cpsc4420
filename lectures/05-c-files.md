@@ -6,7 +6,7 @@ What is a file?
 
 - Resource for storing data
 - Typically stored on persistent media (HDD, SSD, etc)
-- Group together and organized as a file system
+- Grouped together and organized as a file system
 
 Organization
 ------------
