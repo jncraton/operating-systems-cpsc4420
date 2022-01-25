@@ -1,4 +1,4 @@
-personal_ws-1.1 en 39 
+personal_ws-1.1 en 42 
 APIs
 CPSC
 CPUs
@@ -7,6 +7,7 @@ DLL
 Datagram
 DrawSquare
 EE
+FHS
 ISA
 ISAs
 MSVCRT
@@ -16,10 +17,12 @@ Modularization
 POSIX
 Preprocess
 Runtimes
+SSD
 TCP
 Threadripper
 UDP
 asm
+cp
 dereferences
 gcc
 glibc

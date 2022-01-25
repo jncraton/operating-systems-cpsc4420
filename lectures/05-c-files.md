@@ -83,7 +83,7 @@ void main(int argc, char ** argv) {
 File permissions
 ----------------
 
-- On Unix systems, files can be set as readable, writeable, and executable
+- On Unix systems, files can be set as readable, writable, and executable
 - These can be defined for the file owner, file owner group, and everyone
 
 Permission encoding
