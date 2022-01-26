@@ -160,8 +160,6 @@ Function Returns
 
 - End the function
 - Return some value
-- In languages without separate statements, the return is simply the value of the function body
-- Some languages allow for implicit returns
 
 Random Number
 -------------
