@@ -167,15 +167,3 @@ Random Number
 -------------
 
 ![](https://imgs.xkcd.com/comics/random_number.png){height=480px}
-
----
-
-```rust
-fn get_num() -> u8 {
-  42
-}
-
-fn main() {
-  println!("{}", get_num());
-}
-```
