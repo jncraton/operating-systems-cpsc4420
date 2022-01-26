@@ -85,3 +85,84 @@ restore:
 ---
 
 ![Saving registers and per-thread stack](media/2-8.png)
+
+Security
+--------
+
+- On most systems, memory protections are enforced
+- A process can't jump into another processes memory
+- The user mode thread switching described is not possible in practice
+
+Kernel
+------
+
+- The kernel must be responsible for thread management and switching
+
+Yield
+-----
+
+- Simplified version of `switchFromTo`
+- Take no parameters
+- Informs the kernel that the current thread is ready to take a break
+
+Yield Implementation
+--------------------
+
+```
+outgoing = current
+next = chooseNextThread()
+current = next // Maintain global variable
+switchFromTo(outgoing, next)
+```
+
+Multiple processors
+-------------------
+
+- A modern system can run multiple threads simultaneously in hardware
+- We need to maintain information about the `n` running threads on our `n` processors
+- When a thread yields on one CPU, we can begin running a new thread there
+
+2.5 Pre-emptive multitasking
+============================
+
+Cooperative Mutltitasking
+-------------------------
+
+- Threads run until they yield time back to the OS
+- This is the system we have described so far
+
+---
+
+What are some issue with cooperative multitasking?
+
+Cooperative Multitasking Issues
+-------------------------------
+
+- One thread may not be as cooperative and hog time from others
+- The OS doesn't know when it will next have CPU time to perform device I/O
+
+Pre-emptive Multitasking
+------------------------
+
+- Allows the OS to take control and switch to another thread
+
+Interrupts
+----------
+
+- CPUs generally execute the next instruction
+- Devices have the ability to interrupt this flow and redirect execution to an interrupt handler
+- Using timer and interrupt handlers, the OS can build pre-emptive multitasking
+
+2.6 Security and Threads
+========================
+
+DoS
+---
+
+- One thread hogs execution preventing the system from running properly
+
+Race Conditions
+---------------
+
+- If not programmed carefully, threads can lead to undefined and unexpected behavior
+- This behavior can sometimes be exploitable by an attacker
