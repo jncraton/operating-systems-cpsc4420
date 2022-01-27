@@ -37,65 +37,79 @@ class OpeningManim(Scene):
         d = Text("Thread D", color=BLACK)
         d.shift(RIGHT*4)
         self.add(d)
-        
-        self.wait()
 
         text = Text("Thread A reads from file", color=BLACK)
         text.shift(DOWN*3)
-        self.play(AddTextLetterByLetter(text))
-        self.play(a.animate.shift(RIGHT*8, DOWN*2))
-        self.play(b.animate.shift(UP*1))
+        self.add(text)
+        self.play(
+            a.animate.shift(RIGHT*8, DOWN*2),
+            b.animate.shift(UP*1),
+        )
         self.remove(text)
 
         text = Text("Read completes for thread C", color=BLACK)
         text.shift(DOWN*3)
-        self.play(AddTextLetterByLetter(text))
-        self.play(c.animate.shift(LEFT*8, DOWN*1))
-        self.play(d.animate.shift(UP*1))
-        self.play(a.animate.shift(UP*1))
+        self.add(text)
+        self.play(
+            c.animate.shift(LEFT*8, DOWN*1),
+            d.animate.shift(UP*1),
+            a.animate.shift(UP*1),
+        )
         self.remove(text)
 
         text = Text("Read completes for thread D", color=BLACK)
         text.shift(DOWN*3)
-        self.play(AddTextLetterByLetter(text))
-        self.play(d.animate.shift(LEFT*8, DOWN*2))
-        self.play(a.animate.shift(UP*1))
+        self.add(text)
+        self.play(
+            d.animate.shift(LEFT*8, DOWN*2),
+            a.animate.shift(UP*1),
+        )
         self.remove(text)
 
         text = Text("Thread B reads from file", color=BLACK)
         text.shift(DOWN*3)
-        self.play(AddTextLetterByLetter(text))
-        self.play(b.animate.shift(RIGHT*8, DOWN*1))
-        self.play(c.animate.shift(UP*1))
-        self.play(d.animate.shift(UP*1))
+        self.add(text)
+        self.play(
+            b.animate.shift(RIGHT*8, DOWN*1),
+            c.animate.shift(UP*1),
+            d.animate.shift(UP*1),
+        )
         self.remove(text)
 
         text = Text("Thread C reads from file", color=BLACK)
         text.shift(DOWN*3)
-        self.play(AddTextLetterByLetter(text))
-        self.play(c.animate.shift(RIGHT*8, DOWN*2))
-        self.play(d.animate.shift(UP*1))
+        self.add(text)
+        self.play(
+            c.animate.shift(RIGHT*8, DOWN*2),
+            d.animate.shift(UP*1),
+        )
         self.remove(text)
 
         text = Text("Read completes for thread A", color=BLACK)
         text.shift(DOWN*3)
-        self.play(AddTextLetterByLetter(text))
-        self.play(a.animate.shift(LEFT*8, DOWN*1))
-        self.play(b.animate.shift(UP*1))
-        self.play(c.animate.shift(UP*1))
+        self.add(text)
+        self.play(
+            a.animate.shift(LEFT*8, DOWN*1),
+            b.animate.shift(UP*1),
+            c.animate.shift(UP*1),
+        )
         self.remove(text)
 
         text = Text("Read completes for thread B", color=BLACK)
         text.shift(DOWN*3)
-        self.play(AddTextLetterByLetter(text))
-        self.play(b.animate.shift(LEFT*8, DOWN*2))
-        self.play(c.animate.shift(UP*1))
+        self.add(text)
+        self.play(
+            b.animate.shift(LEFT*8, DOWN*2),
+            c.animate.shift(UP*1),
+        )
         self.remove(text)
 
         text = Text("Thread D reads from file", color=BLACK)
         text.shift(DOWN*3)
-        self.play(AddTextLetterByLetter(text))
-        self.play(d.animate.shift(RIGHT*8, DOWN*1))
-        self.play(a.animate.shift(UP*1))
-        self.play(b.animate.shift(UP*1))
+        self.add(text)
+        self.play(
+            d.animate.shift(RIGHT*8, DOWN*1),
+            a.animate.shift(UP*1),
+            b.animate.shift(UP*1),
+        )
         self.remove(text)
