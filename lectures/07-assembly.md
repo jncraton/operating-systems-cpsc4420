@@ -1,3 +1,9 @@
+Lab Questions
+-------------
+
+- [Test value update](https://github.com/jncraton/cereals/commit/ae22cb6606ed312dbe867ffdb10626d0c6e5e257)
+- [Floats in TSV file](https://github.com/jncraton/cereals/commit/fab01327b45d08c8d7b55b81c9ca45baaf900238)
+
 Assembly
 ========
 
