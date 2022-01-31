@@ -54,7 +54,7 @@ Register  Purpose
 .globl _start
 _start:
  mov $1, %rdi
- leaq .data(%rip), %rsi
+ leaq message(%rip), %rsi
  mov $14, %rdx
  mov $1, %rax
  syscall
