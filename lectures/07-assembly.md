@@ -71,7 +71,7 @@ Functions
 
 - `call` and `ret` perform jumps and adjust state
 - `push` and `pop` access stack
-- `rax` register is used for return value is [x64 calling convention](https://raw.githubusercontent.com/wiki/hjl-tools/x86-psABI/x86-64-psABI-1.0.pdf)
+- `rax` register is used for return value in [x64 calling convention](https://raw.githubusercontent.com/wiki/hjl-tools/x86-psABI/x86-64-psABI-1.0.pdf)
 
 Common Function Registers
 -------------------------
