@@ -58,7 +58,7 @@ Lifetime
 
 ---
 
-- [Example program](examples/2-simple-thread/threads.c)
+- [Example program](../examples/2-simple-thread/threads.c)
 
 2.3 Reasons for Concurrent Threads
 ==================================
