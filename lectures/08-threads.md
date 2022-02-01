@@ -84,7 +84,7 @@ Modularization
 -------------
 
 - We may also like threads for creating cleaner programs
-- Aspects of computation can be handle independently
+- Aspects of computation can be handled independently
 
 Web Server Example
 ------------------
@@ -100,4 +100,4 @@ Multiprocessor Example
 ----------------------
 
 - Nearly all systems now have multiple processors
-- How are threads useful here
+- How are threads useful here?
