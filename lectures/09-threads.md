@@ -48,7 +48,6 @@ Consider:
 - Stack Pointer
 - Register Values
 
-
 Changing Threads
 ----------------
 
@@ -67,7 +66,7 @@ What about memory
 
 - Each thread's memory should remain accessible and largely unchanged after switching
 - The stack should be preserved exactly
-- The stack pushed to hold thread state when switching just like when calling a function
+- The stack is pushed to hold thread state when switching just like when calling a function
 
 Psuedocode
 ----------
