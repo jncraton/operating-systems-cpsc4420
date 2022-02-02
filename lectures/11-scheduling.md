@@ -9,7 +9,7 @@ Scheduling
 
 ---
 
-Insert Figure 3.3
+![Thread states](/media/3-3.png)
 
 ---
 
@@ -65,7 +65,7 @@ Cache Coherence Protocol
 
 ---
 
-Insert figure 3.5
+![Cache locality](meida/3-5.png)
 
 Response Time
 -------------
