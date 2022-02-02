@@ -46,3 +46,21 @@ RR
 
 - Allow all highest priority threads to run
 - Delays work on one thread to service others
+
+Niche
+-----
+
+- A busy high priority thread will consume all system resources
+- In a carefully controlled system, they can be useful
+
+Hard-real-time systems
+----------------------
+
+- Data and computation must be completed on a fixed timetable
+- Aircraft
+- Control systems
+- [Rockets](https://www.youtube.com/watch?v=pmRrnyDssZc&t=360s)
+
+---
+
+Gantt Charts and Examples
