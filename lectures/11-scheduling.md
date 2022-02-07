@@ -9,7 +9,7 @@ Scheduling
 
 ---
 
-![Thread states](/media/3-3.png)
+![Thread states](media/3-3.png)
 
 ---
 
@@ -30,6 +30,7 @@ Throughput
 
 - Measure of work done per time
 - An example would be requests per second (RPS) for a webserver
+- Typically goes down as we change threads more quickly
 
 Context Switching
 -----------------
@@ -48,7 +49,7 @@ Cache Hierarchy
 - The implementation of the cache hierarchy makes context switching more expensive
 - Another thread will replace many of our cached values
 
-How does this effect change in multiprocessor systems
+How does this effect change in multiprocessor systems?
 
 Multiprocessor Systems
 ----------------------
@@ -65,13 +66,13 @@ Cache Coherence Protocol
 
 ---
 
-![Cache locality](meida/3-5.png)
+![Cache locality](media/3-5.png)
 
 Response Time
 -------------
 
 - Time to service a single request
-- Typically goes down the fast we change contexts
+- Typically goes down the faster we change contexts
 
 Control Goals
 -------------
@@ -97,3 +98,14 @@ Resource allocation
 -------------------
 
 - How to split resources between users
+
+Scheduling Goals
+----------------
+
+- Performance
+  - Throughput
+  - Response Time
+- Control
+  - Urgency
+  - Importance
+  - Resource allocation
