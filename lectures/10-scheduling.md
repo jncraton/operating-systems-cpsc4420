@@ -41,3 +41,7 @@ Queues
 - Run queue - Queue of threads that can be run now
 - Wait queue - Queue of threads waiting on something
     - 1 queue per wait reason
+
+---
+
+![Queues](media/run-queue.gif)
