@@ -27,3 +27,7 @@ Can the example sell more tickets than are available?
 ---
 
 What if it is running in multiple threads?
+
+---
+
+[examples/race/tickets.c](../examples/race/tickets.c)
