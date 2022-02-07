@@ -6,7 +6,7 @@ Priority based scheduling
 
 - Useful in limited circumstances
 - Helpful as a framework for more advanced scheduling
-- What if the OS could auotmatically adjust priorities?
+- What if the OS could automatically adjust priorities?
 
 Earliest Deadline First
 -----------------------

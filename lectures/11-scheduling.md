@@ -71,7 +71,7 @@ Response Time
 -------------
 
 - Time to service a single request
-- Typcially goes down the fast we change contexts
+- Typically goes down the fast we change contexts
 
 Control Goals
 -------------

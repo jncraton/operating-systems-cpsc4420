@@ -68,7 +68,7 @@ What about memory
 - The stack should be preserved exactly
 - The stack is pushed to hold thread state when switching just like when calling a function
 
-Psuedocode
+Pseudocode
 ----------
 
 ```
@@ -124,7 +124,7 @@ Multiple processors
 2.5 Pre-emptive multitasking
 ============================
 
-Cooperative Mutltitasking
+Cooperative Multitasking
 -------------------------
 
 - Threads run until they yield time back to the OS

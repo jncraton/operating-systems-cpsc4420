@@ -4,7 +4,8 @@
 Threads
 -------
 
-- Collections of instructions and runtime data
+- A sequence of computational instructions run one after another
+- Requires OS-level management for runtime data
 
 Thread Switching
 ----------------

@@ -1,13 +1,15 @@
-personal_ws-1.1 en 42 
+personal_ws-1.1 en 56 
 APIs
 CPSC
 CPUs
 Craton
 DLL
 Datagram
+DoS
 DrawSquare
 EE
 FHS
+Gantt
 ISA
 ISAs
 MSVCRT
@@ -15,15 +17,21 @@ MacOS
 Middleware
 Modularization
 POSIX
+Pre
 Preprocess
+Pseudocode
 Runtimes
 SSD
+TCB
 TCP
+TSV
 Threadripper
 UDP
 asm
 cp
+currentThread
 dereferences
+emptive
 gcc
 glibc
 interruptable
@@ -31,6 +39,8 @@ journaling
 libc
 namespace
 nd
+newThread
+pre
 px
 rax
 rcx
@@ -38,6 +48,10 @@ rdi
 rdx
 rsi
 rsp
+runnable
+runtime
+switchFromTo
 th
 unistd
 userspace
+webserver
