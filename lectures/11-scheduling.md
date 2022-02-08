@@ -94,6 +94,12 @@ Importance
 - How critical the task is to complete
 - Your graduation application
 
+Urgency and Importance
+----------------------
+
+- Orthogonal concepts
+- A task can be urgent without being import or important without being urgent
+
 Resource allocation
 -------------------
 
