@@ -88,9 +88,7 @@ Theorems
 Rate-monotonic scheduling
 -------------------------
 
->  If the threads will meet their deadlines under any fixed priority as-
-signment, then they will do so under an assignment that prioritizes
-threads with shorter periods over those with longer periods.
+>  If the threads will meet their deadlines under any fixed priority assignment, then they will do so under an assignment that prioritizes threads with shorter periods over those with longer periods.
 
 Starting Together
 -----------------
