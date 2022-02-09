@@ -107,7 +107,7 @@ Gantt Chart
 
 ---
 
-![Gantt Chart](media/gantt1.png)
+![Gantt Chart](media/gantt1.png){height=160px}
 
 Example
 -------
@@ -125,7 +125,8 @@ Can this application be serviced on a single CPU using fixed-priority scheduling
 
 ---
 
-![Gantt Chart](media/gantt-ex1.png)
+![Gantt Chart](media/gantt-ex1.png){height=160px}
+
 Example 2
 ---------
 
@@ -135,3 +136,7 @@ Example 2
 - Thread 2
   - Period and deadline: 6 seconds
   - Worst-case execution time: **2** seconds
+
+---
+
+![Gantt Chart](media/gantt-ex2.png){height=160px}
