@@ -1,6 +1,20 @@
 3.4 Fixed-priority scheduling
 -----------------------------
 
+Scheduling Mechanisms
+---------------------
+
+- Priority
+  - Fixed Priority (3.4)
+  - Dynamic Priority
+    - Earliest Deadline First (3.5.1)
+    - Decay Usage (3.5.2)
+- Proportional Share (3.6)
+
+---
+
+![Uniform priority scheduling](media/run-queue.gif)
+
 Priority
 --------
 
