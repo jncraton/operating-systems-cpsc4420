@@ -1,4 +1,4 @@
-all: run-queue.gif
+all: run-queue.gif priority.gif
 
 %.gif: %.py
 	manim -ql --format=gif $< -o $@
