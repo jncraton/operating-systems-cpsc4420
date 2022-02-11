@@ -38,7 +38,7 @@ Decay Usage Scheduling
 - Lower priority for threads that run more
 - Allows quick, interactive tasks to execute instantly while moving compute-intensive tasks to the background
 
-Insert figure 3.9
+![Usage and priority](media/3-9.png)
 
 3.6 Proportional Share Scheduling
 =================================
