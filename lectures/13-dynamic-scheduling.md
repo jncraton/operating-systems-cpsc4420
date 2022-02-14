@@ -60,14 +60,14 @@ Mechanisms
 
 - Lottery Scheduling
 - Weighted Round-robin
-- Weighted Fair Queueing
+- Weighted Fair Queuing
 
 Lottery Scheduling
 ------------------
 
 - Uniform time slices for all threads
 - No formal rotation
-- Next thread to run selected randomly using asigned weights
+- Next thread to run selected randomly using assigned weights
 
 Lottery Scheduling
 ------------------
@@ -92,7 +92,7 @@ Example
 
 ![Weighted Round Robin Example](media/weighted-round-robin.png)
 
-Weighted Fair Queueing
+Weighted Fair Queuing
 ----------------------
 
 - Threads with smaller allocation have to sit out on some rounds
@@ -100,7 +100,7 @@ Weighted Fair Queueing
 
 ---
 
-![Weighted Fair Queueing Example](media/weighted-fair-queueing.png)
+![Weighted Fair Queuing Example](media/weighted-fair-queueing.png)
 
 Linux Example
 -------------

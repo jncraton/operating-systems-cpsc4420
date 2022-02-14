@@ -83,7 +83,7 @@ Theorems
 --------
 
 - [Liu and Layland 1973](http://web.cs.wpi.edu/~cs3013/a09/Papers/Liu%20%26%20Layland%2C%20Real-time%20Scheduling.pdf)
-- Simplify the process of analysing systems with real-time constraints
+- Simplify the process of analyzing systems with real-time constraints
 
 Rate-monotonic scheduling
 -------------------------

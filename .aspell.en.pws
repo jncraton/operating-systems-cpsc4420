@@ -1,4 +1,4 @@
-personal_ws-1.1 en 56 
+personal_ws-1.1 en 64 
 APIs
 CPSC
 CPUs
@@ -12,6 +12,8 @@ FHS
 Gantt
 ISA
 ISAs
+Layland
+Liu
 MSVCRT
 MacOS
 Middleware
@@ -37,21 +39,27 @@ glibc
 interruptable
 journaling
 libc
+mutex
 namespace
 nd
 newThread
+pid
 pre
 px
 rax
 rcx
 rdi
 rdx
+renice
 rsi
 rsp
 runnable
 runtime
+runtimes
 switchFromTo
 th
+tunable
 unistd
+unsyncronized
 userspace
 webserver
