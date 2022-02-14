@@ -106,5 +106,6 @@ Linux Example
 -------------
 
 - `nice` values feed into scheduler
+- Weight is approximately 1024 / (1.25^niceness)
 - `renice` can adjust niceness
 - renice -n {niceness} -p {pid}
