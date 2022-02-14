@@ -101,3 +101,10 @@ Weighted Fair Queueing
 ---
 
 ![Weighted Fair Queueing Example](media/weighted-fair-queueing.png)
+
+Linux Example
+-------------
+
+- `nice` values feed into scheduler
+- `renice` can adjust niceness
+- renice -n {niceness} -p {pid}
