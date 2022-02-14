@@ -34,9 +34,11 @@ P3       4               10
 Decay Usage Scheduling
 ----------------------
 
-- Suitable for systems with deadlines
+- Suitable for systems without deadlines
 - Lower priority for threads that run more
 - Allows quick, interactive tasks to execute instantly while moving compute-intensive tasks to the background
+
+---
 
 ![Usage and priority](media/3-9.png)
 
@@ -48,4 +50,54 @@ Fairness
 
 - Equal sharing of resources my be more important than other factors
 
-...
+Goal
+----
+
+- Provide tunable fair sharing of resources between threads and/or system users
+
+Mechanisms
+----------
+
+- Lottery Scheduling
+- Weighted Round-robin
+- Weighted Fair Queueing
+
+Lottery Scheduling
+------------------
+
+- Uniform time slices for all threads
+- No formal rotation
+- Next thread to run selected randomly using asigned weights
+
+Lottery Scheduling
+------------------
+
+- Simple
+- Technically correct in the long run
+- May produce undesirable behavior in the short run
+
+Weighted Round Robin
+--------------------
+
+- Threads with larger allocations are assigned larger time slices
+- Reduces context switches
+
+Example
+-------
+
+- Three threads (T1, T2, T3)
+- Allocated resources in the proportions 3:2:1
+
+---
+
+![Weighted Round Robin Example](media/weighted-round-robin.png)
+
+Weighted Fair Queueing
+----------------------
+
+- Threads with smaller allocation have to sit out on some rounds
+- Keeps accumulated runtimes very close to desired proportions
+
+---
+
+![Weighted Fair Queueing Example](media/weighted-fair-queueing.png)
