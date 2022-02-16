@@ -9,20 +9,20 @@ pthread_mutex_t sale_mutex;
 
 
 long int child(long int thread_num) {
-  long tickets_sold = 0;
+  long thread_tickets_sold = 0;
 
   while (tickets_remaining > 0) {
     pthread_mutex_lock(&sale_mutex);
     if(tickets_remaining > 0) {
       tickets_remaining--;
-      tickets_sold++;
+      thread_tickets_sold++;
     }
     pthread_mutex_unlock(&sale_mutex);
   }
 
-  printf("Thread %ld sold %ld tickets.\n", thread_num, tickets_sold);
+  printf("Thread %ld sold %ld tickets.\n", thread_num, thread_tickets_sold);
 
-  return tickets_sold;
+  return thread_tickets_sold;
 }
 
 int main() {

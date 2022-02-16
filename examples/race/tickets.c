@@ -1,21 +1,21 @@
 #include <pthread.h>
 #include <stdio.h>
 
-#define THREADS 16
+#define THREADS 1
 
 int tickets_remaining = 100000;
 
 long int child(long int thread_num) {
-  long tickets_sold = 0;
+  long thread_tickets_sold = 0;
 
   while (tickets_remaining > 0) {
     tickets_remaining--;
-    tickets_sold++;
+    thread_tickets_sold++;
   }
 
-  printf("Thread %ld sold %ld tickets.\n", thread_num, tickets_sold);
+  printf("Thread %ld sold %ld tickets.\n", thread_num, thread_tickets_sold);
 
-  return tickets_sold;
+  return thread_tickets_sold;
 }
 
 int main() {
