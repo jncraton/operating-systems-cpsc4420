@@ -41,8 +41,12 @@ What behaviors do we need to avoid if we have shared memory?
 4.2 Races and the Need for Mutual Exclusion
 ===========================================
 
-Races
------
+---
+
+![Race condition in a circuit](https://upload.wikimedia.org/wikipedia/commons/7/78/Race_condition.svg)
+
+Thread Race Conditions
+----------------------
 
 - Two threads may be operating concurrently in an unsyncronized manner
 - This can lead to output that differs over different program runs
