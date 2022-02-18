@@ -13,10 +13,10 @@ Scheduling Goals	Chapter 3.3
 Fix-priority Scheduling	Chapter 3.4
 Dynamic-priority Scheduling	Chapter 3.5 - 3.7
 Races and the Need for Mutual Exclusion	Chapter 4.1 - 4.2
+Presentation Day 1 
 Mutexes and Monitors	Chapter 4.3
 Syncronization Patterns	Chapter 4.4 - 4.6
 Deadlocks and Scheduling	Chapter 4.7 - 4.10
-Presentation Day 1	
 Exam Review	
 Exam 1	
 Atomic Transactions	Chapter 5.1 - 5.3
