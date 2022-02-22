@@ -115,6 +115,16 @@ Spinlock
 
 ---
 
+```lua
+to lock mutex:
+  let temp = 0
+  repeat
+    atomically exchange temp and mutex
+  until temp = 1
+```
+
+---
+
 ![Spinlock implementation](media/4-8.png)
 
 Cache-conscious spinlocks
@@ -125,7 +135,7 @@ Cache-conscious spinlocks
 
 ---
 
-```
+```lua
 to lock mutex:
   let temp = 0
   repeat
