@@ -1,5 +1,3 @@
-Exam 1 - Wednesday, March 2
-
 4.4 Other Synchronization Patterns
 =================================
 

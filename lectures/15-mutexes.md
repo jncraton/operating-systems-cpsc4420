@@ -1,3 +1,6 @@
+- Midterm Exam on March 2nd
+- Lab questions?
+
 4.3 Mutexes and Monitors
 ========================
 
