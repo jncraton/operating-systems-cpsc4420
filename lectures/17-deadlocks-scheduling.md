@@ -6,11 +6,11 @@ Concurrency
 
 - Addresses problems of responsiveness and throughput
 - Creates problems with races
-- Races can be resolved using syncronization patterns
+- Races can be resolved using synchronization patterns
 
 ---
 
-What problems can be caused by syncronization?
+What problems can be caused by synchronization?
 
 Example
 -------
@@ -59,7 +59,7 @@ Addressing Deadlocks
 Prevention Through Resource Ordering
 ------------------------------------
 
-- Requires resources to have globals IDs
+- Requires resources to have global IDs
 - When locking resources, lock them in order by ID
 
 Example
@@ -125,5 +125,5 @@ Immediate detection
 
 - If we detect deadlocks conditions when the last lock in the cycle is attempted, we can notify applications and they can choose to take appropriate action
 
-4.8 Interaction of Syncronization and Scheduling
+4.8 Interaction of Synchronization and Scheduling
 ================================================

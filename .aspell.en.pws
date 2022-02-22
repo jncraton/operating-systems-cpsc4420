@@ -1,4 +1,4 @@
-personal_ws-1.1 en 64 
+personal_ws-1.1 en 71 
 APIs
 CPSC
 CPUs
@@ -18,12 +18,15 @@ MSVCRT
 MacOS
 Middleware
 Modularization
+Mutexes
+OOP
 POSIX
 Pre
 Preprocess
 Pseudocode
 Runtimes
 SSD
+Spinlock
 TCB
 TCP
 TSV
@@ -40,11 +43,13 @@ interruptable
 journaling
 libc
 mutex
+mutexes
 namespace
 nd
 newThread
 pid
 pre
+pthread
 px
 rax
 rcx
@@ -56,6 +61,8 @@ rsp
 runnable
 runtime
 runtimes
+spinlock
+spinlocks
 switchFromTo
 th
 tunable

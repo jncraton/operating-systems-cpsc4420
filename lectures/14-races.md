@@ -1,4 +1,4 @@
-4.1 Syncronization and Deadlocks
+4.1 Synchronization and Deadlocks
 ================================
 
 Interaction
@@ -8,7 +8,7 @@ Interaction
 - The tools we have so far allow threads to run independently
 - Sometimes threads have dependencies
 
-Indpendent Execution
+Independent Execution
 --------------------
 
 - Create threads

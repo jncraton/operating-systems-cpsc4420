@@ -1,6 +1,6 @@
 Exam 1 - Wednesday, March 2
 
-4.4 Other Syncronization Patterns
+4.4 Other Synchronization Patterns
 =================================
 
 Producer-consumer model
@@ -20,7 +20,7 @@ Concurrency
 Bounded Buffer
 --------------
 
-- Provices storage space for producer output
+- Provides storage space for producer output
 - Limited in space because space is finite and larger size produces diminishing returns
 - When buffer is empty, consumer must wait
 - When buffer is full, producer must wait

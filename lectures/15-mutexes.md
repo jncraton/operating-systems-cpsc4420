@@ -88,7 +88,7 @@ Language support
 ----------------
 
 - Can be automatic (e.g. `class monitor`)
-- `syncronized` keywork provides object locking at the method level
+- `syncronized` keyword provides object locking at the method level
 - Can be implemented manually
 
 Mutex Implementation
@@ -110,7 +110,7 @@ Spinlock
 
 ![Spinlock implementation](media/4-8.png)
 
-Cache-concious spinlocks
+Cache-conscious spinlocks
 ------------------------
 
 - Wait for another thread to change the lock state before atomically locking it
@@ -136,7 +136,7 @@ Spinlocks
 - Can be appropriate in the case where very little waiting is typically needed due to fast operations
 - Does not require a system call
 
-Queing Mutex
+Queuing Mutex
 ------------
 
 - Avoids spinning
