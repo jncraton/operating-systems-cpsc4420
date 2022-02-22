@@ -66,6 +66,10 @@ Mutex Types
 
 - PTHREAD_MUTEX_DEFAULT - Produces undefined behavior in exceptional cases
 - PTHREAD_MUTEX_ERROR_CHECK - Error codes returned for exceptional cases
+
+Mutex Types
+-----------
+
 - PTHREAD_MUTEX_NORMAL - Self-deadlocks are possible. Produces undefined behavior in other cases
 - PTHREAD_MUTEX_RECURSIVE - A counter is used for lock state. A mutex can be locked multiple times and must be unlocked the same number of times before truly being unlocked
 
