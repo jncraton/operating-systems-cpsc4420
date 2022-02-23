@@ -50,7 +50,7 @@ Barriers
 - Requires multiple concurrent threads to finish a task before moving on
 - Similar to our use `pthread_join`, but does not require threads to terminate
 
-Condtion Variables
+Condition Variables
 ------------------
 
 - Provide a way to bundle multiple threads waiting on the same condition

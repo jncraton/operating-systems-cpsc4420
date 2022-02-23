@@ -132,7 +132,7 @@ Synchronization and Scheduling
 ------------------------------
 
 - Scheduler determines which thread to run
-- Syncronization actions performed by running threads determine which other threads are runnable
+- Synchronization actions performed by running threads determine which other threads are runnable
 
 Priority Inversion
 ------------------
@@ -144,9 +144,9 @@ Short-term example
 ------------------
 
 1. High priority thread waits on I/O
-2. Low priority runs and aquires mutex
+2. Low priority runs and acquires mutex
 3. I/O completes an the high priority thread preempts the other
-4. High priority thread can't aquire mutex
+4. High priority thread can't acquire mutex
 5. Low priority thread resumes
 
 Short term issues
@@ -160,9 +160,9 @@ Problematic Example
 -------------------
 
 1. High and medium threads both wait on I/O
-2. Low priority thread runs and aquires mutex
+2. Low priority thread runs and acquires mutex
 3. All I/O completes and the high priority thread preempts the others
-4. The high priority thread cannot aquire the mutex and waits
+4. The high priority thread cannot acquire the mutex and waits
 5. The medium priority thread runs and the low priority thread is unable to give up the mutex
 
 Possible Solution
