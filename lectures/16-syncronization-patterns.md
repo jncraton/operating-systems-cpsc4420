@@ -50,5 +50,15 @@ Barriers
 - Requires multiple concurrent threads to finish a task before moving on
 - Similar to our use `pthread_join`, but does not require threads to terminate
 
-4.5 Condition Variables
-=======================
+Condtion Variables
+------------------
+
+- Provide a way to bundle multiple threads waiting on the same condition
+- A signaling mechanism is used to wake threads when the condition is met
+
+Semaphores
+----------
+
+- Somewhat similar to a mutex, but can take on values other than 0 and 1
+- A semaphore that uses only 0 and 1 is a mutex
+- Larger counter values can be useful when implementing bounded buffers or other concurrency mechanisms
