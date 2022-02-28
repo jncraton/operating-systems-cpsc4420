@@ -1,5 +1,6 @@
 - Exam on Wednesday
-- No lab this Friday
+- No lab this Friday. Lab due date extended.
+- Lab questions?
 
 4.7 Deadlocks
 =============
