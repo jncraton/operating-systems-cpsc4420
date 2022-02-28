@@ -20,13 +20,13 @@ Example
 -------
 
 ```python
-to transfer amount from sourceAccount to destinationAccount:
-  lock sourceAccount.mutex
-  lock destinationAccount.mutex
-  sourceAccount.balance = sourceAccount.balance - amount
-  destinationAccount.balance = destinationAccount.balance + amount
-  unlock sourceAccount.mutex
-  unlock destinationAccount.mutex
+to transfer amount from srcAccount to dstAccount:
+  lock srcAccount.mutex
+  lock dstAccount.mutex
+  srcAccount.balance = srcAccount.balance - amount
+  dstAccount.balance = dstAccount.balance + amount
+  unlock srcAccount.mutex
+  unlock dstAccount.mutex
 ```
 
 Analysis
@@ -70,13 +70,13 @@ Example
 -------
 
 ```python
-to transfer amount from sourceAccount to destinationAccount:
-  lock min(sourceAccount, destinationAccount).mutex
-  lock max(sourceAccount, destinationAccount).mutex
-  sourceAccount.balance = sourceAccount.balance - amount
-  destinationAccount.balance = destinationAccount.balance + amount
-  unlock sourceAccount.mutex
-  unlock destinationAccount.mutex
+to transfer amount from srcAccount to dstAccount:
+  lock min(srcAccount, dstAccount).mutex
+  lock max(srcAccount, dstAccount).mutex
+  srcAccount.balance = srcAccount.balance - amount
+  dstAccount.balance = dstAccount.balance + amount
+  unlock srcAccount.mutex
+  unlock dstAccount.mutex
 ```
 
 Linux Scheduler Example
