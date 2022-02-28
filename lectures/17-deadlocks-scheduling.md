@@ -197,5 +197,26 @@ Solution
 - Integrate the mutex wait queue with the scheduler and avoid simple FIFO behavior
 - Allow a thread to relock a mutex is gave up during its time slice even though other threads are waiting on it
 
-4.9 Non-blocking Synchronization
+4.10 Security and Syncronization
 ================================
+
+Policy vs Practice
+------------------
+
+- Some security flaws are due to improper policies implemented correctly
+- Other flaws may be due to correct policies with buggy implementations
+
+Syncronization Bugs
+-------------------
+
+- Concurrency is hard, so programmers are likely to introduce bugs
+- Race conditions are hard to test for, as the system will usually perform correctly
+- Crackers may be able to induce race conditions more frequently than would naturally occur
+- Race conditions can allow "impossible" situations and break through defenses
+
+Time of check to time of use
+----------------------------
+
+- Class of bugs
+- Involve checking for some condition and then using it in a concurrent system
+- If the value changes between these points, security assumptions can be violated
