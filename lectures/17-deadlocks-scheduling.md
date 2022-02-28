@@ -201,7 +201,7 @@ Solution
 - Integrate the mutex wait queue with the scheduler and avoid simple FIFO behavior
 - Allow a thread to relock a mutex is gave up during its time slice even though other threads are waiting on it
 
-4.10 Security and Syncronization
+4.10 Security and Synchronization
 ================================
 
 Policy vs Practice
@@ -210,7 +210,7 @@ Policy vs Practice
 - Some security flaws are due to improper policies implemented correctly
 - Other flaws may be due to correct policies with buggy implementations
 
-Syncronization Bugs
+Synchronization Bugs
 -------------------
 
 - Concurrency is hard, so programmers are likely to introduce bugs
