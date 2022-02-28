@@ -1,3 +1,6 @@
+- Exam on Wednesday
+- No lab this Friday
+
 4.7 Deadlocks
 =============
 
