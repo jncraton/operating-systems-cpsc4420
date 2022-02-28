@@ -190,10 +190,10 @@ Convoy Phenomenon
 Convoy Issues
 -------------
 
-- Increased context switched due to most lock operations requiring a context switch
+- Increased context switching due to most lock operations requiring a context switch
 - Decreased throughput due to increase context switching
 - Breakdown of scheduler prioritization as many threads are not runnable
-- Mutex weight queue manages scheduling in practice
+- Mutex wait queue manages scheduling in practice
 
 Solution
 --------
