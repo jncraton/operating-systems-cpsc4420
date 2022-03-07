@@ -8,6 +8,7 @@ Invariant
 
 - Property of a mathematical object
 - Holds true after certain classes of operations
+- In CS, often a logical assertion is always true in a particlar phase of execution
 
 Monitor objects
 ---------------
@@ -35,7 +36,7 @@ Rooted Tree
 Atomic Tranaction
 -----------------
 
-- Operation that transition a system from one observable state to another
+- Operation that transitions a system from one observable state to another
 - No intermediate states are visible
 - State maintains consistency across transactions
 - Often simply referred to as transactions
@@ -50,3 +51,11 @@ Durability
 ----------
 
 - A completed transaction will be reflected in the system state even if the system crashes
+
+ACID
+----
+
+- Atomicity
+- Concurrency
+- Isolation
+- Durability
