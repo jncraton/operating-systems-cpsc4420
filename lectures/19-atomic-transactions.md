@@ -120,22 +120,23 @@ Proving equivalence
 Lock consistency conflicts
 --------------------------
 
-- $\overline{e}_j(x)$, $s_k(x)
-- $\overline{e}_j(x)$, $e_k(x)
-- $\overline{s}_j(x)$, $e_k(x)
-- $\overline{s}_j(x)$, $u_k(x)
+- $\overline{e}_j(x)$, $s_k(x)$
+- $\overline{e}_j(x)$, $e_k(x)$
+- $\overline{s}_j(x)$, $e_k(x)$
+- $\overline{s}_j(x)$, $u_k(x)$
 
 Data order conflicts
 --------------------
 
-- $w_j(x)$, $r_k(x)
-- $r_j(x)$, $w_k(x)
-- $w_j(x)$, $w_k(x)
+- $w_j(x)$, $r_k(x)$
+- $r_j(x)$, $w_k(x)$
+- $w_j(x)$, $w_k(x)$
 
 Conflict notes
 --------------
 
 - All conflicts involve operations on the same entity
+- Operations against different entities may be reordered without harm
 - Reads against the same entity may be reordered without harm
 
 Two-phase locking
