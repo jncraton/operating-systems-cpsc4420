@@ -47,3 +47,15 @@ Virtual Memory Properties
 - Table contents are controlled by OS
 - Table can be sparse. Undefined pages are illegal to use (page fault).
 - Pages may have more granular permission (R/W)
+
+Uses
+----
+
+- Private storage
+- Controlled sharing
+- Flexible allocation
+- Sparse address spaces
+- Persistence
+- Demand-driven loading
+- Efficient zero filling
+- Substituting disk for RAM
