@@ -200,3 +200,10 @@ Failure Handlers
 ---
 
 ![Failure handlers](media/5-9.png)
+
+Undo Logging
+------------
+
+- Manage and store undo steps automatically
+- Each transaction maintains a logically independent log
+- Roll back changes on failure
