@@ -1,5 +1,6 @@
-personal_ws-1.1 en 72 
+personal_ws-1.1 en 79 
 APIs
+Atomicity
 CPSC
 CPUs
 Craton
@@ -19,6 +20,7 @@ MacOS
 Middleware
 Modularization
 Mutexes
+Nonserializable
 OOP
 POSIX
 Pre
@@ -26,6 +28,7 @@ Preprocess
 Pseudocode
 Runtimes
 SSD
+Serializability
 Spinlock
 TCB
 TCP
@@ -40,6 +43,7 @@ emptive
 gcc
 glibc
 interruptable
+invariants
 journaling
 libc
 mutex
@@ -47,6 +51,7 @@ mutexes
 namespace
 nd
 newThread
+overline
 pid
 pre
 pthread
@@ -62,6 +67,8 @@ rsp
 runnable
 runtime
 runtimes
+serializability
+serializable
 spinlock
 spinlocks
 switchFromTo

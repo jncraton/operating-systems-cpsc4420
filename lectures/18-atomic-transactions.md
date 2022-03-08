@@ -8,12 +8,12 @@ Invariant
 
 - Property of a mathematical object
 - Holds true after certain classes of operations
-- In CS, often a logical assertion is always true in a particlar phase of execution
+- In CS, often a logical assertion is always true in a particular phase of execution
 
 Monitor objects
 ---------------
 
-- Preserve invariants using mutexes for public methods
+- Preserve invariant using mutexes for public methods
 - Interleaving is not allowed, so object state is always consistent
 
 ---
@@ -33,7 +33,7 @@ Rooted Tree
 
 ![Rooted Tree Example](media/5-1.png)
 
-Atomic Tranaction
+Atomic Transaction
 -----------------
 
 - Operation that transitions a system from one observable state to another

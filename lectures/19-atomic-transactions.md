@@ -24,11 +24,11 @@ Rollback
 
 ![Rollback](media/5-3.png){height=540px}
 
-Filesystem Example
+File system Example
 ------------------
 
-- Filesystem metadata must stay consistent when power fails
-- Journaling filesystems make use of the concept of a rollback to ensure consistency
+- File system metadata must stay consistent when power fails
+- Journaling file systems make use of the concept of a rollback to ensure consistency
 
 5.3 Atomic Transaction Mechanisms
 =================================
@@ -114,7 +114,7 @@ Proving equivalence
 -------------------
 
 - One history can be converted to another using equivalence-preserving swaps
-- Swapped actions must be from different transactions. No reording of a transactions operations.
+- Swapped actions must be from different transactions. No reordering of a transactions operations.
 - Cannot be one of the conflicting pairs
 
 Lock consistency conflicts
@@ -167,8 +167,8 @@ Implementation
 Automated two-phase locking
 ---------------------------
 
-- Immediately before reading, aquire lock if not already held
-- Immediately before writing, aquire or upgrade to exclusive lock if not already held
+- Immediately before reading, acquire lock if not already held
+- Immediately before writing, acquire or upgrade to exclusive lock if not already held
 - Unlock all locks at the end of the transaction
 
 Serial vs Serializable
@@ -182,7 +182,7 @@ Failure Atomicity
 
 ---
 
-- Transactions may put the system in an incosistent state
+- Transactions may put the system in an inconsistent state
 - This state must not be visible to others during the transaction
 - This state must not be visible to others if the transaction fails
 
