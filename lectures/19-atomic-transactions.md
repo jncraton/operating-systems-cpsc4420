@@ -114,7 +114,7 @@ Proving equivalence
 -------------------
 
 - One history can be converted to another using equivalence-preserving swaps
-- Swapped actions must be from different transactions. No reordering of a transactions operations.
+- Swapped actions must be from different transactions. An individual transaction's operations may not be reordered.
 - Cannot be one of the conflicting pairs
 
 Lock consistency conflicts
