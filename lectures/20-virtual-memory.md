@@ -59,3 +59,86 @@ Uses
 - Demand-driven loading
 - Efficient zero filling
 - Substituting disk for RAM
+
+Private Storage
+---------------
+
+- Each computation should be able to use whatever virtual addresses it finds most convenient for its objects, without needing to avoid using the same address as some other computation
+- Each computation’s objects should be protected from accidental (or malicious) access by other computations
+
+Process
+-------
+
+- Group of one or more threads in a protection context
+- Protection context is a broad idea. For now, it means an isolated virtual address space
+
+---
+
+![Process](https://upload.wikimedia.org/wikipedia/commons/a/a5/Multithreaded_process.svg){height=540px}
+
+Controlled Sharing
+------------------
+
+- Certain memory areas can be shared by multiple processes
+- Can facilitate communication
+- Can reduce memory usage
+
+---
+
+![Program text sharing](media/6-5.png)
+
+---
+
+![Communicating via shared memory](media/6-6.png)
+
+Flexible Memory Allocation
+--------------------------
+
+- Virtual memory allows physical memory to be allocated and deallocated more freely
+- A single process can be allocated pages from all over physical memory
+- These pages appear as a single unified (and often contiguous) address space
+
+---
+
+![Fragmentation](media/6-8.png)
+
+---
+
+![Solution](media/6-9.png)
+
+Sparse Address Spaces
+---------------------
+
+- Processes need not have all addresses mapped
+- This can allow data structure space to grow without wasting memory
+
+---
+
+![Sparse address space](media/6-sparse.png)
+
+Persistence
+-----------
+
+- Memoruy addresses don't have to correspond to physical memory
+- The OS may provide the ability to map a persistent storage medium to a process address space
+
+Demand Driven Loading
+---------------------
+
+- Many progrms are large
+- Conceptually, these programs need to be loaded before being run
+- Virtual memory can be used to load portions of these programs as needed
+
+Efficient Zero-filling
+----------------------
+
+- Memory allocated to a process should be zeroed before use
+- This task takes time
+- An OS can avoid it by assigning copies of a read-only zeroed page to processes
+- Pages can be swapped out when writes occur
+
+Substituting Disk Storage for RAM
+---------------------------------
+
+- Peristent storage is typically cheaper than RAM
+- Virtual memory provides the tools to move rarely used memory pages to persistent storage
