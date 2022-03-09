@@ -39,10 +39,6 @@ Address Mapping
 
 ![MMU](media/6-4.png)
 
----
-
-![MMU details](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/MMU_principle_updated.png/800px-MMU_principle_updated.png)
-
 Virtual Memory Properties
 -------------------------
 
@@ -51,6 +47,10 @@ Virtual Memory Properties
 - Table contents are controlled by OS
 - Table can be sparse. Undefined pages are illegal to use (page fault).
 - Pages may have more granular permission (R/W)
+
+---
+
+![MMU details](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/MMU_principle_updated.png/800px-MMU_principle_updated.png)
 
 Uses
 ----
