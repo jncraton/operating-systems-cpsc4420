@@ -119,13 +119,13 @@ Sparse Address Spaces
 Persistence
 -----------
 
-- Memoruy addresses don't have to correspond to physical memory
+- Memory addresses don't have to correspond to physical memory
 - The OS may provide the ability to map a persistent storage medium to a process address space
 
 Demand Driven Loading
 ---------------------
 
-- Many progrms are large
+- Many programs are large
 - Conceptually, these programs need to be loaded before being run
 - Virtual memory can be used to load portions of these programs as needed
 
@@ -140,5 +140,5 @@ Efficient Zero-filling
 Substituting Disk Storage for RAM
 ---------------------------------
 
-- Peristent storage is typically cheaper than RAM
+- Persistent storage is typically cheaper than RAM
 - Virtual memory provides the tools to move rarely used memory pages to persistent storage
