@@ -5,13 +5,13 @@ Memory Protection
 -----------------
 
 - Share memory creates concurrency challenges
-- What if each thread had private memory
+- What if each thread had private memory?
 
 Virtual Memory
 --------------
 
 - Provides memory privacy
-- Provides many other applications
+- Can also be repurposed for many other uses
 
 Addressing
 ----------
@@ -38,6 +38,10 @@ Address Mapping
 ---
 
 ![MMU](media/6-4.png)
+
+---
+
+![MMU details](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/MMU_principle_updated.png/800px-MMU_principle_updated.png)
 
 Virtual Memory Properties
 -------------------------
