@@ -39,7 +39,7 @@ Locality
 Translation Lookaside Buffer
 ----------------------------
 
-- MMU stores (caches) recently use translations
+- MMU stores (caches) recently used translations
 - Translation lookaside buffer (TLB) is used to improve performance
 
 Caches
@@ -103,7 +103,7 @@ Software-only
 -------------
 
 - MMU may simply send control to the OS on TLB miss
-- OS return memory mapping to be used and stored in TLB
+- OS returns memory mapping to be used and stored in TLB
 - Provides slower performance on miss but enhanced flexibility for mapping storage and lookup
 
 Context Switching
@@ -144,7 +144,7 @@ Breaking the Page Table into Pages
 ----------------------------------
 
 - A large linear table can itself be broken into pages
-- Only pages that include valid entries need to be stores
+- Only pages that include valid entries need to be stored
 
 ---
 
