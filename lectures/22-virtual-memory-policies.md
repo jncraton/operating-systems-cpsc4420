@@ -58,5 +58,35 @@ Clustered Paging
 Placement Policy
 ----------------
 
+- Determines where to place a frame
+
+Placement Considerations
+------------------------
+
+- Spatial locality for cache performance
+- NUMA nodes
+- Energy efficiency (allow some memory chips to enter low power states)
+
+Caching
+-------
+
+- Conflict (rather than capacity) misses can occur when addresses are poorly chosen
+- Address coloring or bin hopping are techniques to help avoid an increase in conflict misses from virtual memory
+
 Replacement Policy
 ------------------
+
+- Pages may be evicted from memory and stored to disk when memory space is limited
+- This can happen as pages are requested
+- Most operating systems choose to keep some number of pages available and perform evictions in the background
+
+Advantages to early evictions
+-----------------------------
+
+- Lower latency for applications that experience page faults
+- Combining disk write back operations
+- Page frames that have been marked freed can be reused if an application request them before they are handed over to a new application
+
+---
+
+![Windows Page Lists](media/6-18.png)
