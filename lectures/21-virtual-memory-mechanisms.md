@@ -61,7 +61,7 @@ Splitting TLB
 
 - Using a separate TLB for instruction fetches and data loads improves performance
 - Locality is improved
-- Lookups can happen in paralell
+- Lookups can happen in parallel
 - Caches can be smaller and therefore faster
 
 TLB Hierarchy
@@ -89,7 +89,7 @@ Performance Implications
 ------------------------
 
 - Programs that access memory sequentially will benefit from both TLB hits and data cache hits
-- Dense datastructures will perform much better than sparse ones
+- Dense data structures will perform much better than sparse ones
 - Shorter programs and shorter jumps will see better TLB performance
 
 Hardware Support
@@ -138,7 +138,7 @@ Sparse Addresses
 
 - Most virtual addresses aren't valid mappings
 - Modern systems include 64 bit addresses
-- Even using absurdly large page sizes in the GB range, mutliple GB are still needed to store the page table for each process
+- Even using absurdly large page sizes in the GB range, multiple GB are still needed to store the page table for each process
 
 Breaking the Page Table into Pages
 ----------------------------------

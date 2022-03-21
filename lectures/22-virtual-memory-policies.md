@@ -22,7 +22,7 @@ Fetch Policy
 - The OS may wait for page faults before assigning any pages
 - The OS may do something in between
 
-Prepageing
+Prepaging
 ----------
 
 - All pages are available without causing page faults
