@@ -148,7 +148,7 @@ Breaking the Page Table into Pages
 
 ---
 
-![Address translation](media/6-12.png)
+![Address translation](media/6-12.png){height=540px}
 
 Two Level Page Table
 ---------------------
@@ -165,6 +165,10 @@ Two Level Page Table
 
 ![Two-level translation](media/6-14.png){height=540px}
 
+---
+
+![x86 two-level page table](https://upload.wikimedia.org/wikipedia/commons/8/8e/X86_Paging_4K.svg){height=540px}
+
 Large Pages
 -----------
 
@@ -176,6 +180,10 @@ Multilevel page tables
 
 - We can support larger addresses using more levels
 - Modern 64-bit system often use 4 layer page tables
+
+---
+
+![x86 PAE Three-level page table](https://upload.wikimedia.org/wikipedia/commons/0/0d/X86_Paging_PAE_4K.svg){height=540px}
 
 Hashed Page Tables
 ------------------
