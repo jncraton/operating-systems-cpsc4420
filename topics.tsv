@@ -24,13 +24,11 @@ Transaction Mechanisms	Chapter 5.4 - 5.6
 Virtual Memory	Chapter 6.1 - 6.2
 Mechanisms for Virtual Memory	Chapter 6.3
 Virtual Memory Policies and Security	Chapter 6.4 - 6.5
+Presentation Day 2
 POSIX Process Management API	Chapter 7.1 - 7.2
 Protecting Memory	Chapter 7.3 - 7.6
 POSIX File API	Chapter 8.1 - 8.3
 File System Implementation	Chapter 8.4 - 8.9
-Presentation Day 2	
-Exam Review	
-Exam 2	
 Networking Application Layer	Chapter 9.1 - 9.2
 POSIX Socket API	Chapter 9.3 - 9.6
 Presentation Day 3	
@@ -40,4 +38,6 @@ User Authentication and Information Access	Chapter 11.3 - 11.4
 Malware	Chapter 11.5
 Security Practices	Chapter 11.6 - 11.8
 Presentation Day 4	
-Final Review	
+Final Review 
+Exam Review 
+Exam 2 
