@@ -51,7 +51,7 @@ int main() {
 Memory
 ------
 
-- A process created using fork hold copies of all memory available to the parent process
+- A process created using fork holds copies of all memory available to the parent process
 - This memory is a copy
 - Memory is not shared as with threads
 
