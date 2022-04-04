@@ -85,3 +85,22 @@ Capabilities
 - Indirect reference to object
 - Includes information needed to locate object and a set of access rights
 - Also known as handles (Windows) and descriptors (POSIX)
+
+Access Control List
+-------------------
+
+- List of access rights associated with an object
+
+Example
+-------
+
+```
+> getfacl /bin/ls
+
+# file: bin/ls
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::r-x
+```
