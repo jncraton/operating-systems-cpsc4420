@@ -97,18 +97,18 @@ Advantages to early evictions
 Processes
 ---------
 
-- Virtual memeory provides basis for private process memory
+- Virtual memory provides basis for private process memory
 - Security details are covered more deeply in the next chapter
 
 Persistence
 -----------
 
 - Memory is often assumed to volatile
-- Algorithms need to be able to store sensative information, such as passwords, in memory while operating on them
+- Algorithms need to be able to store sensitive information, such as passwords, in memory while operating on them
 - Swapping may cause this sensitive information to be written to disk and accessible to an attacker
 
 `mlock`
 -------
 
 - POSIX standard provides a family of procedures to prevent a page from being swapped to disk
-- This prevents sensative information from every being written to persistent storage
+- This prevents sensitive information from every being written to persistent storage

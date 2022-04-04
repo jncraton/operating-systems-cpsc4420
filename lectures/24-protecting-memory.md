@@ -31,7 +31,7 @@ User Mode
 ---------
 
 - Normal instructions are usable
-- Priviledged instructions will fail
+- Privileged instructions will fail
 - Illegal instructions are caught by the OS (trap)
 
 System Calls
@@ -142,7 +142,7 @@ Users and processes
 
 - Processes are run using user credentials
 - They may take actions that a user did not intend
-- An example is a trojan horse program
+- An example is a Trojan horse program
 
 Worms
 -----

@@ -1,4 +1,6 @@
-personal_ws-1.1 en 87 
+personal_ws-1.1 en 93 
+ACL
+ACLs
 APIs
 Atomicity
 CPSC
@@ -22,8 +24,11 @@ MiB
 Middleware
 Modularization
 Mutexes
+NUMA
 Nonserializable
 OOP
+PAE
+PIDs
 POSIX
 Pre
 Prepaging
@@ -77,6 +82,7 @@ runtime
 runtimes
 serializability
 serializable
+setuid
 spinlock
 spinlocks
 switchFromTo
