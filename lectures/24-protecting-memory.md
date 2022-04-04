@@ -1,3 +1,8 @@
+- Darrin Jones visit on Friday at 10am
+    - Come prepared to engage and ask questions
+- Next round of presentation next Monday
+- Lab questions?
+
 7.3 Protecting Memory
 =====================
 
