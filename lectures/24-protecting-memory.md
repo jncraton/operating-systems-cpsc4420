@@ -104,3 +104,50 @@ user::rwx
 group::r-x
 other::r-x
 ```
+
+---
+
+![Windows File ACL](media/7-16.png)
+
+--- 
+
+POSIX file permissions
+----------------------
+
+- `r` - Read
+- `w` - Write
+- `x` - Execute
+
+POSIX directory permissions
+----------------------------
+
+- `r` - List
+- `w` - Create/rename/delete files in directory
+- `x` - Traverse a directory (access files if name already known)
+- Common combinations are `rwx`, `r-x`, and `---`
+
+Security and Protection
+-----------------------
+
+- Protection is essential for security, but it is not equivalent to security
+- ACLs and other measures must be applied carefully and correctly to provide security
+
+Users and processes
+-------------------
+
+- Processes are run using user credentials
+- They may take actions that a user did not intend
+- An example is a trojan horse program
+
+Worms
+-----
+
+- Trojan horse programs that execute malicious code and redistribute themselves to others
+- Often sent via email
+
+setuid
+------
+
+- Some programs run by users need elevated permissions
+- This can be achieved by allowing programs to run as the user who owns the program rather than the user who executes it
+- These programs must be written carefully and securely to prevent these permissions from spilling over into child process or other operations
