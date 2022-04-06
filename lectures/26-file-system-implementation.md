@@ -198,7 +198,7 @@ B-Tree
 
 ---
 
-![B-tree](https://upload.wikimedia.org/wikipedia/commons/6/65/B-tree.svg){height=540px}
+![B-tree](https://upload.wikimedia.org/wikipedia/commons/6/65/B-tree.svg)
 
 Access Control Metadata
 -----------------------
