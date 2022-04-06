@@ -99,3 +99,43 @@ File Names
 
 Data Location Metadata
 ----------------------
+
+- ext3 stores file metadata in blocks called inodes
+- Each inode stores file metadata including data locations
+- inodes are stored in a linear array
+- Each file has a unique inode
+
+---
+
+![inode metadata](media/8-6.png)
+
+Example
+-------
+
+`ls -i` will list inode numbers
+
+Indirect Blocks
+---------------
+
+- We want inodes to be a fixed, relatively small size
+- Some files will need more metadata
+- inodes are able to link to additional blocks for more metadata
+
+---
+
+![inode metadata overflowing to indirect block](media/8-7.png)
+
+Double and Triple Indirection
+-----------------------------
+
+- Some files are very large
+- We create a deeper tree
+- The early blocks are still linked direction from the inode then the single indirect block
+
+---
+
+![Double indirect storage](media/8-9.png)
+
+---
+
+![Tree](media/8-10.png)
