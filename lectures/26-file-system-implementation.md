@@ -139,3 +139,85 @@ Double and Triple Indirection
 ---
 
 ![Tree](media/8-10.png)
+
+Sparse Files
+------------
+
+- It is not necessary for empty blocks to be backed by actual storage
+- A large file use sparsely need not take up the full file size on disk
+
+Example
+-------
+
+```
+> dd if=/dev/zero of=sparsefile count=0 bs=4k seek=1000000000
+> ls -s sparsefile
+0 -rw-rw-r-- 1 jncraton 3.8T Apr  6 09:11 sparsefile
+```
+
+Extents
+-------
+
+- Fixed size blocks have some weaknesses
+- Large, contiguous files still have to perform many data block lookups
+- A single extent could be used to represent a large contiguous file
+
+Extent-based file systems
+-------------------------
+
+- NTFS (Windows)
+- HFS Plus (Mac OS X)
+- XFS (Unix)
+- BTRFS (Linux)
+
+Extent Storage
+--------------
+
+- Can't be efficiently stored in linear array
+- Need to be searchable
+
+Binary Tree
+-----------
+
+- Common construct for efficient searching
+- Not used for extent storage
+
+Tree height
+-----------
+
+- Each layer of the tree requires a disk access
+- We want as many nodes linked to a layer as a single disk access can provide
+
+B-Tree
+------
+
+- Similar in concept to a binary tree
+- Includes many nodes at each layer
+- Efficient for storing extent data
+- Also commonly used for database indexes
+
+---
+
+![B-tree](https://upload.wikimedia.org/wikipedia/commons/6/65/B-tree.svg){height=540px}
+
+Access Control Metadata
+-----------------------
+
+- Varies by OS
+- POSIX includes fixed-sized metadata
+- Other operating systems provide metadata of arbitrary size that needs more complex storage
+
+POSIX Metadata
+--------------
+
+- Owner (number)
+- Group (number)
+- File mode (9 permission bits)
+- Stored in [inode](https://github.com/torvalds/linux/blob/3e732ebf7316ac83e8562db7e64cc68aec390a18/include/linux/fs.h#L585)
+
+Other Metadata
+--------------
+
+- File size
+- Modified, written, accessed times
+- Count of names referencing this file
