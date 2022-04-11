@@ -14,3 +14,7 @@ Directories
 - Provide hierarchical levels for storing files
 - Each name in a director points to one file
 - Names within a directory are unique
+
+Unordered Linear List
+---------------------
+
