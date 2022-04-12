@@ -130,7 +130,7 @@ Double and Triple Indirection
 
 - Some files are very large
 - We create a deeper tree
-- The early blocks are still linked direction from the inode then the single indirect block
+- The early blocks are still linked directly from the inode then the single indirect block
 
 ---
 
