@@ -34,7 +34,7 @@ Hash Tables
 B+-Tree
 -------
 
-- Tree with large fanout to reduce number of lookups
+- Tree with large fan out to reduce number of lookups
 - O(log n) search
 - Internal nodes contain pointers to leaves and no values
 - Nodes include links to next sibling to form a linked list

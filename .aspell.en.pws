@@ -1,10 +1,12 @@
-personal_ws-1.1 en 93 
+personal_ws-1.1 en 106 
 ACL
 ACLs
 APIs
 Atomicity
+BTRFS
 CPSC
 CPUs
+CREAT
 Craton
 DLL
 Datagram
@@ -13,6 +15,7 @@ DrawSquare
 EE
 FHS
 Gantt
+HFS
 ISA
 ISAs
 Layland
@@ -24,6 +27,7 @@ MiB
 Middleware
 Modularization
 Mutexes
+NTFS
 NUMA
 Nonserializable
 OOP
@@ -34,16 +38,23 @@ Pre
 Prepaging
 Preprocess
 Pseudocode
+RDONLY
+RDWR
 Runtimes
 SSD
+SSDs
 Serializability
 Spinlock
+Subdirectories
 TCB
 TCP
 TLB
+TRUNC
 TSV
 Threadripper
 UDP
+WRONLY
+XFS
 asm
 cp
 currentThread
@@ -52,6 +63,8 @@ dereferences
 emptive
 gcc
 glibc
+inode
+inodes
 interruptable
 invariants
 journaling

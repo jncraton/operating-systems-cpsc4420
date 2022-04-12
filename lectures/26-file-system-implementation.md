@@ -20,7 +20,7 @@ Allocations
 
 - Any block in a file could be mapped to any block on a disk
 - Not all choices are equal
-- Goal is to opimize space and time usage
+- Goal is to optimize space and time usage
 
 Wasted Space
 ------------

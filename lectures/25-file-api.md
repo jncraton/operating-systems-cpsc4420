@@ -23,7 +23,7 @@ Common forms of persistent storage
 
 - File - Array of bytes
 - Table - Array of typed data fields
-- Persistent Object - Serialized datastructure from a programming context
+- Persistent Object - Serialized data structure from a programming context
 
 Common access services
 ----------------------
@@ -41,7 +41,7 @@ Disk Drive
 ----------
 
 - Store data in 512 byte blobs called sectors (other sizes are possible)
-- Conceptially, an array of sectors
+- Conceptually, an array of sectors
 - The processor can request that an ordered group of sectors be transferred to RAM or vice versa
 
 ---
@@ -76,7 +76,7 @@ Standardization
 Referencing files
 -----------------
 
-- Files are commonly referenced by pathname
+- Files are commonly referenced by path name
 - Files are also referenced by an integer called a file descriptor
 
 File descriptor
@@ -125,7 +125,7 @@ Modes
 - O_RDONLY - Read only
 - O_RDWR - Read and write
 - O_CREAT - Create file if not present
-- O_TRUNC - Emply file before writing
+- O_TRUNC - Empty file before writing
 
 Close
 -----
