@@ -118,7 +118,7 @@ Snapshots
 ---------
 
 - If we select shadow paging, we can keep old metadata blocks around
-- If we also create copies of blocks on write, we can cheaply store each state of the filesystem in time
+- If we also create copies of blocks on write, we can cheaply store each state of the file system in time
 - This can be very valuable in certain contexts
 
 Controlling Ordering
@@ -135,7 +135,7 @@ Controlling Ordering
 Polymorphism
 ------------
 
-- Simialar operations can be used on different underlying data
+- Similar operations can be used on different underlying data
 - Operation implementation may differ to perform correctly
 
 File Systems

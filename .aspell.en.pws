@@ -1,4 +1,4 @@
-personal_ws-1.1 en 106 
+personal_ws-1.1 en 113 
 ACL
 ACLs
 APIs
@@ -13,7 +13,9 @@ Datagram
 DoS
 DrawSquare
 EE
+FDE
 FHS
+FS
 Gantt
 HFS
 ISA
@@ -34,6 +36,7 @@ OOP
 PAE
 PIDs
 POSIX
+Polymorphism
 Pre
 Prepaging
 Preprocess
@@ -53,14 +56,17 @@ TRUNC
 TSV
 Threadripper
 UDP
+VFS
 WRONLY
 XFS
+ZFS
 asm
 cp
 currentThread
 deallocated
 dereferences
 emptive
+exfiltration
 gcc
 glibc
 inode
@@ -78,6 +84,7 @@ nd
 newThread
 overline
 pid
+polymorphism
 pre
 prepaging
 pthread
