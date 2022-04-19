@@ -27,7 +27,7 @@ Hash Tables
 -----------
 
 - O(1) lookup without collisions
-- Does not provide a way to iterate name in order
+- Does not provide a way to iterate names in order
 
 ![Hash Table](https://upload.wikimedia.org/wikipedia/commons/7/7d/Hash_table_3_1_1_0_1_0_0_SP.svg)
 
