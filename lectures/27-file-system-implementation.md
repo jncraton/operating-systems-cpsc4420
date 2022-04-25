@@ -29,6 +29,8 @@ Hash Tables
 - O(1) lookup without collisions
 - Does not provide a way to iterate names in order
 
+---
+
 ![Hash Table](https://upload.wikimedia.org/wikipedia/commons/7/7d/Hash_table_3_1_1_0_1_0_0_SP.svg)
 
 B+-Tree
@@ -38,6 +40,8 @@ B+-Tree
 - O(log n) search
 - Internal nodes contain pointers to leaves and no values
 - Nodes include links to next sibling to form a linked list
+
+---
 
 ![B+-Tree](https://upload.wikimedia.org/wikipedia/commons/3/37/Bplustree.png)
 
