@@ -85,6 +85,7 @@ Open Design
 - The only secret parts of a secure system should be keys and passwords
 - The design should be openly inspected by as many parties as will look at it
 - Examples include cryptographic algorithms (TLS, SHA, etc) along with their implementations (OpenSSL, OpenSSH, etc)
+
 Separation of Privilege
 -----------------------
 
