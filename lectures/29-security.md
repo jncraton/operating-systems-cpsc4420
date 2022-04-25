@@ -64,7 +64,7 @@ Economy of Mechanism
 --------------------
 
 - Simple designs consistently using a small number of mechanisms should be more secure
-- A single, general purpose transaction mechanism is easier to audit than different approaches to concurrency used throughtout a system
+- A single, general purpose transaction mechanism is easier to audit than different approaches to concurrency used throughout a system
 
 Fail safe defaults
 ------------------
@@ -84,7 +84,7 @@ Open Design
 
 - The only secret parts of a secure system should be keys and passwords
 - The design should be openly inspected by as many parties as will look at it
-- Examples include cryptographic alogrithms (TLS, SHA, etc) along with their implementations (OpenSSL, OpenSSH, etc)
+- Examples include cryptographic algorithms (TLS, SHA, etc) along with their implementations (OpenSSL, OpenSSH, etc)
 Separation of Privilege
 -----------------------
 
@@ -121,19 +121,19 @@ Compromise Recording
 --------------------
 
 - System logging should be tamper-proof
-- Breaches should be recorded in a relaible manner
+- Breaches should be recorded in a reliable manner
 - Technical and/or legal responses can be mounted
 
 Defense in Depth
 ----------------
 
-- Attackers should need to breach multiple idependent security boundaries to break a system
+- Attackers should need to breach multiple independent security boundaries to break a system
 - Password, second factor, IP allow list, firewall, etc
 
 Alignment of Authority and Control
 ----------------------------------
 
-- The same user who supplies creditials for an action should perform the action
+- The same user who supplies credentials for an action should perform the action
 - Trojan horse programs perform different actions than a user expects
 - setuid programs operate with their authors authority rather than their users
 
@@ -141,7 +141,7 @@ Physical security
 -----------------
 
 - Owners should control physical access to systems
-- Unecrypted drives must be protected from theft
+- Encrypted drives must be protected from theft
 
 Adversaries
 -----------
