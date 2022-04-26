@@ -1,12 +1,16 @@
-personal_ws-1.1 en 118 
+personal_ws-1.1 en 131 
 ACL
 ACLs
 APIs
 Atomicity
+Auth
 BTRFS
+CFAA
+CIH
 CPSC
 CPUs
 CREAT
+CTRL
 Craton
 DLL
 Datagram
@@ -28,6 +32,7 @@ MacOS
 MiB
 Middleware
 Modularization
+Mulitfactor
 Mutexes
 NTFS
 NUMA
@@ -56,15 +61,20 @@ TCB
 TCP
 TLB
 TLS
+TOTP
 TRUNC
 TSV
 Threadripper
 UDP
 VFS
+ViaWeb
 WRONLY
 XFS
+YC
 ZFS
 asm
+bcrypt
+biometrics
 cp
 cryptographic
 currentThread
@@ -79,9 +89,11 @@ inodes
 interruptable
 invariants
 journaling
+keygen
 libc
 lookaside
 lookups
+masse
 mutex
 mutexes
 namespace
@@ -102,6 +114,7 @@ relock
 renice
 rsi
 rsp
+rtm
 runnable
 runtime
 runtimes
