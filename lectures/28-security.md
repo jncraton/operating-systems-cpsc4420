@@ -151,3 +151,104 @@ Adversaries
 - Can be users falling victim to [social engineering](https://www.youtube.com/watch?v=lc7scxvKQOo)
 - Can be an external attacker using technical means
 
+11.3 User Authentication
+========================
+
+Password Auth
+-------------
+
+- User enters username and password when sitting down at a computer
+
+Password Issues
+---------------
+
+- Auth happens at the start of session only
+- Passwords can be shared
+- Passwords may be written down and copied
+- Passwords may be observed as entered
+- Passwords are either guessable or hard to remember
+
+More Issues
+-----------
+
+- Login form can be spoofed to steal passwords
+- Passwords must be stored in some form by authentication system
+- Passwords may be reused
+
+Capture Using Spoofing
+----------------------
+
+- Create fake login form
+- Get a user to use this form instead of the real form
+- CTRL+ALT+DEL on Windows helps prevent this
+
+Checking Passwords with Storing
+-------------------------------
+
+- Use an adaptive hash function for creating password hashes ([bcrypt](https://en.wikipedia.org/wiki/Bcrypt))
+- Hash password on entry and compare computed hash to stored hash
+- Prevent passwords being leaked en masse
+
+Password Manager
+----------------
+
+- Password reuse causes problems
+- Remembering numerous passwords is difficult
+- Use a primary password locally to unlock other passwords
+
+Mulitfactor Authentication
+--------------------------
+
+- 2FA/MFA
+- Use multiple authentication methods
+- Examples include phones, TOTP apps, physical tokens, and biometrics
+- Card + PIN for debit transactions
+
+---
+
+![MFA token](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/SecureID_token_new.JPG/640px-SecureID_token_new.JPG)
+
+Viruses and Worms
+=================
+
+Malicious Software
+------------------
+
+- Users may run software that performs actions not explicitly requested by them
+- This creates many security issues
+- Software of this nature is often called malware
+
+Trojan Horse
+------------
+
+- Program that purports to perform one task but actually does something else
+- For example, a keygen for a program that is actually ransomware
+
+Virus
+-----
+
+- Software that modifies an existing program to introduce malicious behavior
+- Can allow malicious software to be distributed with legitimate software
+
+CIH
+---
+
+- 1998 computer virus
+- Gave itself a year to spread before activating
+- Ended up in out-of-the-box new computer systems
+- Caused $1 billion in damage once activated
+
+Worm
+----
+
+- Enters a system remotely via exploiting a security hole
+- Typically establishes persistence
+- Sends itself to other systems
+
+Morris Worm
+-----------
+
+- First worm on the Internet
+- Created by Robert Morris (rtm)
+- rtm was the first person convicted under the CFAA
+- rtm is also a professor at MIT and co-founded ViaWeb and YC
