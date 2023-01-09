@@ -1,4 +1,4 @@
-personal_ws-1.1 en 131 
+personal_ws-1.1 en 143 
 ACL
 ACLs
 APIs
@@ -7,6 +7,7 @@ Auth
 BTRFS
 CFAA
 CIH
+COVID
 CPSC
 CPUs
 CREAT
@@ -24,6 +25,7 @@ Gantt
 HFS
 ISA
 ISAs
+KACE
 Layland
 Liu
 MMU
@@ -38,6 +40,7 @@ NTFS
 NUMA
 Nonserializable
 OOP
+OSBoxes
 OpenSSH
 OpenSSL
 PAE
@@ -48,6 +51,7 @@ Pre
 Prepaging
 Preprocess
 Pseudocode
+QEMU
 RDONLY
 RDWR
 Runtimes
@@ -67,7 +71,9 @@ TSV
 Threadripper
 UDP
 VFS
+VM
 ViaWeb
+VirtualBox
 WRONLY
 XFS
 YC
@@ -82,6 +88,7 @@ deallocated
 dereferences
 emptive
 exfiltration
+fidelitas
 gcc
 glibc
 inode
@@ -97,6 +104,7 @@ masse
 mutex
 mutexes
 namespace
+natively
 nd
 newThread
 overline
@@ -129,4 +137,8 @@ tunable
 unistd
 unsyncronized
 userspace
+utilitas
+veritas
+virt
+virtualized
 webserver
