@@ -28,8 +28,16 @@ Quizzes
 Labs
 ----
 
-- Now 50% (up from 30%) of your grade
 - Code-based labs that do not parse or compile will be awarded zero credit
+- Outside resources are acceptable e.g. Stack Overflow, Transformers (Codex, Copilot, etc)
+- Help from peers and other is acceptable
+- Your solution must be yours, and you must fully understand it
+
+Lab Grading
+-----------
+
+- Most labs will be graded for correctness and code quality, as in other courses
+- Labs may occasionally be graded orally at my discretion
 
 1.2 What is an Operating System
 ===============================
