@@ -18,7 +18,7 @@ Resources
 ---------
 
 - Limited CPU time, disk access bandwidth, memory bandwidth
-- Multiple application using resources simultaneously
+- Multiple applications using resources simultaneously
 
 Concurrency
 -----------
