@@ -17,6 +17,7 @@ Required Resources
 
 - [Operating Systems and Middleware (Free)](https://gustavus.edu/mcs/max/os-book/)
 - [ISO C Standard (Draft is free)](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf)
+- [C Programming (Free)](https://en.wikibooks.org/wiki/C_Programming)
 
 Course objectives
 -----------------
