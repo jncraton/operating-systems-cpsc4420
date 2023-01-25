@@ -38,7 +38,7 @@ ARM Mac Setup
 
 M1 and M2 Macs may be especially challenging due to not all software being ported to the architecture yet. The following should work to run an x64 VM using QEMU.
 
-1. Install Homebrew (`brew`) if you have not already done so. This will allow us to install other packages by running the following command:
+1. Install Homebrew (`brew`) if you have not already done so by running the following command:
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -65,7 +65,7 @@ cd ~/debian
 qemu-img create -f qcow2 disk.qcow2 16G
 ```
 
-This creates a new 16 GB disk image call `disk.qcow2` in the current directory.
+This creates a new 16 GB disk image called `disk.qcow2` in the current directory.
 
 5. Download install media for the OS of your choosing. Once downloaded, move the file to your VM directory and name it `install.iso`.
 
