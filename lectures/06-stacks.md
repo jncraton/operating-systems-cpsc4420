@@ -160,8 +160,3 @@ Function Returns
 
 - End the function
 - Return some value
-
-Random Number
--------------
-
-![](https://imgs.xkcd.com/comics/random_number.png){height=480px}
