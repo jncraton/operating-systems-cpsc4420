@@ -7,4 +7,4 @@ thread-args: thread-args.c
 	gcc $< -lpthread -o $@
 
 clean:
-	rm -f threads
+	rm -f threads thread-args
