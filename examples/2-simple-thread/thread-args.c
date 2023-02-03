@@ -5,12 +5,12 @@
 #define SUM_TO 5
 
 static void* child(void * num) {
-  long num_int = *(int*)num;
+  long num_int = *(long*)num;
 
   return (void*)(num_int * num_int);
 }
 
-int main(int argc, char *argv[]) {
+int main() {
   pthread_t child_thread[SUM_TO+1];
   long inputs[SUM_TO+1];
   
