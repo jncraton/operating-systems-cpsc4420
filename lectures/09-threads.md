@@ -19,6 +19,14 @@ Pausing
 - Start up again later
 - Something else can use the CPU in between
 
+Stopping Processes
+------------------
+
+- Stop the process:
+    - `kill -STOP [pid]`
+- Resume execution:
+    - `kill -CONT [pid]`
+
 New Instruction
 ---------------
 
@@ -29,14 +37,14 @@ New Instruction
 
 Thread A            Thread B
 ------------------- ---------
-A1
-A2
+Instruction A1
+Instruction A2
 switchFromTo(A, B)
-                    B1
-                    B2
+                    Instruction B1
+                    Instruction B2
                     switchFromTo(B, A)
-A4
-A5
+Instruction A3
+Instruction A4
 
 ---
 
