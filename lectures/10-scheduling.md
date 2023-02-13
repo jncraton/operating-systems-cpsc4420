@@ -1,3 +1,48 @@
+2.5 Pre-emptive multitasking
+============================
+
+Cooperative Multitasking
+-------------------------
+
+- Threads run until they yield time back to the OS
+- This is the system we have described so far
+
+---
+
+What are some issue with cooperative multitasking?
+
+Cooperative Multitasking Issues
+-------------------------------
+
+- One thread may not be as cooperative and hog time from others
+- The OS doesn't know when it will next have CPU time to perform device I/O
+
+Pre-emptive Multitasking
+------------------------
+
+- Allows the OS to take control and switch to another thread
+
+Interrupts
+----------
+
+- CPUs generally execute the next instruction
+- Devices have the ability to interrupt this flow and redirect execution to an interrupt handler
+- Using timer and interrupt handlers, the OS can build pre-emptive multitasking
+
+2.6 Security and Threads
+========================
+
+DoS
+---
+
+- One thread hogs execution preventing the system from running properly
+
+Race Conditions
+---------------
+
+- If not programmed carefully, threads can lead to undefined and unexpected behavior
+- This behavior can sometimes be exploitable by an attacker
+
 3.1 - 3.2 Thread States
 =======================
 
