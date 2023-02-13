@@ -58,6 +58,8 @@ Thread Switching
 - A thread can ask the OS to run another thread by calling `yield()`
 - The OS may take control of the CPU using pre-emptive multitasking
 
+---
+
 How does the OS determine which thread to switch to?
 
 Scheduling
