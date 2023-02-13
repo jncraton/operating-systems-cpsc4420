@@ -64,7 +64,7 @@ Scheduling
 ----------
 
 - OS determines which process to run next
-- Decision should be based on what the users of the system needs
+- Decision should be based on what the users of the system need
 - Should optimize resource use
 
 Waiting Threads
