@@ -49,6 +49,8 @@ Cache Hierarchy
 - The implementation of the cache hierarchy makes context switching more expensive
 - Another thread will replace many of our cached values
 
+---
+
 How does this effect change in multiprocessor systems?
 
 Multiprocessor Systems

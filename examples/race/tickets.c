@@ -1,7 +1,7 @@
 #include <pthread.h>
 #include <stdio.h>
 
-#define THREADS 1
+#define THREADS 4
 
 int tickets_remaining = 100000;
 
