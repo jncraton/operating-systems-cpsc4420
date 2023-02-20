@@ -93,9 +93,7 @@ Rate-monotonic scheduling
 Starting Together
 -----------------
 
-> To check that deadlines are met, it suffices to consider the worst-
-case situation, which is that all the threads’ periods start at the same
-moment.
+> To check that deadlines are met, it suffices to consider the worst-case situation, which is that all the threads’ periods start at the same moment.
 
 Gantt Chart
 -----------
