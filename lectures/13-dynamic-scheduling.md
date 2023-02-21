@@ -1,6 +1,3 @@
-Lab Solution
-------------
-
 3.5 Dynamic Priority Scheduling
 ===============================
 
