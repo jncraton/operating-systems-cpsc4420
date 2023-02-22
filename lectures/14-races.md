@@ -91,6 +91,6 @@ Solution
 Thread Safe Operations
 ---------------
 
-- Only reading from the same data structure
+- Only reading from shared data structure
 - Interleaving operations without data dependencies
 - Interleaving atomic operations
