@@ -1,4 +1,4 @@
-- Midterm Exam on March 2nd
+- Midterm Exam next Monday, March 6th
 - Lab questions?
 
 4.3 Mutexes and Monitors
