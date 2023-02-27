@@ -13,7 +13,7 @@ Data Races
 Mutual Exclusion Lock
 ---------------------
 
-- Provided by the OS
+- Provided by the OS (see [futex](https://en.wikipedia.org/wiki/Futex))
 - Commonly known as a mutex
 
 Mutex POSIX API
