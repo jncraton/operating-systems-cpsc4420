@@ -13,7 +13,7 @@ Data Races
 Mutual Exclusion Lock
 ---------------------
 
-- Provided by the OS (see [futex](https://en.wikipedia.org/wiki/Futex))
+- Provided by the OS
 - Commonly known as a mutex
 
 Mutex POSIX API
@@ -151,7 +151,7 @@ Spinlocks
 
 - Explicitly waste CPU time
 - Can be appropriate in the case where very little waiting is typically needed due to fast operations
-- Does not require a system call
+- May not require a system call (see [futex](https://en.wikipedia.org/wiki/Futex))
 
 Queuing Mutex
 ------------
