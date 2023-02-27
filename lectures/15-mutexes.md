@@ -102,16 +102,16 @@ Mutex Implementation
 --------------------
 
 - Atomic instruction is needed that can modify memory and report its previous value
-- [`swap`](https://en.wikibooks.org/wiki/X86_Assembly/Data_Transfer#Data_swap) to exchange a register value with memory is sufficient
+- [`swap`](https://en.wikibooks.org/wiki/X86_Assembly/Data_Transfer#Data_swap) to exchange a register value with memory is sufficient 
 
 Spinlock
 --------
 
-- Memory value 1 is unlocked, 0 is locked
-- Unlock by storing 1
+- Memory value `1` is unlocked, `0` is locked
+- Unlock by storing `1`
 - Lock by swapping `0` with the mutex value
-  - Locking succeeded if we get a 1 back
-  - Otherwise, try until we get a 1 back
+  - Locking succeeded if we get a `1` back
+  - Otherwise, try until we get a `1` back
 
 ---
 
