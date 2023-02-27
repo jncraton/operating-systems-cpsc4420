@@ -102,7 +102,7 @@ Mutex Implementation
 --------------------
 
 - Atomic instruction is needed that can modify memory and report its previous value
-- `swap` to exchange a register value with memory is sufficient
+- [`swap`](https://en.wikibooks.org/wiki/X86_Assembly/Data_Transfer#Data_swap) to exchange a register value with memory is sufficient
 
 Spinlock
 --------
