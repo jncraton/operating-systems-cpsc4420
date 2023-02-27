@@ -151,7 +151,7 @@ Spinlocks
 
 - Explicitly waste CPU time
 - Can be appropriate in the case where very little waiting is typically needed due to fast operations
-- May not require a system call (see [futex](https://en.wikipedia.org/wiki/Futex))
+- Does not require a system call
 
 Queuing Mutex
 ------------
