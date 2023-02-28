@@ -27,7 +27,7 @@ Bounded Buffer
 
 ![Bounded burger buffer](media/4-14.png)
 
-Incorrect Bounded Buffer
+Naive Bounded Buffer
 ------------------------
 
 ```python
