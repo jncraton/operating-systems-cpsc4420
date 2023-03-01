@@ -38,7 +38,7 @@ Analysis
 Deadlock
 --------
 
-- Each thread lock the first mutex and waits for the second
+- Each thread locks the first mutex and waits for the second
 - They now have a circular dependency and will never progress or unlock their mutex
 
 Deadlock conditions
@@ -56,8 +56,32 @@ Deadlock conditions
 Addressing Deadlocks
 --------------------
 
-- Prevention
 - Detection and mitigation
+- Prevention
+
+Detection
+---------
+
+- OS stores additional information about mutexes
+- Track which thread holds a mutex
+- Record which mutex a thread is waiting for
+- Use this graph to periodically check for cycles (deadlocks)
+
+---
+
+![Mutex Cycle indicating Deadlock](media/4-22.png)
+
+Breaking the Deadlock
+---------------------
+
+- A thread can be rolled back to before it attempted the offending lock
+- Most systems don't support rolling back threads
+- Killing a thread is the typical solution
+
+Immediate detection
+-------------------
+
+- If we detect deadlock conditions when the last lock in the cycle is attempted, we can notify applications and they can choose to take appropriate action
 
 Prevention Through Resource Ordering
 ------------------------------------
@@ -98,29 +122,7 @@ static void double_rq_lock(struct rq *rq1, struct rq *rq2) {
 
 ```
 
-Detection
----------
 
-- OS stores additional information about mutexes
-- Track which thread holds a mutex
-- Record which mutex a thread is waiting for
-- Use this graph to periodically check for cycles (deadlocks)
-
----
-
-![Mutex Cycle indicating Deadlock](media/4-22.png)
-
-Breaking the Deadlock
----------------------
-
-- A thread can be rolled back to before it attempted the offending lock
-- Most systems don't support rolling back threads
-- Killing a thread is the typical solution
-
-Immediate detection
--------------------
-
-- If we detect deadlock conditions when the last lock in the cycle is attempted, we can notify applications and they can choose to take appropriate action
 
 4.8 Interaction of Synchronization and Scheduling
 ================================================
