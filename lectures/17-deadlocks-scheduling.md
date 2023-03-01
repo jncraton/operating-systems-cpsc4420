@@ -120,7 +120,7 @@ Breaking the Deadlock
 Immediate detection
 -------------------
 
-- If we detect deadlocks conditions when the last lock in the cycle is attempted, we can notify applications and they can choose to take appropriate action
+- If we detect deadlock conditions when the last lock in the cycle is attempted, we can notify applications and they can choose to take appropriate action
 
 4.8 Interaction of Synchronization and Scheduling
 ================================================
