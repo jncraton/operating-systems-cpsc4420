@@ -19,13 +19,13 @@ Example
 -------
 
 ```python
-to transfer amount from srcAccount to dstAccount:
-  lock srcAccount.mutex
-  lock dstAccount.mutex
+def transfer(srcAccount, dstAccount):
+  lock(srcAccount.mutex)
+  lock(dstAccount.mutex)
   srcAccount.balance = srcAccount.balance - amount
   dstAccount.balance = dstAccount.balance + amount
-  unlock srcAccount.mutex
-  unlock dstAccount.mutex
+  unlock(srcAccount.mutex)
+  unlock(dstAccount.mutex)
 ```
 
 Analysis
@@ -69,35 +69,29 @@ Example
 -------
 
 ```python
-to transfer amount from srcAccount to dstAccount:
-  lock min(srcAccount, dstAccount).mutex
-  lock max(srcAccount, dstAccount).mutex
+def transfer(srcAccount, dstAccount):
+  lock(min(srcAccount, dstAccount).mutex)
+  lock(max(srcAccount, dstAccount).mutex)
   srcAccount.balance = srcAccount.balance - amount
   dstAccount.balance = dstAccount.balance + amount
-  unlock srcAccount.mutex
-  unlock dstAccount.mutex
+  unlock(srcAccount.mutex)
+  unlock(dstAccount.mutex)
 ```
 
 Linux Scheduler Example
 -----------------------
 
 ```c
-static void double_rq_lock(struct rq *rq1, struct rq *rq2)
-  __acquires(rq1->lock)
-  __acquires(rq2->lock)
-  {
-  BUG_ON(!irqs_disabled());
+static void double_rq_lock(struct rq *rq1, struct rq *rq2) {
   if (rq1 == rq2) {
     raw_spin_lock(&rq1->lock);
-    __acquire(rq2->lock);
-     /* Fake it out ;) */
-    } else {
+  } else {
     if (rq1 < rq2) {
       raw_spin_lock(&rq1->lock);
-      raw_spin_lock_nested(&rq2->lock, SINGLE_DEPTH_NESTING);
+      raw_spin_lock(&rq2->lock);
     } else {
       raw_spin_lock(&rq2->lock);
-      raw_spin_lock_nested(&rq1->lock, SINGLE_DEPTH_NESTING);
+      raw_spin_lock(&rq1->lock);
     }
   }
 }
