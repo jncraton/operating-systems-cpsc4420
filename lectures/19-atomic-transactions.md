@@ -151,19 +151,19 @@ Two-phase locking rules
 - Transaction locks an entity exactly once before it reads or writes
 - Transaction unlocks an entity exactly once after it last reads or writes
 - Exclusive locks are obtained or upgraded before writing
-- All lock operations are performed before and unlock operations
+- All lock operations are performed before all unlock operations
 
 Two-phase locking benefit
 -------------------------
 
-- A system that follows two-phase locking with guarantee serializable transactions
+- A system that follows two-phase locking will guarantee serializable transactions
 - The textbook includes a proof of this
 
 Implementation
 --------------
 
 - Programmers would have difficulty obeying these rules
-- Can we follow two-phase locking automatically
+- Can we follow two-phase locking automatically?
 
 Automated two-phase locking
 ---------------------------
