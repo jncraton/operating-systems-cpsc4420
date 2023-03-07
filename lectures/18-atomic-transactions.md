@@ -56,6 +56,6 @@ ACID
 ----
 
 - Atomicity
-- Concurrency
+- Consistency
 - Isolation
 - Durability
