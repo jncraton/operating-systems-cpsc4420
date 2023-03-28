@@ -21,6 +21,14 @@ Process Identification
 - Each process has a process ID number (PID)
 - All PIDs are positive integers
 
+---
+
+![Process Memory Layout](https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Program_memory_layout.pdf/page1-234px-Program_memory_layout.pdf.jpg)
+
+---
+
+![Process Memory Layout](https://i.stack.imgur.com/k4hPj.png){height=540px}
+
 Process Creation
 ----------------
 
