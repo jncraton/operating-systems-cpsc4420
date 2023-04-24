@@ -55,3 +55,6 @@ Hello, world!
 ```
 
 You should even be able to run interactive programs such as `/usr/bin/vi`.
+
+Note that this simple shell implementation does not support the `PATH` environment variable, so programs like `ls` need to be executed as `/bin/ls` using their absolute path.
+
