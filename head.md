@@ -1,16 +1,16 @@
+Spring 2024
+
 <main>
 
-- Instructor: Jon Craton (jlcraton@anderson.edu)
+- Instructor: Jon Craton
 - Office: Decker 354
-- [Lecture Notes](lectures/index.html)
+- E-mail: [jlcraton@anderson.edu](mailto:jlcraton@anderson.edu)
 
 Office hours
 ------------
 
-Location: Decker 354
-
-- 11am - Noon Monday
-- Noon - 3pm Tuesday
-- 11am - 3pm Wednesday
+- Monday, Wednesday: 10am - noon
+- Tuesday, Thursday: 2pm - 3pm
+- Thursday: 9am - 11am
 
 - Schedule a meeting during office hours: [joncraton.com/meet](https://joncraton.com/meet)
