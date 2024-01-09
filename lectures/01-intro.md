@@ -29,7 +29,7 @@ Labs
 ----
 
 - Code-based labs that do not parse or compile will be awarded zero credit
-- Outside resources are acceptable e.g. Stack Overflow, Transformers (Codex, Copilot, etc)
+- Outside resources are acceptable e.g. Stack Overflow, etc
 - Help from peers is acceptable
 - Your solution must be yours, and you must fully understand it
 
