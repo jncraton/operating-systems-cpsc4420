@@ -1,119 +1,94 @@
-3.3 Scheduling Goals
-====================
+2.5 Pre-emptive multitasking
+============================
+
+Cooperative Multitasking
+-------------------------
+
+- Threads run until they yield time back to the OS
+- This is the system we have described so far
+
+---
+
+What are some issue with cooperative multitasking?
+
+Cooperative Multitasking Issues
+-------------------------------
+
+- One thread may not be as cooperative and hog time from others
+- The OS doesn't know when it will next have CPU time to perform device I/O
+
+Pre-emptive Multitasking
+------------------------
+
+- Allows the OS to take control and switch to another thread
+
+Interrupts
+----------
+
+- CPUs generally execute the next instruction
+- Devices have the ability to interrupt this flow and redirect execution to an interrupt handler
+- Using timer and interrupt handlers, the OS can build pre-emptive multitasking
+
+2.6 Security and Threads
+========================
+
+DoS
+---
+
+- One thread hogs execution preventing the system from running properly
+
+Race Conditions
+---------------
+
+- If not programmed carefully, threads can lead to undefined and unexpected behavior
+- This behavior can sometimes be exploitable by an attacker
+
+3.1 - 3.2 Thread States
+=======================
+
+Threads
+-------
+
+- A sequence of computational instructions run one after another
+- Requires OS-level management for runtime data
+
+Thread Switching
+----------------
+
+- A thread can ask the OS to run another thread by calling `yield()`
+- The OS may take control of the CPU using pre-emptive multitasking
+
+---
+
+How does the OS determine which thread to switch to?
 
 Scheduling
 ----------
 
-- Optimize system resources
-- Provide snappy user experience
+- OS determines which process to run next
+- Decision should be based on what the users of the system need
+- Should optimize resource use
 
----
-
-![Thread states](media/3-3.png)
-
----
-
-System Usage
-------------
-
-- Many consumer devices (laptops, phones, etc) are idle most of the time
-- Servers in data centers often have a backlog of work to do
-
-Performance Goals
------------------
-
-- Throughput
-- Response time
-
-Throughput
-----------
-
-- Measure of work done per time
-- An example would be requests per second (RPS) for a webserver
-- Typically goes down as we change threads more quickly
-
-Context Switching
------------------
-
-- Changing threads incurs a cost
-- State has to be saved to memory when pausing a thread
-- State has to be loaded from memory when resuming a thread
-
----
-
-What impact does the cache hierarchy have on context switching?
-
-Cache Hierarchy
+Waiting Threads
 ---------------
 
-- The implementation of the cache hierarchy makes context switching more expensive
-- Another thread will replace many of our cached values
+- Threads may be blocked waiting for I/O
+- e.g. a webserver waiting on a disk access
+
+Busy Waiting
+------------
+
+- Loop until the task is complete, checking frequently
+- Wastes CPU time that could be used by other threads
+- OS should implement a better mechanism
+
+Queues
+------
+
+- Run queue - Queue of threads that can be run now
+- Wait queue - Queue of threads waiting on something
+    - 1 queue per wait reason
 
 ---
 
-How does this effect change in multiprocessor systems?
-
-Multiprocessor Systems
-----------------------
-
-- A context switch to another CPU will be much slower
-- The threads old cache will be inaccessible from the new CPU
-- Processor affinity is helpful to keep threads running on the same CPU
-
-Cache Coherence Protocol
-------------------------
-
-- Values that exist in another CPUs cache are especially slow to access
-- This further increases the cost of context switches to another CPU
-
----
-
-![Cache locality](media/3-5.png)
-
-Response Time
--------------
-
-- Time to service a single request
-- Typically goes down the faster we change contexts
-
-Control Goals
--------------
-
-- Urgency
-- Importance
-- Resource allocation
-
-Urgency
--------
-
-- How soon a task needs to be completed
-- A homework assignment with a due date
-- A VOIP packet to send
-
-Importance
-----------
-
-- How critical the task is to complete
-- Your graduation application
-
-Urgency and Importance
-----------------------
-
-- Orthogonal concepts
-- A task can be urgent without being import or important without being urgent
-
-Resource allocation
--------------------
-
-- How to split resources between users
-
-Scheduling Goals
-----------------
-
-- Performance
-  - Throughput
-  - Response Time
-- Control
-  - Urgency
-  - Importance
-  - Resource allocation
+![Queues](media/run-queue.gif)
