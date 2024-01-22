@@ -27,6 +27,7 @@ Displaying the address of a value
 
 ---
 
+```c
 #include <stdio.h>
 
 int main() {
@@ -37,6 +38,7 @@ int main() {
 
   printf("%d", *b);
 }
+```
 
 Dereferening a pointer
 
