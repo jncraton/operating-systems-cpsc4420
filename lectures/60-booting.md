@@ -32,3 +32,14 @@ Second-stage boot loader
 - The initial boot loader is usually tightly coupled to the device
 - It is basic and has limited size
 - It is used to load a more complete bootloader that loads the full OS
+- Examples include GRUB, Syslinux, NTLDR, and BOOTMGR
+
+GRUB
+----
+
+- Popular boot loader used with Linux systems
+- Supports multiple operating systems
+
+---
+
+![GRUB OS Selection](https://upload.wikimedia.org/wikipedia/commons/4/48/Debian_Unstable_GRUB2_%282015%29.png)
