@@ -1,3 +1,37 @@
+1.6 Controlling Interactions Between Computations
+=================================================
+
+Dependencies
+------------
+
+- Sometimes threads are not fully independent
+- One thread may generate data that another consumes
+- These threads need to interact via *synchronization*
+
+---
+
+What if thread A is waiting for thread B and thread B is waiting for thread A?
+
+Deadlock
+--------
+
+- Cyclic waiting
+- Must be addressed to prevent freezes
+- Difficult to solve generally
+
+Transaction
+-----------
+
+- Unit of computation with no externally visible internal state
+- Computation succeeds for fails as a unit
+- Useful concurrency primitive
+
+Accidental Interaction
+----------------------
+
+- Threads share memory, so they may interact unintentionally
+- This can be mitigated on some systems using virtual memory
+
 1.7 Supporting Interactions Across Time
 =======================================
 
