@@ -14,12 +14,12 @@ int main() {
   pthread_t child_thread[SUM_TO+1];
   long inputs[SUM_TO+1];
   
-  int code;
+  int error;
   for (int i = 1; i<=SUM_TO; i++) {
     inputs[i] = i;
-    code = pthread_create(&child_thread[i], NULL, child, &inputs[i]);
-    if (code) {
-      fprintf(stderr, "pthread_create failed with code %d\n", code);
+    error = pthread_create(&child_thread[i], NULL, child, &inputs[i]);
+    if (error) {
+      fprintf(stderr, "pthread_create failed with error %d\n", error);
     }
   }
 
