@@ -1,6 +1,20 @@
 Fork
 ======
 
+---
+
+```c
+#include <unistd.h>
+#include <stdio.h>
+
+int main() {
+  int i;
+  i = fork();
+
+  printf("%d\n", i);
+}
+```
+
 Process
 -------
 
@@ -35,3 +49,9 @@ Fork
 - The child process sees a return value of 0
 - The child process is otherwise an exact copy of the parent
 
+Memory
+------
+
+- A forked process sees a copy of its parent's memory
+- Clobbering the other processes memory is not possible
+- Communication via memory modification is not available
