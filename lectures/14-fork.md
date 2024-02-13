@@ -49,9 +49,47 @@ Fork
 - The child process sees a return value of 0
 - The child process is otherwise an exact copy of the parent
 
+---
+
+```c
+#include <unistd.h>
+#include <stdio.h>
+
+int main() {
+  int pid = fork();
+
+  printf("PID: %d\n", pid);
+}
+```
+
 Memory
 ------
 
 - A forked process sees a copy of its parent's memory
 - Clobbering the other processes memory is not possible
 - Communication via memory modification is not available
+
+Signals
+-------
+
+- We need a way to communicate between processes
+- One way to do this is to send signals
+
+---
+
+```c
+#include <unistd.h>
+#include <stdio.h>
+#include <signal.h>
+
+int main() {
+  int pid = fork();
+
+  if (pid) {
+    kill(pid, SIGKILL);
+    printf("Killed child process\n");
+  }
+
+  printf("Done\n");
+}
+```
