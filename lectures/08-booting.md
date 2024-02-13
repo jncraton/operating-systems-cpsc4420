@@ -10,7 +10,7 @@ Execution
 
 ---
 
-Where does the first in struction come from?
+Where does the first instruction come from?
 
 Volatility
 ----------

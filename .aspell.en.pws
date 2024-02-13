@@ -1,9 +1,10 @@
-personal_ws-1.1 en 144 
+personal_ws-1.1 en 150 
 ACL
 ACLs
 APIs
 Atomicity
 Auth
+BOOTMGR
 BTRFS
 CFAA
 CIH
@@ -15,6 +16,7 @@ CTRL
 Craton
 DLL
 Datagram
+Dereferening
 DoS
 DrawSquare
 EE
@@ -38,6 +40,7 @@ Modularization
 Mulitfactor
 Mutexes
 NTFS
+NTLDR
 NUMA
 Nonserializable
 OOP
@@ -62,6 +65,7 @@ SSDs
 Serializability
 Spinlock
 Subdirectories
+Syslinux
 TCB
 TCP
 TLB
@@ -71,6 +75,7 @@ TRUNC
 TSV
 Threadripper
 UDP
+UEFI
 VFS
 VM
 ViaWeb
@@ -82,6 +87,7 @@ ZFS
 asm
 bcrypt
 biometrics
+bootloader
 cp
 cryptographic
 currentThread
