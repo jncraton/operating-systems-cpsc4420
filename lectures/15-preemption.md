@@ -5,7 +5,6 @@ Cooperative Multitasking
 -------------------------
 
 - Threads run until they yield time back to the OS
-- This is the system we have described so far
 
 ---
 
