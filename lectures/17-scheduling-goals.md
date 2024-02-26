@@ -41,6 +41,10 @@ Context Switching
 
 ---
 
+![Thread control block](media/2-8.png)
+
+---
+
 What impact does the cache hierarchy have on context switching?
 
 Cache Hierarchy
