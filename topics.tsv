@@ -1,43 +1,56 @@
-name	reading
-What is an operating system	Chapter 1.1 - 1.2
-Middleware	Chapter 1.3 - 1.9
-Review make, gcc	
-Review C and pointers	
-Review C and files
-Stacks Appendix A
-Review x86_64 assembly	
-Thread Basics	Chapter 2.1 - 2.3
-Switching Threads	Chapter 2.4 - 2.6
-Thread States	Chapter 3.1 - 3.2
-Scheduling Goals	Chapter 3.3
-Fix-priority Scheduling	Chapter 3.4
+name	type	reading
+Intro	lecture	Chapter 1.1 - 1.2
+Setup	lab
+Cancelled (personal)	lecture
+C	lecture	Chapter 1.3 - 1.9
+cfmt	lab	
+C	lecture
+C-Pointers	lecture	
+C-Files	lecture
+csv stats	lab
+make	lecture
+Stacks Appendix	lecture
+booting	lecture
+GRUB	lab
+middleware	lecture
+interation	lecture
+Thread Basics	lecture	Chapter 2.1 - 2.3
+pthread	lab
+Switching Threads	lecture	Chapter 2.4 - 2.6
+Thread States	lecture	Chapter 3.1 - 3.2
+fork	lecture
+fork	lab
+preemption	lecture
+Fix-priority Scheduling	lecture	Chapter 3.4
+Wonder Wednesday	lecture
+fixed-priority scheduler	lab
+Scheduling Goals	lecture	Chapter 3.3
 Dynamic-priority Scheduling	Chapter 3.5 - 3.7
-Races and the Need for Mutual Exclusion	Chapter 4.1 - 4.2
-Presentation Day 1 
-Mutexes and Monitors	Chapter 4.3
-Syncronization Patterns	Chapter 4.4 - 4.6
-Deadlocks and Scheduling	Chapter 4.7 - 4.10
-Exam Review	
-Exam 1	
-Atomic Transactions	Chapter 5.1 - 5.3
-Transaction Mechanisms	Chapter 5.4 - 5.6
-Virtual Memory	Chapter 6.1 - 6.2
-Mechanisms for Virtual Memory	Chapter 6.3
-Virtual Memory Policies and Security	Chapter 6.4 - 6.5
-Presentation Day 2
-POSIX Process Management API	Chapter 7.1 - 7.2
-Protecting Memory	Chapter 7.3 - 7.6
-POSIX File API	Chapter 8.1 - 8.3
-File System Implementation	Chapter 8.4 - 8.9
-Networking Application Layer	Chapter 9.1 - 9.2
-POSIX Socket API	Chapter 9.3 - 9.6
-Presentation Day 3	
-Messaging, RPC, and Web Services	Chapter 10
-Security Objectives and Principles	Chapter 11.1 - 11.2
-User Authentication and Information Access	Chapter 11.3 - 11.4
-Malware	Chapter 11.5
-Security Practices	Chapter 11.6 - 11.8
-Presentation Day 4	
-Final Review 
-Exam Review 
-Exam 2 
+Midterm Exam	lecture
+Dynamic scheduling	lab
+Races and the Need for Mutual Exclusion	lecture	Chapter 4.1 - 4.2
+Mutexes and Monitors	lecture	Chapter 4.3
+Syncronization Patterns	lecture	Chapter 4.4 - 4.6
+Philosophers	lab
+Deadlocks and Scheduling	lecture	Chapter 4.7 - 4.10
+Atomic Transactions	lecture	Chapter 5.1 - 5.3
+Transaction Mechanisms	lecture	Chapter 5.4 - 5.6
+Weensy Memory	lab
+Virtual Memory	lecture	Chapter 6.1 - 6.2
+Mechanisms for Virtual Memory	lecture	Chapter 6.3
+Virtual Memory Policies and Security	lecture Chapter 6.4 - 6.5
+POSIX Process Management API	lecture	Chapter 7.1 - 7.2
+Protecting Memory	lecture Chapter 7.3 - 7.6
+Weensy Virtual Memory	lab
+POSIX File API	lecture	Chapter 8.1 - 8.3
+File System Implementation	lecture	Chapter 8.4 - 8.9
+Networking Application Layer	lecture	Chapter 9.1 - 9.2
+Weensy Fork	lab
+POSIX Socket API	lecture	Chapter 9.3 - 9.6
+Messaging, RPC, and Web Services	lecture	Chapter 10
+Security Objectives and Principles	lecture	Chapter 11.1 - 11.2
+Weensy Fork Week 2	lab
+User Authentication and Information Access	lecture	Chapter 11.3 - 11.4
+Security Practices	lecture	Chapter 11.6 - 11.8
+Exam Review	lecture
+Presentations	lab
