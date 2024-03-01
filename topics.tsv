@@ -28,26 +28,26 @@ Scheduling Goals	lecture	Chapter 3.3
 Dynamic-priority Scheduling	Chapter 3.5 - 3.7
 Midterm Exam	lecture
 Dynamic scheduling	lab
+Exam Summary and Assembly review	lecture
 Races and the Need for Mutual Exclusion	lecture	Chapter 4.1 - 4.2
 Mutexes and Monitors	lecture	Chapter 4.3
-Syncronization Patterns	lecture	Chapter 4.4 - 4.6
 Philosophers	lab
+Syncronization Patterns	lecture	Chapter 4.4 - 4.6
 Deadlocks and Scheduling	lecture	Chapter 4.7 - 4.10
 Atomic Transactions	lecture	Chapter 5.1 - 5.3
-Transaction Mechanisms	lecture	Chapter 5.4 - 5.6
 Weensy Memory	lab
+Transaction Mechanisms	lecture	Chapter 5.4 - 5.6
 Virtual Memory	lecture	Chapter 6.1 - 6.2
 Mechanisms for Virtual Memory	lecture	Chapter 6.3
 Virtual Memory Policies and Security	lecture Chapter 6.4 - 6.5
 POSIX Process Management API	lecture	Chapter 7.1 - 7.2
-Protecting Memory	lecture Chapter 7.3 - 7.6
 Weensy Virtual Memory	lab
+Protecting Memory	lecture Chapter 7.3 - 7.6
 POSIX File API	lecture	Chapter 8.1 - 8.3
 File System Implementation	lecture	Chapter 8.4 - 8.9
-Networking Application Layer	lecture	Chapter 9.1 - 9.2
 Weensy Fork	lab
+Networking Application Layer	lecture	Chapter 9.1 - 9.2
 POSIX Socket API	lecture	Chapter 9.3 - 9.6
-Messaging, RPC, and Web Services	lecture	Chapter 10
 Security Objectives and Principles	lecture	Chapter 11.1 - 11.2
 Weensy Fork Week 2	lab
 User Authentication and Information Access	lecture	Chapter 11.3 - 11.4
