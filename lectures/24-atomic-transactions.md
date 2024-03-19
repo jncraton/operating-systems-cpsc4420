@@ -1,7 +1,3 @@
-- Exam Results
-- Lab questions
-- Midterm grades
-
 Atomic Transactions
 ===================
 
