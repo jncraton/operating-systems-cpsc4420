@@ -1,3 +1,6 @@
+4.4 Other Synchronization Patterns
+=================================
+
 Naive Bounded Buffer
 ------------------------
 
