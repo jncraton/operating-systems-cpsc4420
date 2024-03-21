@@ -36,14 +36,14 @@ Syncronization Patterns	lecture	Chapter 4.4 - 4.6
 Syncronization Patterns	lecture	Chapter 4.4 - 4.6
 Deadlocks and Scheduling	lecture	Chapter 4.7 - 4.10
 Weensy Memory	lab
-Atomic Transactions	lecture	Chapter 5.1 - 5.3
-Transaction Mechanisms	lecture	Chapter 5.4 - 5.6
 Virtual Memory	lecture	Chapter 6.1 - 6.2
 Mechanisms for Virtual Memory	lecture	Chapter 6.3
 Virtual Memory Policies and Security	lecture Chapter 6.4 - 6.5
-Weensy Virtual Memory	lab
 POSIX Process Management API	lecture	Chapter 7.1 - 7.2
 Protecting Memory	lecture Chapter 7.3 - 7.6
+Weensy Virtual Memory	lab
+Atomic Transactions	lecture	Chapter 5.1 - 5.3
+Transaction Mechanisms	lecture	Chapter 5.4 - 5.6
 POSIX File API	lecture	Chapter 8.1 - 8.3
 Weensy Fork	lab
 File System Implementation	lecture	Chapter 8.4 - 8.9
