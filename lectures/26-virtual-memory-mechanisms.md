@@ -1,3 +1,6 @@
+6.2 Uses for Virtual Memory
+===========================
+
 Flexible Memory Allocation
 --------------------------
 
