@@ -11,8 +11,9 @@ This implementation strives to be as simple as possible to understand from top t
 - System call 59 - `execve`
 - System call 60 - `exit`
 - System call 61 - `wait4`
+- System call 80 - `cd`
 
-It turns out that using just these six system calls, we can implement a basic shell.
+It turns out that using just these seven system calls, we can implement a basic shell.
 
 What is a shell?
 ----------------
