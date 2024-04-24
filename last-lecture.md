@@ -6,7 +6,7 @@ Follow Your Dreams
 
 - People will offer to pay you to help them follow their dreams
 - Determine the purpose of your life and work to live it out
-- Your purpose should be more than personal wealth, safety, and security
+- Your purpose can be more than personal wealth, safety, and security
 
 ---
 
@@ -58,7 +58,7 @@ Be Happy
 Liturgies
 ---------
 
-- Plan you days and time intentionally
+- Plan your days and time intentionally
 
 > We are what we repeatedly do; excellence, then, is not an act but a habit.
 >
