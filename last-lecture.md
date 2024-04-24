@@ -86,3 +86,9 @@ Work just enough
 > Normal is getting dressed in clothes that you buy for work and driving through traffic in a car that you are still paying for - in order to get to the job you need to pay for the clothes and the car, and the house you leave vacant all day so you can afford to live in it.
 > 
 > Ellen Goodman 
+
+---
+
+For none of us lives to himself, and none of us dies to himself.
+
+Romans 14:7 ESV
