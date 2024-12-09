@@ -1,4 +1,4 @@
-Spring 2024
+Spring 2025
 
 <main>
 
@@ -9,8 +9,9 @@ Spring 2024
 Office hours
 ------------
 
-- Monday, Wednesday: 10am - noon
-- Tuesday, Thursday: 2pm - 3pm
+- Monday: 1pm - 3pm
+- Tuesday: 1pm - 3pm
+- Wednesday: 2pm - 3pm
 - Thursday: 9am - 11am
-
+- Friday: 11am - noon
 - Schedule a meeting during office hours: [joncraton.com/meet](https://joncraton.com/meet)

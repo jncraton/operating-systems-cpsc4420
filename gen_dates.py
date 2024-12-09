@@ -4,7 +4,7 @@ import csv
 import json
 from itertools import zip_longest
 
-config = json.load(open('config.json'))
+config = json.load(open("config.json"))
 
 day_map = {"M": MO, "T": TU, "W": WE, "R": TH, "F": FR}
 day3_map = {"Mon": "M", "Tue": "T", "Wed": "W", "Thu": "R", "Fri": "F"}
@@ -20,13 +20,13 @@ rules.rrule(
     )
 )
 for b in config["breaks"]:
-    rules.exdate(datetime.fromisoformat(b))
+    rules.exdate(datetime.fromisoformat(b.split()[0]))
 
-with open('topics.tsv') as f:
-    lectures = csv.DictReader(f, dialect='excel-tab')
+with open("topics.tsv") as f:
+    lectures = csv.DictReader(f, dialect="excel-tab")
 
     start_week = None
-    
+
     for i, day in enumerate(zip_longest(rules, lectures)):
         if not start_week:
             start_week = int(day[0].strftime("%V")) - 1
@@ -34,7 +34,13 @@ with open('topics.tsv') as f:
         dow = day3_map[day[0].strftime("%a")]
         week = int(day[0].strftime("%V")) - start_week
 
-        if dow in config['lab_days']:
-            assert day[1]['type'] == 'lab', f'Day should be lab {i+2}'
+        if not day[1]:
+            print(f"Week {week} Out of topics ({day[0].strftime('%A, %B %d')})")
+            continue
 
-        print(f"Week {week} {day[1]['type'].title()}: {day[1]['name'] if day[1] != None else 'Out of topics'} ({day[0].strftime('%A, %B %d')})")
+        if dow in config["lab_days"]:
+            assert day[1]["type"] == "lab", f"Day should be lab {i+2}"
+
+        print(
+            f"Week {week} {day[1]['type'].title()}: {day[1]['name']} ({day[0].strftime('%A, %B %d')})"
+        )

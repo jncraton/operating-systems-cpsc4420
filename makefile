@@ -1,9 +1,14 @@
-all: index.html syllabus.html syllabus.docx syllabus.txt env.html lectures/index.html
+SHELL := bash -O nullglob
+
+all: index.html syllabus.md syllabus.html syllabus.docx syllabus.txt syllabus.pdf env.html lectures/index.html examples/index.html
 
 .PHONY: clean lectures
 
-syllabus.md: readme.md
+syllabus.md: syllabus-template.md head.md tail.md
 	markdown-pp $< -o $@
+
+readme.md: syllabus.md
+	cp -f $< $@
 
 syllabus.txt: syllabus.md
 	cp syllabus.md syllabus.txt
@@ -47,6 +52,9 @@ lectures:
 	for file in lectures/*.md.html; do \
 	    mv -- "$$file" "$$(echo $$file | sed 's/.md//')"; \
 	done
+	for file in lectures/media/*.puml; do \
+	    plantuml -output .. "$$file"; \
+	done
 
 spellcheck:
 	aspell --home-dir=. --check --dont-backup head.md
@@ -65,15 +73,48 @@ lectures/all-slides.html: lectures/all.md
 	pandoc --mathjax -t revealjs --standalone -V theme:white -V history=true --metadata pagetitle=Slides -o $@ $<
 
 lectures/index.html: lectures lectures/all.html lectures/all-slides.html lectures/reveal.js
-	cd lectures && tree -H '.' -L 1 --noreport --charset utf-8 -P "*.html" > index.html
+	python3 gen_lecture_index.py
+	pandoc lectures/index.md -o $@
+
+examples/index.html:
+	cd examples && tree -H '.' -L 1 --noreport --charset utf-8 -P "*" | sponge index.html
 
 lectures/reveal.js:
 	cd lectures && git clone --depth=1 --branch 3.9.2 https://github.com/hakimel/reveal.js
 
+update:
+	wget -q -N https://raw.githubusercontent.com/jncraton/course-template/master/.gitignore \
+	           https://raw.githubusercontent.com/jncraton/course-template/master/head.tex \
+	           https://raw.githubusercontent.com/jncraton/course-template/master/makefile \
+	           https://raw.githubusercontent.com/jncraton/course-template/master/reference.docx \
+	           https://raw.githubusercontent.com/jncraton/course-template/master/requirements.txt \
+	           https://raw.githubusercontent.com/jncraton/course-template/master/runtime.md \
+	           https://raw.githubusercontent.com/jncraton/course-template/master/head.md \
+	           https://raw.githubusercontent.com/jncraton/course-template/master/tail.md \
+	           https://raw.githubusercontent.com/jncraton/course-template/master/env.md \
+	           https://raw.githubusercontent.com/jncraton/course-template/master/style.css \
+	           https://raw.githubusercontent.com/jncraton/course-template/master/gen_dates.py \
+	           https://raw.githubusercontent.com/jncraton/course-template/master/gen_lecture_index.py \
+	           https://raw.githubusercontent.com/jncraton/course-template/master/config.json
+
+	mkdir -p .github/workflows
+	cd .github/workflows && wget -q -N https://raw.githubusercontent.com/jncraton/course-template/master/.github/workflows/pages.yml
+
+	# readme.md was previously used as syllabus template
+	# Copy it if needed when updating
+	cp --no-clobber readme.md syllabus-template.md
+	git add -f syllabus-template.md
+
+	git add -f gen_lecture_index.py
+
+	make readme.md
+
 clean:
 	rm -rf pandoc*
-	rm -f index.html index.md syllabus* env.html *.pdf
-	rm -rf lectures/*.html lectures/all.md
+	rm -f index.html index.md syllabus.md syllabus.docx syllabus.html syllabus.pdf env.html *.pdf
+	rm -rf lectures/**.html lectures/all.md lectures/index.md
+	rm -rf lectures/*.png
+	rm -rf examples/index.html
 	find lectures -name "*.html" -exec rm -f {} \;
 	rm -rf figures
 	rm -rf __pycache__

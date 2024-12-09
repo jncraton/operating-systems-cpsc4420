@@ -3,26 +3,25 @@ Grading Scale
 
 The following standard grading scale is used to map percentages to letter grades:
 
-Letter Grade   Percentage
-------------   ----------
-A              93-100%
-A-             90-93%
-B+             87-90%
-B              83-87%
-B-             80-83%
-C+             77-80%
-C              73-77%
-C-             70-73%
-D+             67-70%
-D              63-67%
-D-             60-63%
-F              0-60%
-------------   --------
+| Letter Grade | Percentage |
+| --- | --- |
+| A | 93-100% |
+| A- | 90-93% |
+| B+ | 87-90% |
+| B | 83-87% |
+| B- | 80-83% |
+| C+ | 77-80% |
+| C | 73-77% |
+| C- | 70-73% |
+| D+ | 67-70% |
+| D | 63-67% |
+| D- | 60-63% |
+| F | 0-60% |
 
 Late Assignments
 ----------------
 
-Late assignments will lose 10% for each day they are late rounded up, so an assignment submitted even one second late may be deducted 10%. In certain circumstances, extremely late work may be submitted for up to half credit.
+Late assignments will lose 10% for each day they are late rounded up, so an assignment submitted even one second late may be deducted 10%.
 
 Anderson University Educational Commitment
 ------------------------------------------
