@@ -68,5 +68,3 @@ Pathways Program
 ----------------
 
 Anderson University has a robust referral system that was created to connect students with the campus resources that will be most beneficial to them. Students may be referred by faculty for any student success issue. Students will be contacted by an appropriate staff or faculty member to provide support and care. For more information please see: [anderson.pharos360.com](https://anderson.pharos360.com/).
-
-</main>

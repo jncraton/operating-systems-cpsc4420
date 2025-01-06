@@ -1,23 +1,37 @@
 CPSC 4420 Operating Systems
 ===========================
 
-Spring 2025
+Term
+  ~ Spring 2025
 
-<main>
+Instructor
+  ~ Jon Craton
 
-- Instructor: Jon Craton
-- Office: Decker 354
-- E-mail: [jlcraton@anderson.edu](mailto:jlcraton@anderson.edu)
+Email
+  ~ [jlcraton@anderson.edu](mailto:jlcraton@anderson.edu)
+
+Office
+  ~ Decker 354
 
 Office hours
 ------------
 
-- Monday: 1pm - 3pm
-- Tuesday: 1pm - 3pm
-- Wednesday: 2pm - 3pm
-- Thursday: 9am - 11am
-- Friday: 11am - noon
-- Schedule a meeting during office hours: [joncraton.com/meet](https://joncraton.com/meet)
+Monday
+  ~ 1pm - 3pm
+
+Tuesday
+  ~ 1pm - 3pm
+  
+Wednesday
+  ~ 2pm - 3pm
+
+Thursday
+  ~ 9am - 11am
+
+Friday
+  ~ 11am - noon
+
+Schedule a meeting during office hours: [joncraton.com/meet](https://joncraton.com/meet)
 
 Course Catalog Description
 --------------------------
@@ -147,5 +161,3 @@ Pathways Program
 ----------------
 
 Anderson University has a robust referral system that was created to connect students with the campus resources that will be most beneficial to them. Students may be referred by faculty for any student success issue. Students will be contacted by an appropriate staff or faculty member to provide support and care. For more information please see: [anderson.pharos360.com](https://anderson.pharos360.com/).
-
-</main>
