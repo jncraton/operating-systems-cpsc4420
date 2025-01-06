@@ -3,6 +3,7 @@ CPSC 4420 Operating Systems
 
 !INCLUDE "head.md"
 
+
 Course Catalog Description
 --------------------------
 
@@ -15,9 +16,10 @@ PREREQUISITE: CPSC 2420 and CPSC 2500.
 Required Resources
 ------------------
 
-- [Operating Systems and Middleware (Free)](https://gustavus.edu/mcs/max/os-book/)
-- [ISO C Standard (Draft is free)](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf)
-- [C Programming (Free)](https://en.wikibooks.org/wiki/C_Programming)
+- [Course Lecture Notes (Free)](https://jncraton.github.io/operating-systems-cpsc4420/lectures){target=_blank}
+- [Operating Systems and Middleware (Free)](https://gustavus.edu/mcs/max/os-book/){target=_blank}
+- [ISO C Standard (Draft is free)](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf){target=_blank}
+- [C Programming (Free)](https://en.wikibooks.org/wiki/C_Programming){target=_blank}
 
 Course objectives
 -----------------
