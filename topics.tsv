@@ -1,12 +1,12 @@
 name	type	reading
 Intro	lecture	Chapter 1.1 - 1.2
 Setup	lab
-Cancelled (personal)	lecture
 C	lecture	Chapter 1.3 - 1.9
-cfmt	lab	
 C	lecture
 C-Pointers	lecture	
+cfmt	lab	
 C-Files	lecture
+C?	lecture
 csv stats	lab
 make	lecture
 Stacks Appendix	lecture
@@ -39,8 +39,10 @@ Weensy Memory	lab
 Virtual Memory	lecture	Chapter 6.1 - 6.2
 Mechanisms for Virtual Memory	lecture	Chapter 6.3
 Virtual Memory Policies and Security	lecture Chapter 6.4 - 6.5
+No lab?	lab
 POSIX Process Management API	lecture	Chapter 7.1 - 7.2
 Protecting Memory	lecture Chapter 7.3 - 7.6
+Security Objectives and Principles	lecture	Chapter 11.1 - 11.2
 Weensy Virtual Memory	lab
 Atomic Transactions	lecture	Chapter 5.1 - 5.3
 Transaction Mechanisms	lecture	Chapter 5.4 - 5.6
@@ -50,8 +52,6 @@ File System Implementation	lecture	Chapter 8.4 - 8.9
 Networking Application Layer	lecture	Chapter 9.1 - 9.2
 POSIX Socket API	lecture	Chapter 9.3 - 9.6
 Weensy Fork Week 2	lab
-Security Objectives and Principles	lecture	Chapter 11.1 - 11.2
 User Authentication and Information Access	lecture	Chapter 11.3 - 11.4
 Security Practices	lecture	Chapter 11.6 - 11.8
 Presentations	lab
-Exam Review	lecture
