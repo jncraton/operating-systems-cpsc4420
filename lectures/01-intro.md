@@ -11,6 +11,8 @@ Anything you want to know?
 Introductions
 -------------
 
+- Name
+- Major(s)
 - Favorite thing you did over break?
 
 Syllabus
