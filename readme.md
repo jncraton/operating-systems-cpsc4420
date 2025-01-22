@@ -115,6 +115,11 @@ Late Assignments
 
 Late assignments will lose 10% for each day they are late rounded up, so an assignment submitted even one second late may be deducted 10%.
 
+Exam and Quiz Policy
+--------------------
+
+Exams and quizzes are closed-book unless otherwise noted. No external tools (calculators, programming language interpreters, LLMs, books, websites, etc) may be used during quizzes or exams.
+
 Anderson University Educational Commitment
 ------------------------------------------
 
