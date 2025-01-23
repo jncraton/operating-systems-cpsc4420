@@ -23,7 +23,7 @@ syllabus.docx: syllabus.md
 	pandoc -V lang=en --metadata pagetitle=Syllabus --reference-doc reference.docx -o $@ $<
 
 syllabus.pdf: syllabus.md
-	pandoc -V lang=en --metadata title-meta=Syllabus --variable documentclass=article --variable fontsize=12pt --variable mainfont="FreeSans" --variable mathfont="FreeMono" --variable monofont="FreeMono" --variable monofontoptions="SizeFeatures={Size=8}" --include-in-head head.tex --no-highlight -V 'hyphens=none' --mathjax --variable titlepage="false" -s -o $@ $< 
+	pandoc -V lang=en --metadata title-meta=Syllabus --variable documentclass=article --variable fontsize=12pt --variable mainfont="FreeSans" --variable mathfont="FreeMono" --variable monofont="FreeMono" --variable monofontoptions="SizeFeatures={Size=8}" --include-in-head head.tex --no-highlight -V 'hyphens=none' --mathjax=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js --variable titlepage="false" -s -o $@ $< 
 	gs					\
 		-q -dNOPAUSE -dBATCH -dSAFER		\
 		-sDEVICE=pdfwrite			\
@@ -48,7 +48,7 @@ env.html: env.md
 	pandoc -V lang=en --metadata pagetitle=Environment --standalone --css=style.css -o $@ $<
 
 lectures:
-	find lectures -name "*.md" -exec pandoc --mathjax -t revealjs --standalone -V theme:white -V history=true --metadata pagetitle=Slides -o "{}.html" "{}" \;
+	find lectures -name "*.md" -exec pandoc --mathjax=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js -t revealjs --standalone -V theme:white -V history=true --metadata pagetitle=Slides -o "{}.html" "{}" \;
 	for file in lectures/*.md.html; do \
 	    mv -- "$$file" "$$(echo $$file | sed 's/.md//')"; \
 	done
@@ -67,10 +67,10 @@ lectures/all.md:
 	cd lectures && sed -e '$$G' -s `ls -v *.md` > all.md
 
 lectures/all.html: lectures/all.md
-	pandoc -V lang=en --metadata pagetitle="Lecture Notes" --standalone --mathjax --css=../style.css -o $@ $<
+	pandoc -V lang=en --metadata pagetitle="Lecture Notes" --standalone --mathjax=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js --css=../style.css -o $@ $<
 
 lectures/all-slides.html: lectures/all.md
-	pandoc --mathjax -t revealjs --standalone -V theme:white -V history=true --metadata pagetitle=Slides -o $@ $<
+	pandoc --mathjax=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js -t revealjs --standalone -V theme:white -V history=true --metadata pagetitle=Slides -o $@ $<
 
 lectures/index.html: lectures lectures/all.html lectures/all-slides.html lectures/reveal.js
 	python3 gen_lecture_index.py
