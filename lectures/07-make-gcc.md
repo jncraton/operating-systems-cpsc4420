@@ -1,6 +1,12 @@
 Make and GCC
 ============
 
+Make
+----
+
+- Build automation tool
+- Performs actions ordered by configured dependencies as defined in makefile
+
 GCC
 ---
 
