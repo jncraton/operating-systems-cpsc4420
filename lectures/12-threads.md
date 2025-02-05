@@ -59,6 +59,10 @@ Objectives
 - Availability
 - Accountability
 
+---
+
+![CIA Triad](https://www.nist.gov/sites/default/files/images/2022/09/09/cyber-triad-1.png){height=540px}
+
 2 Threads
 =========
 
