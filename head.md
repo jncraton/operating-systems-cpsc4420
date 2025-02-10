@@ -16,9 +16,6 @@ Monday
 Tuesday
   ~ 1pm - 3pm
 
-Thursday
-  ~ 9am - 11am
-
 Friday
   ~ 11am - noon
 
