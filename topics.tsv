@@ -26,20 +26,20 @@ Fix-priority Scheduling	lecture	Chapter 3.4
 fixed-priority scheduler	lab
 Scheduling Goals	lecture	Chapter 3.3
 Dynamic-priority Scheduling	Chapter 3.5 - 3.7
-Midterm Exam	lecture
-Dynamic scheduling	lab
+Exam Review	lecture
+Midterm Exam	lab
 Exam Summary and Assembly review	lecture
 Races and the Need for Mutual Exclusion	lecture	Chapter 4.1 - 4.2
 Mutexes and Monitors	lecture	Chapter 4.3
-Philosophers	lab
+Dynamic scheduling	lab
 Syncronization Patterns	lecture	Chapter 4.4 - 4.6
 Syncronization Patterns	lecture	Chapter 4.4 - 4.6
 Deadlocks and Scheduling	lecture	Chapter 4.7 - 4.10
-Weensy Memory	lab
+Philosophers	lab
 Virtual Memory	lecture	Chapter 6.1 - 6.2
 Mechanisms for Virtual Memory	lecture	Chapter 6.3
 Virtual Memory Policies and Security	lecture Chapter 6.4 - 6.5
-No lab?	lab
+Weensy Memory	lab
 POSIX Process Management API	lecture	Chapter 7.1 - 7.2
 Protecting Memory	lecture Chapter 7.3 - 7.6
 Security Objectives and Principles	lecture	Chapter 11.1 - 11.2
