@@ -26,3 +26,40 @@ Bounded Buffer
 ---
 
 ![Bounded burger buffer](media/4-14.png)
+
+Spin-waiting Producer
+------------
+
+```python
+producer:
+    while True:
+        queue.lock()
+        while (queue.isFull()):
+            queue.unlock()
+            queue.lock()
+
+        queue.append(task)
+        queue.unlock()
+```
+
+Spin-waiting Consumer
+------------
+
+```python
+consumer:
+    while True:
+        queue.lock()
+        while (queue.isEmpty()):
+            queue.unlock()
+            queue.lock()
+
+        task = queue.pop()
+        doStuff(task)
+        queue.unlock()
+```
+
+Pipes
+-----
+
+- Provide OS-level support for bounded buffers between processes
+- `du | sort -n`
