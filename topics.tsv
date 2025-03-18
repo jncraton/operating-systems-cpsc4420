@@ -33,7 +33,7 @@ Assembly review	lecture
 Races and the Need for Mutual Exclusion	lecture	Chapter 4.1 - 4.2
 Dynamic scheduling	lab
 Mutexes and Monitors	lecture	Chapter 4.3
-Syncronization Patterns	lecture	Chapter 4.4 - 4.6
+Mutex Implementation	lecture	Chapter 4.3
 Syncronization Patterns	lecture	Chapter 4.4 - 4.6
 Philosophers	lab
 Deadlocks and Scheduling	lecture	Chapter 4.7 - 4.10
