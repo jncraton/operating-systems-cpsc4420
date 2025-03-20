@@ -48,12 +48,12 @@ env.html: env.md
 	pandoc -V lang=en --metadata pagetitle=Environment --standalone --css=style.css -o $@ $<
 
 lectures:
-	find lectures -name "*.md" -exec pandoc --mathjax=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js -t revealjs --standalone --template=revealjs-template.html -V theme:white -V history=true --metadata pagetitle=Slides -o "{}.html" "{}" \;
+	find lectures -name "*.md" -exec pandoc --mathjax=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js -t revealjs --standalone --template=revealjs-template.html -V revealjs-url=reveal.js -V theme:white -V history=true --metadata pagetitle=Slides -o "{}.html" "{}" \;
 	for file in lectures/*.md.html; do \
 	    mv -- "$$file" "$$(echo $$file | sed 's/.md//')"; \
 	done
 	for file in lectures/media/*.puml; do \
-	    plantuml -output .. "$$file"; \
+	    plantuml -Sdpi=300 -output .. "$$file"; \
 	done
 
 spellcheck:
@@ -70,7 +70,7 @@ lectures/all.html: lectures/all.md
 	pandoc -V lang=en --metadata pagetitle="Lecture Notes" --standalone --mathjax=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js --css=../style.css -o $@ $<
 
 lectures/all-slides.html: lectures/all.md
-	pandoc --mathjax=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js -t revealjs --standalone -V theme:white -V history=true --metadata pagetitle=Slides -o $@ $<
+	pandoc --mathjax=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js -t revealjs --standalone --template=revealjs-template.html -V revealjs-url=reveal.js -V theme:white -V history=true --metadata pagetitle=Slides -o $@ $<
 
 lectures/index.html: lectures lectures/all.html lectures/all-slides.html lectures/reveal.js
 	python3 gen_lecture_index.py
@@ -80,7 +80,7 @@ examples/index.html:
 	cd examples && tree -H '.' -L 1 --noreport --charset utf-8 -P "*" | sponge index.html
 
 lectures/reveal.js:
-	cd lectures && git clone --depth=1 --branch 3.9.2 https://github.com/hakimel/reveal.js
+	cd lectures && git clone --depth=1 --branch 5.2.0 https://github.com/hakimel/reveal.js
 
 update:
 	wget -q -N https://raw.githubusercontent.com/jncraton/course-template/master/.gitignore \
