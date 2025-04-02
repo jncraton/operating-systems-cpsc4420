@@ -27,7 +27,7 @@ Process Identification
 
 ---
 
-![Process Memory Layout](https://i.stack.imgur.com/k4hPj.png){height=540px}
+![Process Memory Layout](https://i.sstatic.net/k4hPj.png){height=540px}
 
 Process Creation
 ----------------
