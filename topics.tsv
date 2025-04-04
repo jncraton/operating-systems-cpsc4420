@@ -45,13 +45,12 @@ Virtual Memory Policies and Security	lecture Chapter 6.4 - 6.5
 POSIX Process Management API	lecture	Chapter 7.1 - 7.2
 Weensy Virtual Memory	lab
 Protecting Memory	lecture Chapter 7.3 - 7.6
-Security Objectives and Principles	lecture	Chapter 11.1 - 11.2
-Atomic Transactions	lecture	Chapter 5.1 - 5.3
-Weensy Fork	lab
-Transaction Mechanisms	lecture	Chapter 5.4 - 5.6
 POSIX File API	lecture	Chapter 8.1 - 8.3
+Weensy Lab Assistance	lecture
+Weensy Fork	lab
 File System Implementation	lecture	Chapter 8.4 - 8.9
 Networking Application Layer	lecture	Chapter 9.1 - 9.2
 POSIX Socket API	lecture	Chapter 9.3 - 9.6
-User Authentication and Information Access & Security Practices	lecture	Chapter 11.3 - 11.4 & 11.6 - 11.8
-Presentations	lab
+Shell lab	lecture
+Security Objectives and Principles User Authentication and Information Access & Security Practices	lecture	Chapter 11.3 - 11.4 & 11.6 - 11.8	lecture	Chapter 11.1 - 11.2
+Complete Shell Lab	lab
