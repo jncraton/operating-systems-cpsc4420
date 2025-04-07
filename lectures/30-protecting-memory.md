@@ -75,8 +75,8 @@ Access Right
 Principal
 ---------
 
-- Rights are attached to subjects
-- A *principal* is often used to determine appropriate rights
+- Rights are attached to subjects (active users)
+- A *principal* (often a user) is used to determine appropriate rights
 - Processes may be the subject, but their rights reflect those of the user that owns them
 
 Capabilities
