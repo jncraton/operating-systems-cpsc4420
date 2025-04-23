@@ -249,11 +249,8 @@ Critical Reparable Corruption
 Consistency Strategies
 ----------------------
 
-- Single-block updates
-  - Journaling
-  - Shadow Paging
-- Careful ordering
-
+- Journaling
+- Shadow Paging
 
 Journaling
 ----------
@@ -267,7 +264,7 @@ Shadow Paging
 -------------
 
 - Creates new data structures instead of modifying existing structures
-- Single block change update pointer to current metadata structure
+- Single block change updates pointer to current metadata structure
 - ZFS, BTRFS
 
 Snapshots
@@ -277,13 +274,7 @@ Snapshots
 - If we also create copies of blocks on write, we can cheaply store each state of the file system in time
 - This can be very valuable in certain contexts
 
-Controlling Ordering
---------------------
-
-- Perform writes such that they could be interrupted at any point and only cause recoverable errors
-- Fix any integrity errors on boot
-- Performance is typically worse than other strategies
-- Used to be popular and has largely been replaced
+<!--
 
 8.8 Polymorphism in File System Implementations
 ===============================================
@@ -300,6 +291,8 @@ File Systems
 - FS interface exhibits polymorphism
 - A virtual file system provides a consistent interface and API
 - Many file systems may reside under a uniform VFS interface
+
+-->
 
 8.9 Security and Persistent Storage
 ===================================
