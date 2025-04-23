@@ -25,6 +25,8 @@ Data Location Metadata
 - inodes are stored in a linear array
 - Each file has a unique inode
 
+<!--
+
 ---
 
 ![inode metadata](media/8-6.png)
@@ -56,9 +58,11 @@ Double and Triple Indirection
 
 ![Double indirect storage](media/8-9.png)
 
+-->
+
 ---
 
-![Tree](media/8-10.png)
+![File Block Mappings in inode Tree](media/8-10.png)
 
 Sparse Files
 ------------
@@ -74,6 +78,8 @@ Example
 > ls -s sparsefile
 0 -rw-rw-r-- 1 jncraton 3.8T Apr  6 09:11 sparsefile
 ```
+
+<!--
 
 Extents
 -------
@@ -94,7 +100,7 @@ Extent Storage
 --------------
 
 - Can't be efficiently stored in linear array
-- Need to be searchable
+- Needs to be searchable
 
 Binary Tree
 -----------
@@ -126,6 +132,8 @@ Access Control Metadata
 - Varies by OS
 - POSIX includes fixed-sized metadata
 - Other operating systems provide metadata of arbitrary size that needs more complex storage
+
+-->
 
 POSIX Metadata
 --------------
