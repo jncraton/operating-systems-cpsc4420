@@ -18,7 +18,7 @@ Get a feedback loop
 -------------------
 
 - Education has provided this for you for the last 20 years
-- Now you have to build it yourself
+- Now you must build it yourself
 - Without accurate feedback, it is very difficult to grow
 
 Keep Learning
