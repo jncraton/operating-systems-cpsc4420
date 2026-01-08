@@ -1,38 +1,34 @@
-CPSC 4420 Operating Systems
-===========================
+# CPSC 4420 Operating Systems
 
 Term
-  ~ Spring 2026
+~ Spring 2026
 
 Instructor
-  ~ Jon Craton
+~ Jon Craton
 
 Email
-  ~ [jlcraton@anderson.edu](mailto:jlcraton@anderson.edu)
+~ [jlcraton@anderson.edu](mailto:jlcraton@anderson.edu)
 
-Office hours
-------------
+## Office hours
 
 Monday
-  ~ 11am - noon, 2pm - 3:30pm
+~ 11am - noon, 2pm - 3:30pm
 
 Tuesday
-  ~ 9am - 11am, 2pm - 3:30pm
+~ 9am - 11am, 2pm - 3:30pm
 
 Wednesday
-  ~ 11am - noon
+~ 11am - noon
 
 Friday
-  ~ 11am - noon
+~ 11am - noon
 
 Office
-  ~ Decker 305
+~ Decker 305
 
 Schedule a meeting during office hours: [joncraton.com/meet](https://joncraton.com/meet)
 
-
-Course Catalog Description
---------------------------
+## Course Catalog Description
 
 This course focuses on the fundamentals of operating systems (OS), including how the OS manages processes,
 memory, I/O, and file management. Process and thread management are emphasized, including synchronization,
@@ -40,43 +36,40 @@ communication, races, and deadlocks. Virtual memory, virtualization/hypervisors,
 discussed. With each topic, the security implications and design considerations are thoroughly discussed.
 PREREQUISITE: CPSC 2420 and CPSC 2500.
 
-Required Resources
-------------------
+## Required Resources
 
-- [Course Lecture Notes (Free)](https://jncraton.github.io/operating-systems-cpsc4420/lectures){target=_blank}
-- [Operating Systems and Middleware (Free)](https://gustavus.edu/mcs/max/os-book/){target=_blank}
-- [ISO C Standard (Draft is free)](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf){target=_blank}
-- [C Programming (Free)](https://en.wikibooks.org/wiki/C_Programming){target=_blank}
+- [Course Lecture Notes (Free)](https://jncraton.github.io/operating-systems-cpsc4420/lectures){target=\_blank}
+- [Operating Systems and Middleware (Free)](https://gustavus.edu/mcs/max/os-book/){target=\_blank}
+- [ISO C Standard (Draft is free)](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf){target=\_blank}
+- [C Programming (Free)](https://en.wikibooks.org/wiki/C_Programming){target=\_blank}
 
-Course objectives
------------------
+## Course objectives
 
 Upon completion of this course, students will be able to:
 
 - Describe low level operating system concepts, including kernel mode vs. user mode and the roles of the
-CPU, memory, busses, I/O and other hardware concepts.
+  CPU, memory, busses, I/O and other hardware concepts.
 - Write programs using the C language to create new processes and perform interprocess communication.
 - Write C programs to utilize parallelism, including thread creation and interthread communication.
 - Identify race conditions, and describe how to use mutual exclusion, semaphores, mutexes, and condition
-variables to address this issue.
+  variables to address this issue.
 - Describe classical interprocess communication problems, including the Producer-Consumer problem, the
-Dining Philosopher problem, and the Readers and Writers problem.
+  Dining Philosopher problem, and the Readers and Writers problem.
 - Identify the operating system's role in scheduling processes and threads, including common scheduling
-algorithms.
+  algorithms.
 - Describe memory abstractions, including base and limit registers, swapping, and virtual memory.
 - Examine the operating system's role in memory management, including the function of multi-level caching,
-the MMU, and the TLB.
+  the MMU, and the TLB.
 - Describe common file system structures, and the operating system's role in file system management.
 - Implement programs in C which explore issues in memory management and/or file system management.
 
-Course Overview
----------------
+## Course Overview
 
 Please refer to Canvas for a list of assignments and detailed grading breakdown.
 
 ### Presentations
 
-Students will complete a  presentation sharing knowledge of a specific operating system of interest with their peers.
+Students will complete a presentation sharing knowledge of a specific operating system of interest with their peers.
 
 ### Labs
 
@@ -90,38 +83,34 @@ Regular quizzes will be given covering the lecture material. Students will have 
 
 A total of 3 exams will be taken in this course. All exams are cumulative with a focus on more recent material.
 
-Grading Scale
--------------
+## Grading Scale
 
 The following standard grading scale is used to map percentages to letter grades:
 
 | Letter Grade | Percentage |
-| --- | --- |
-| A | 93-100% |
-| A- | 90-93% |
-| B+ | 87-90% |
-| B | 83-87% |
-| B- | 80-83% |
-| C+ | 77-80% |
-| C | 73-77% |
-| C- | 70-73% |
-| D+ | 67-70% |
-| D | 63-67% |
-| D- | 60-63% |
-| F | 0-60% |
+| ------------ | ---------- |
+| A            | 93-100%    |
+| A-           | 90-93%     |
+| B+           | 87-90%     |
+| B            | 83-87%     |
+| B-           | 80-83%     |
+| C+           | 77-80%     |
+| C            | 73-77%     |
+| C-           | 70-73%     |
+| D+           | 67-70%     |
+| D            | 63-67%     |
+| D-           | 60-63%     |
+| F            | 0-60%      |
 
-Late Assignments
-----------------
+## Late Assignments
 
 Late assignments will lose 10% for each day they are late rounded up, so an assignment submitted even one second late may be deducted 10%.
 
-Exam and Quiz Policy
---------------------
+## Exam and Quiz Policy
 
 Exams and quizzes are closed-book unless otherwise noted. No external tools (calculators, programming language interpreters, LLMs, books, websites, etc) may be used during quizzes or exams. Students should communicate exam absences in advance if at all possible. Exams that are missed without prior approval may not be made up if a student has missed more than a week of class sessions.
 
-Anderson University Educational Commitment
-------------------------------------------
+## Anderson University Educational Commitment
 
 veritas - fidelitas - utilitas
 
@@ -129,13 +118,11 @@ veritas - fidelitas - utilitas
 >
 > As a student of the university you are expected to fully engage in vigorous intellectual and experiential activity where head, heart, and hands are equally engaged and a commitment to Christ is honored.
 
-Academic Honesty
-----------------
+## Academic Honesty
 
 As an institution of higher education committed to academic and Christian discovery, Anderson University expects faculty and students alike to maintain the highest standards of academic and personal integrity. "Anderson University seeks to support and promote qualities of academic honesty and personal integrity and regards cheating, plagiarism, and all other forms of academic dishonesty as serious offenses against the University community" (Faculty Handbook 4.23 Policy on Academic Integrity). See the [Student Handbook](https://anderson.edu/student-life/handbook/) for examples of plagiarism.
 
-External Resources
-------------------
+## External Resources
 
 Professional software development often involves collaboration and the use of various external resources. Nevertheless, each contributor is responsible for ensuring the quality and accuracy of their contributions. Students must take full responsibility for their submitted work, regardless of any external resources or tools used to complete the work. Students should only submit work that would be considered their own in a professional setting.
 
@@ -143,8 +130,7 @@ The use of [generative artificial intelligence](https://en.wikipedia.org/wiki/Ge
 
 In general, [intelligent code completion](https://en.wikipedia.org/wiki/Intelligent_code_completion) and utilizing large language models to aid in programming problems is appropriate on lab assignments. However, students must demonstrate comprehension and ownership of their submitted work. If a student cannot fully understand or explain their code, they must not submit it as their own.
 
-Academic Support Statements
----------------------------
+## Academic Support Statements
 
 ### Accessibility and Accommodations
 
@@ -156,12 +142,10 @@ If you anticipate or experience physical or academic barriers based on disabilit
 
 The [Kissinger Academic Center for Excellence (KACE)](https://anderson.edu/kissinger/services/), located on the ground floor of the Nicholson Library, provides excellent resources in all areas of study regardless of academic ability. Many students can benefit from academic support and/or sharpen their skills through studying with others. In addition, excellent students often maintain their skills by working as peer tutors. The services are available for all enrolled students at no charge. For information, call 765-641-4225.
 
-Attendance Policy
------------------
+## Attendance Policy
 
 Class attendance is fundamental to the teaching/learning process and any absence from a class results in a loss of learning for the student and learning community. It is the student's obligation to personally notify the course instructor about any absence, in advance if possible. Students may be directly penalized only after the number of absences exceeds the number of class meeting hours per week. Where a student misses more than the number of classes stated above, or additional absences as may be allotted by the course instructor, the instructor has the discretion to determine whether missed work may be completed, how much work will be evaluated, and consequences of excessive absences.
 
-Pathways Program
-----------------
+## Pathways Program
 
 Anderson University has a robust referral system that was created to connect students with the campus resources that will be most beneficial to them. Students may be referred by faculty for any student success issue. Students will be contacted by an appropriate staff or faculty member to provide support and care. For more information please see: [anderson.pharos360.com](https://anderson.pharos360.com/).
