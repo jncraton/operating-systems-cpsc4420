@@ -26,7 +26,7 @@ Late assignments will lose 10% for each day they are late rounded up, so an assi
 Exam and Quiz Policy
 --------------------
 
-Exams and quizzes are closed-book unless otherwise noted. No external tools (calculators, programming language interpreters, LLMs, books, websites, etc) may be used during quizzes or exams.
+Exams and quizzes are closed-book unless otherwise noted. No external tools (calculators, programming language interpreters, LLMs, books, websites, etc) may be used during quizzes or exams. Students should communicate exam absences in advance if at all possible. Exams that are missed without prior approval may not be made up if a student has missed more than a week of class sessions.
 
 Anderson University Educational Commitment
 ------------------------------------------
@@ -49,7 +49,7 @@ Professional software development often involves collaboration and the use of va
 
 The use of [generative artificial intelligence](https://en.wikipedia.org/wiki/Generative_artificial_intelligence) tools must adhere to ethical standards and uphold academic integrity. While AI tools can be useful for coding assistance, they should not replace the learning experience of practicing coding skills. Therefore, excessive reliance on such tools without proper understanding is considered academic dishonesty.
 
-In general, [intelligent code completion](https://en.wikipedia.org/wiki/Intelligent_code_completion) and utilizing large language models to aid in programming problems is appropriate on lab assignments. However, students must demonstrate comprehension and ownership of their submitted work. If a student cannot fully understand or explain their code, they should not submit it as their own.
+In general, [intelligent code completion](https://en.wikipedia.org/wiki/Intelligent_code_completion) and utilizing large language models to aid in programming problems is appropriate on lab assignments. However, students must demonstrate comprehension and ownership of their submitted work. If a student cannot fully understand or explain their code, they must not submit it as their own.
 
 Academic Support Statements
 ---------------------------

@@ -1,5 +1,5 @@
 Term
-  ~ Spring 2025
+  ~ Spring 2026
 
 Instructor
   ~ Jon Craton
@@ -11,15 +11,18 @@ Office hours
 ------------
 
 Monday
-  ~ 11am - noon, 1pm - 3pm
+  ~ 11am - noon, 2pm - 3:30pm
 
 Tuesday
-  ~ 1pm - 3pm
+  ~ 9am - 11am, 2pm - 3:30pm
+
+Wednesday
+  ~ 11am - noon
 
 Friday
   ~ 11am - noon
 
 Office
-  ~ Decker 354
+  ~ Decker 305
 
 Schedule a meeting during office hours: [joncraton.com/meet](https://joncraton.com/meet)

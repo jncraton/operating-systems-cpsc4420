@@ -5,7 +5,9 @@ all: index.html syllabus.md syllabus.html syllabus.docx syllabus.txt syllabus.pd
 .PHONY: clean lectures
 
 syllabus.md: syllabus-template.md head.md tail.md
-	markdown-pp $< -o $@
+	cp -f $< $@
+	sed -i -e "/head.md/{r head.md" -e "d}" $@
+	sed -i -e "/tail.md/{r tail.md" -e "d}" $@
 
 readme.md: syllabus.md
 	cp -f $< $@
@@ -14,10 +16,10 @@ syllabus.txt: syllabus.md
 	cp syllabus.md syllabus.txt
 
 syllabus.html: syllabus.md
-	pandoc -V lang=en --metadata pagetitle=Syllabus --standalone --css=style.css -o $@ $<
+	pandoc -V lang=en --metadata pagetitle=Syllabus --standalone --css=style.css --lua-filter=filters.lua -o $@ $<
 
-index.html: syllabus.md
-	pandoc -V lang=en --metadata pagetitle=Syllabus --standalone --css=style.css -o $@ $<
+index.html: syllabus.html
+	cp -f $< $@
 
 syllabus.docx: syllabus.md
 	pandoc -V lang=en --metadata pagetitle=Syllabus --reference-doc reference.docx -o $@ $<
@@ -58,6 +60,7 @@ lectures:
 
 spellcheck:
 	aspell --home-dir=. --check --dont-backup head.md
+	aspell --home-dir=. --check --dont-backup readme.md
 	aspell --home-dir=. --check --dont-backup tail.md
 	aspell --home-dir=. --check --dont-backup env.md
 	for f in lectures/*.md; do aspell --home-dir=. --check --dont-backup "$$f"; done
@@ -77,7 +80,7 @@ lectures/index.html: lectures lectures/all.html lectures/all-slides.html lecture
 	pandoc lectures/index.md -o $@
 
 examples/index.html:
-	cd examples && tree -H '.' -L 1 --noreport --charset utf-8 -P "*" | sponge index.html
+	cd examples && tree -H '.' -L 2 --noreport --charset utf-8 -P "*" | sponge index.html
 
 lectures/reveal.js:
 	cd lectures && git clone --depth=1 --branch 5.2.0 https://github.com/hakimel/reveal.js
@@ -93,6 +96,7 @@ update:
 	           https://raw.githubusercontent.com/jncraton/course-template/master/tail.md \
 	           https://raw.githubusercontent.com/jncraton/course-template/master/env.md \
 	           https://raw.githubusercontent.com/jncraton/course-template/master/style.css \
+	           https://raw.githubusercontent.com/jncraton/course-template/master/filters.lua \
 	           https://raw.githubusercontent.com/jncraton/course-template/master/revealjs-template.html \
 	           https://raw.githubusercontent.com/jncraton/course-template/master/gen_dates.py \
 	           https://raw.githubusercontent.com/jncraton/course-template/master/gen_lecture_index.py \
