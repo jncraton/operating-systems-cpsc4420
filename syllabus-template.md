@@ -1,8 +1,10 @@
-CPSC 4420 Operating Systems
-===========================
+Operating Systems
+=================
+
+Course Number
+~ CPSC 4420
 
 !INCLUDE "head.md"
-
 
 Course Catalog Description
 --------------------------

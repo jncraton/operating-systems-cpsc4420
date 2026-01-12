@@ -1,4 +1,7 @@
-# CPSC 4420 Operating Systems
+# Operating Systems
+
+Course Number
+~ CPSC 4420
 
 Term
 ~ Spring 2026
