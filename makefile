@@ -115,13 +115,13 @@ update:
 	# Add new .prettierrc.json
 	git add -f .prettierrc.json
 
-	# Remove old requirements.txt if it exists
-	rm -f requirements.txt
+	# Remove old files if the exist
+	rm -f requirements.txt formats.md
 
 	make readme.md
 
 format:
-	npx prettier@3.6.2 --write **.md style.css
+	npx prettier@3.6.2 --write **.md lectures/**.md style.css
 	pipx run --spec black==25.12.0 black gen_lecture_index.py gen_dates.py
 
 clean:
