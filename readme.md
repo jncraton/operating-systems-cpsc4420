@@ -1,7 +1,5 @@
 # CPSC 4420 Operating Systems
 
-Anderson University
-
 Term
 ~ Spring 2026
 
