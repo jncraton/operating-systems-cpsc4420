@@ -34,7 +34,7 @@ Anything you want to know?
 - Most labs will be graded for correctness and code quality, as in other courses
 - Labs may occasionally be graded orally at my discretion
 
-  # 1.2 What is an Operating System
+# 1.2 What is an Operating System
 
 ## What does the OS do?
 
