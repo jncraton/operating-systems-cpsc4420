@@ -1,58 +1,48 @@
-Mutex Implementation
-====================
+# Mutex Implementation
 
-Exceptional Circumstances
--------------------------
+## Exceptional Circumstances
 
 - Unlocking an already unlocked mutex
 - Unlocking a mutex locked by a different thread
-- Locking  a mutex that we already hold
+- Locking a mutex that we already hold
 
-Mutex Types
------------
+## Mutex Types
 
 - PTHREAD_MUTEX_DEFAULT - Produces undefined behavior in exceptional cases
 - PTHREAD_MUTEX_ERROR_CHECK - Error codes returned for exceptional cases
 
-Mutex Types
------------
+## Mutex Types
 
 - PTHREAD_MUTEX_NORMAL - Self-deadlocks are possible. Produces undefined behavior in other cases
 - PTHREAD_MUTEX_RECURSIVE - A counter is used for lock state. A mutex can be locked multiple times and must be unlocked the same number of times before truly being unlocked
 
-Monitors
---------
+## Monitors
 
 - OOP approach to thread safety
 - Provide more structured mutexes
 
-Monitor Objects
----------------
+## Monitor Objects
 
 - All state is private
 - Objects include a mutex in addition to their state
 - Every public method begins by locking the mutex and ends by unlocking it
 
-Races
------
+## Races
 
 - A race on object state will be impossible if the object is a monitor
 
-Language support
-----------------
+## Language support
 
 - Can be automatic (e.g. `class monitor`)
 - [`syncronized`](https://en.cppreference.com/w/cpp/language/transactional_memory#Synchronized_blocks) keyword provides object locking at the method level
 - Can be [implemented manually](https://stackoverflow.com/a/48408987)
 
-Mutex Implementation
---------------------
+## Mutex Implementation
 
 - Atomic instruction is needed that can modify memory and report its previous value
-- [`swap`](https://en.wikibooks.org/wiki/X86_Assembly/Data_Transfer#Data_swap) to exchange a register value with memory is sufficient 
+- [`swap`](https://en.wikibooks.org/wiki/X86_Assembly/Data_Transfer#Data_swap) to exchange a register value with memory is sufficient
 
-Spinlock
---------
+## Spinlock
 
 - Memory value `1` is unlocked, `0` is locked
 - Unlock by storing `1`
@@ -74,8 +64,7 @@ to lock mutex:
 
 ![Spinlock implementation](media/4-8.png)
 
-Cache-conscious spinlocks
-------------------------
+## Cache-conscious spinlocks
 
 - Wait for another thread to change the lock state before atomically locking it
 - Avoids poor cache performance while waiting
@@ -93,15 +82,13 @@ to lock mutex:
   until temp = 1
 ```
 
-Spinlocks
----------
+## Spinlocks
 
 - Explicitly waste CPU time
 - Can be appropriate in the case where very little waiting is typically needed due to fast operations
 - Does not require a system call
 
-Queuing Mutex
-------------
+## Queuing Mutex
 
 - Avoids spinning
 - Components

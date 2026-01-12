@@ -1,36 +1,30 @@
-Files in C
-==========
+# Files in C
 
-What is a file?
----------------
+## What is a file?
 
 - Resource for storing data
 - Typically stored on persistent media (HDD, SSD, etc)
 - Grouped together and organized as a file system
 
-Organization
-------------
+## Organization
 
 - Linux organization described in [FHS](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 - Tree structure descending from root node `/`
 
-Virtual File Systems
---------------------
+## Virtual File Systems
 
 - Used to read and write data from the kernel
 - `/dev`, `/sys`, `/proc`, `/run`
 - e.g. `cat /proc/loadavg`
 
-Using files
------------
+## Using files
 
 - Kernel provides [system calls](https://github.com/torvalds/linux/blob/master/arch/x86/entry/syscalls/syscall_64.tbl) (`open`, `read`, `write`, `close`)
 - System call headers are available in the [kernel source](https://github.com/torvalds/linux/blob/master/include/linux/syscalls.h)
 - Files are accessed as streams of bytes
 - Bytes are read and written starting from the beginning of the file by default
 
-File API
---------
+## File API
 
 1. `open` file to get a file descriptor for the open file
 2. `read` or `write` using the file descriptor
@@ -38,8 +32,7 @@ File API
 
 ---
 
-Basic file reading
-------------------
+## Basic file reading
 
 ```c
 #include <unistd.h>
@@ -56,8 +49,7 @@ void main() {
 }
 ```
 
-cat implementation
-------------------
+## cat implementation
 
 ```c
 #include <unistd.h>
@@ -80,31 +72,27 @@ void main(int argc, char ** argv) {
 }
 ```
 
-File permissions
-----------------
+## File permissions
 
 - On Unix systems, files can be set as readable, writable, and executable
 - These can be defined for the file owner, file owner group, and everyone
 
-Permission encoding
--------------------
+## Permission encoding
 
 - 3 bits
-    - Read (4)
-    - Write (2)
-    - Execute (1)
+  - Read (4)
+  - Write (2)
+  - Execute (1)
 - 3 numbers used to store user, group, and world respectively
 
-Example
--------
+## Example
 
 - User read and write, group read, world read:
-    - 644
+  - 644
 - User read, write, exec, group read and exec, world nothing
-    - 750
+  - 750
 
-Modifying Permissions
----------------------
+## Modifying Permissions
 
 - `chmod` - change file mode bits
 
@@ -124,8 +112,7 @@ chown user:group myfile.c
 chgrp group myfile.c
 ```
 
-cp implementation
------------------
+## cp implementation
 
 ```c
 #include <unistd.h>
@@ -134,7 +121,7 @@ cp implementation
 
 void main(int argc, char ** argv) {
   if (argc != 3) exit(1);
-  
+
   int in = open(argv[1], O_RDONLY);
   int out = open(argv[2], O_WRONLY|O_CREAT, 0644);
 

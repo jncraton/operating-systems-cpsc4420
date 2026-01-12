@@ -1,98 +1,82 @@
-7.3 Protecting Memory
-=====================
+# 7.3 Protecting Memory
 
-Virtual Memory
---------------
+## Virtual Memory
 
 - Provides the framework for memory protection
 - Different mapping can be used for different processes
 - Mappings can include memory permission bits
 
-Processor Modes
----------------
+## Processor Modes
 
 - Code running as part of a user application may only access its own memory (user mode)
 - Code running as part of the OS needs access to everything (kernel mode)
 
-Kernel Mode
------------
+## Kernel Mode
 
 - All instructions are available
   - I/O
   - Change modes
   - Change memory permissions
 
-User Mode
----------
+## User Mode
 
 - Normal instructions are usable
 - Privileged instructions will fail
 - Illegal instructions are caught by the OS (trap)
 
-System Calls
-------------
+## System Calls
 
 - Effectively illegal operations
 - OS traps the call and performs some requested operation
 - Control typically returns to the process that requested the system call
 
-Threads
--------
+## Threads
 
 - Can be implemented differently based on protection level and mode switch
 - Kernel thread - run and scheduled in kernel mode
 - Native thread (or just thread) - run in user mode, scheduled in kernel mode
 - User thread - run and scheduled in user mode
 
-Multiple Address Spaces
------------------------
+## Multiple Address Spaces
 
 - Each process has its own virtual address space
 - Used by OS X, Windows, Linux, etc
 - Memory mappings are used to control permissions and access
 
-7.4 Representing Access Rights
-==============================
+  # 7.4 Representing Access Rights
 
-Protection system
------------------
+## Protection system
 
 - Controls access to objects by subjects
 - Object is what is being protected
 - Subject is trying to access the object
 
-Operations
-----------
+## Operations
 
 - Associated with an object
 - Can be performed by a subject
 
-Access Right
-------------
+## Access Right
 
 - Permission for a subject to perform an operation on an object
 
-Principal
----------
+## Principal
 
 - Rights are attached to subjects (active users)
-- A *principal* (often a user) is used to determine appropriate rights
+- A _principal_ (often a user) is used to determine appropriate rights
 - Processes may be the subject, but their rights reflect those of the user that owns them
 
-Capabilities
-------------
+## Capabilities
 
 - Indirect reference to object
 - Includes information needed to locate object and a set of access rights
 - Also known as handles (Windows) and descriptors (POSIX)
 
-Access Control List
--------------------
+## Access Control List
 
 - List of access rights associated with an object
 
-Example
--------
+## Example
 
 ```
 > getfacl /bin/ls
@@ -109,44 +93,38 @@ other::r-x
 
 ![Windows File ACL](media/7-16.png)
 
---- 
+---
 
-POSIX file permissions
-----------------------
+## POSIX file permissions
 
 - `r` - Read
 - `w` - Write
 - `x` - Execute
 
-POSIX directory permissions
-----------------------------
+## POSIX directory permissions
 
 - `r` - List
 - `w` - Create/rename/delete files in directory
 - `x` - Traverse a directory (access files if name already known)
 - Common combinations are `rwx`, `r-x`, and `---`
 
-Security and Protection
------------------------
+## Security and Protection
 
 - Protection is essential for security, but it is not equivalent to security
 - ACLs and other measures must be applied carefully and correctly to provide security
 
-Users and processes
--------------------
+## Users and processes
 
 - Processes are run using user credentials
 - They may take actions that a user did not intend
 - An example is a Trojan horse program
 
-Worms
------
+## Worms
 
 - Trojan horse programs that execute malicious code and redistribute themselves to others
 - Often sent via email
 
-setuid
-------
+## setuid
 
 - Some programs run by users need elevated permissions
 - This can be achieved by allowing programs to run as the user who owns the program rather than the user who executes it

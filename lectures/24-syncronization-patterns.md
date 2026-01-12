@@ -1,22 +1,18 @@
-4.4 Other Synchronization Patterns
-=================================
+# 4.4 Other Synchronization Patterns
 
-Producer-consumer model
------------------------
+## Producer-consumer model
 
 - One thread produces data consumed by another thread
 - Can be implemented sequentially
 - Can be implemented as threads that wait on one another, but with limited concurrency
 
-Concurrency
------------
+## Concurrency
 
 - Producer and consumer run at the same time
 - Producer creates output and stores it
 - Consumer grabs input as needed from storage
 
-Bounded Buffer
---------------
+## Bounded Buffer
 
 - Provides storage space for producer output
 - Limited in space because space is finite and larger size produces diminishing returns
@@ -27,8 +23,7 @@ Bounded Buffer
 
 ![Bounded burger buffer](media/4-14.png)
 
-Spin-waiting Producer
-------------
+## Spin-waiting Producer
 
 ```python
 producer:
@@ -42,8 +37,7 @@ producer:
         queue.unlock()
 ```
 
-Spin-waiting Consumer
-------------
+## Spin-waiting Consumer
 
 ```python
 consumer:
@@ -58,14 +52,12 @@ consumer:
         queue.unlock()
 ```
 
-Pipes
------
+## Pipes
 
 - Provide OS-level support for bounded buffers between processes
 - `du | sort -n`
 
-Readers/Writers Locks
----------------------
+## Readers/Writers Locks
 
 - Alternative to mutex
 - Allows lock to specify whether thread is reading or writing
@@ -75,20 +67,17 @@ Readers/Writers Locks
 
 ![Readers/Writers Lock](media/4-15.png)
 
-Barriers
---------
+## Barriers
 
 - Requires multiple concurrent threads to finish a task before moving on
 - Similar to our use `pthread_join`, but does not require threads to terminate
 
-Condition Variables
-------------------
+## Condition Variables
 
 - Provide a way to bundle multiple threads waiting on the same condition
 - A signaling mechanism is used to wake threads when the condition is met
 
-Condition Variable Producer
----------------------------
+## Condition Variable Producer
 
 ```python
 producer:
@@ -105,8 +94,7 @@ producer:
 
 ```
 
-Condition Variable Consumer
----------------------------
+## Condition Variable Consumer
 
 ```python
 consumer:
@@ -123,8 +111,7 @@ consumer:
         queue.unlock()
 ```
 
-Semaphores
-----------
+## Semaphores
 
 - Somewhat similar to a mutex, but can take on values other than 0 and 1
 - A semaphore that uses only 0 and 1 is a mutex

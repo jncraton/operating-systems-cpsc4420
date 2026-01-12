@@ -1,35 +1,28 @@
-4.3 Mutexes and Monitors
-========================
+# 4.3 Mutexes and Monitors
 
-Data Races
-----------
+## Data Races
 
 - Sharing data between threads can cause issues
 - This can be resolved by using a lock to gain exclusive access
 
-Mutual Exclusion Lock
----------------------
+## Mutual Exclusion Lock
 
 - Provided by the OS
 - Commonly known as a mutex
 
-Mutex POSIX API
----------------
+## Mutex POSIX API
 
-States
-------
+## States
 
 - Locked (held by some thread)
 - Unlocked (not held by any thread)
 
-Unlock Operation
-----------------
+## Unlock Operation
 
 - Only allowed when the mutex is locked
 - Returns immediately
 
-Lock Operation
---------------
+## Lock Operation
 
 - Allowed on locked and unlocked mutexes
 - May force the caller to wait until the lock is unlocked by another thread
@@ -38,8 +31,7 @@ Lock Operation
 
 ![Mutex states](media/4-4.png)
 
-POSIX API
----------
+## POSIX API
 
 ```c
 pthread_mutex_t my_mutex;

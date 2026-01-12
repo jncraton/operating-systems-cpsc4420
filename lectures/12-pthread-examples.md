@@ -1,26 +1,21 @@
-1.8 Supporting Interactions Across Space
-========================================
+# 1.8 Supporting Interactions Across Space
 
-Networking
-----------
+## Networking
 
 - Provides a means for separate systems to interact
 - Network stack organized into layers
 
-Sockets
--------
+## Sockets
 
 - Provides a standard and consistent API for applications to use for networking
 - Supports streaming and packet-based communication
 
-Socket types
-------------
+## Socket types
 
 - Stream - provides a virtual circuit
 - Datagram - delivers individual packets
 
-Socket Implementation
----------------------
+## Socket Implementation
 
 - Independent of network type
 - Most typically used with TCP/IP and UDP/IP
@@ -43,16 +38,13 @@ if (n = read(sockfd, recvBuff, sizeof(recvBuff)-1)) <= 0) {
 printf("%s\n", recvBuff);
 ```
 
-1.9 Security
-============
+# 1.9 Security
 
-Threats
--------
+## Threats
 
 - Operating systems need to be able to behave correctly in the face of malicious actors
 
-Objectives
-----------
+## Objectives
 
 - Confidentiality
 - Integrity
@@ -63,11 +55,9 @@ Objectives
 
 ![CIA Triad](https://www.nist.gov/sites/default/files/images/2022/09/09/cyber-triad-1.png){height=540px}
 
-2 Threads
-=========
+# 2 Threads
 
-2.2 Example Multi-threaded Program
-==================================
+# 2.2 Example Multi-threaded Program
 
 ---
 

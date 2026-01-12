@@ -1,87 +1,73 @@
-6.4 Policies for Virtual Memory
-===============================
+# 6.4 Policies for Virtual Memory
 
-Policies
---------
+## Policies
 
 - Mechanisms for operations have been described
 - When and how should these mechanisms be applied?
 
-Questions
----------
+## Questions
 
 - At what point is a page assigned a page frame?
 - Which page frame is assigned to each page?
 - If the operating system needs to move some inactive page to disk in
-order to free up a page frame, which page does it choose?
+  order to free up a page frame, which page does it choose?
 
-Fetch Policy
-------------
+## Fetch Policy
 
 - The OS may assign pages for all program data when a process is started
 - The OS may wait for page faults before assigning any pages
 - The OS may do something in between
 
-Prepaging
-----------
+## Prepaging
 
 - All pages are available without causing page faults
 - Programs are slow to load, as all pages must be mapped before executing any code
 
-Demand Paging
--------------
+## Demand Paging
 
 - Pages are loaded and mapped in response to page faults
 - Does not waste time creating unused mappings
 
-Choosing Demand Paging
-----------------------
+## Choosing Demand Paging
 
 - Limited spatial locality making page prediction difficult
 - Low cost of page faults
 
-Linux Example
--------------
+## Linux Example
 
 - Uses demand paging for zero-filled pages because the cost for a fault is very low
 - Uses a variant of prepaging for pages loaded from disk
 - Uses demand paging for random access to memory-mapped files
 
-Clustered Paging
-----------------
+## Clustered Paging
 
 - Page faults load a cluster of neighboring pages
 - Linux defaults to loading 16 aligned pages surrounding the requested page
 - Windows uses different cluster sizes for instructions and data
 - Clustered paging provides benefit because disk access is typically latency bound rather than bandwidth bound
 
-Placement Policy
-----------------
+## Placement Policy
 
 - Determines where to place a frame
 
-Placement Considerations
-------------------------
+## Placement Considerations
 
 - Spatial locality for cache performance
 - NUMA nodes
 - Energy efficiency (allow some memory chips to enter low power states)
 
-Caching
--------
+## Caching
 
 - Conflict (rather than capacity) misses can occur when addresses are poorly chosen
 - Address coloring or bin hopping are techniques to help avoid an increase in conflict misses from virtual memory
 
-Replacement Policy
-------------------
+## Replacement Policy
 
 - Pages may be evicted from memory and stored to disk when memory space is limited
 - This can happen as pages are requested
 - Most operating systems choose to keep some number of pages available and perform evictions in the background
 
-Advantages to early evictions
------------------------------
+## Advantages to early evictions
 
 - Lower latency for applications that experience page faults
 - Combining disk write back operations
@@ -91,24 +77,20 @@ Advantages to early evictions
 
 ![Windows Page Lists](media/6-18.png)
 
-6.5 Security and Virtual Memory
-===============================
+# 6.5 Security and Virtual Memory
 
-Processes
----------
+## Processes
 
 - Virtual memory provides basis for private process memory
 - Security details are covered more deeply in the next chapter
 
-Persistence
------------
+## Persistence
 
 - Memory is often assumed to volatile
 - Algorithms need to be able to store sensitive information, such as passwords, in memory while operating on them
 - Swapping may cause this sensitive information to be written to disk and accessible to an attacker
 
-`mlock`
--------
+## `mlock`
 
 - POSIX standard provides a family of procedures to prevent a page from being swapped to disk
 - This prevents sensitive information from every being written to persistent storage

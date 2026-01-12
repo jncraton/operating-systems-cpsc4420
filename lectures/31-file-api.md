@@ -1,44 +1,38 @@
-8.1 Files and Other Persistent Storage
-======================================
+# 8.1 Files and Other Persistent Storage
 
-Persistence
------------
+## Persistence
 
 - Data stored in memory disappears on power failure or reboot
 - The OS should provide a way to store data longer term
 
-Access
-------
+## Access
 
 - Provide a means to reference stored objects by name
 - Objects could also be accessed by contents
 
-Files
------
+## Files
 
 - Blend persistence and access
 
-Common forms of persistent storage
-----------------------------------
+## Common forms of persistent storage
 
 - File - Array of bytes
 - Table - Array of typed data fields
 - Persistent Object - Serialized data structure from a programming context
 
-Common access services
-----------------------
+## Common access services
 
 - Hierarchical directories mapping names to objects
 - Indexes providing access based on contents
 
-8.2 Storage Technology
-----------------------
+  8.2 Storage Technology
+
+---
 
 - The recent history of persistent storage has been dominated by spinning hard drives
 - Solid-state drives have begun to replace spinning drives
 
-Disk Drive
-----------
+## Disk Drive
 
 - Store data in 512 byte blobs called sectors (other sizes are possible)
 - Conceptually, an array of sectors
@@ -48,16 +42,14 @@ Disk Drive
 
 ![Disk drive hardware](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Laptop-hard-drive-exposed.jpg/627px-Laptop-hard-drive-exposed.jpg)
 
-Disk drive performance
-----------------------
+## Disk drive performance
 
 - Linear reads are much faster than random reads
 - Head seeking takes
 - Rotational latency (waiting for the sector to arrive under the head) also adds to latency
 - Reads should be queued on the drive to allow the drive to make correct performance decisions
 
-SSDs
-----
+## SSDs
 
 - Do not experience mechanical seeks or rotational latency
 - Less penalty for random reads

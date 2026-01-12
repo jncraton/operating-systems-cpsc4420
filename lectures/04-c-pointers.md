@@ -1,16 +1,14 @@
-Pointers
-========
+# Pointers
 
-Pointers
---------
+## Pointers
 
 - Provide references to memory
 - Just an unsigned integer of the appropriate size
 - `int *a` defines pointer `a`
 - `*b` dereferences `b`
-- `&c` returns the address of `c` 
+- `&c` returns the address of `c`
 
---- 
+---
 
 ```c
 #include <stdio.h>

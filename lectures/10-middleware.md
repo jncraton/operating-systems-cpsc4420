@@ -1,8 +1,6 @@
-1.3 Middleware
-==============
+# 1.3 Middleware
 
-Middleware
-----------
+## Middleware
 
 - Middleware is software that sits between application programs and the operating system
 - Databases, Runtimes, etc
@@ -11,30 +9,25 @@ Middleware
 
 ![Middleware](media/1-2.png)
 
-1.5 Multiple Computations on One Computer
-=========================================
+# 1.5 Multiple Computations on One Computer
 
-Resources
----------
+## Resources
 
 - Limited CPU time, disk access bandwidth, memory bandwidth
 - Multiple applications using resources simultaneously
 
-Concurrency
------------
+## Concurrency
 
 - Make efficient use of resources
 - When we aren't actively using the CPU because we are waiting on I/O, another program can use it
 
-Thread
-------
+## Thread
 
 - Fundamental unit of concurrency
 - Sequence of programmed actions
 - Each program includes at least one thread
 
-Process
--------
+## Process
 
 - Container for one or more threads
 - Protects threads from interactions from unrelated threads running on the same computer
@@ -44,15 +37,13 @@ Process
 
 ![Process with 2 threads](https://upload.wikimedia.org/wikipedia/commons/a/a5/Multithreaded_process.svg)
 
-Thread APIs
------------
+## Thread APIs
 
-- Create 
+- Create
 - Kill
 - Switch
 
-Scheduling
-----------
+## Scheduling
 
 - OS will have many threads that can be run
 - Limited CPUs are available

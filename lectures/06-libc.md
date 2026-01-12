@@ -1,36 +1,30 @@
-C Types
-=======
+# C Types
 
-Common types
-------------
+## Common types
 
 - `int`, `char`, `float`
 - `unsigned int`, `long int`
 - Pointers - `int*`, `char*`
 
-Other Types
------------
+## Other Types
 
 - Arrays - `[1, 2, 3]` (essentially just pointers)
 - `struct`
 - `enum`
 
-Batteries not Included
-----------------------
+## Batteries not Included
 
 - Most "complex" features are delegated to libraries
 - The core language doesn't support common types such as strings
 - The standard library (written in C) is part of the standard and many implementations are available
 
-Standard Library
-----------------
+## Standard Library
 
 - [libc](https://en.wikipedia.org/wiki/C_standard_library)
 - Many implementations available (BSD libc, glibc, MSVCRT.DLL, etc)
 - Defines interfaces for strings, math, I/O, OS operations, and more
 
-Hello World
------------
+## Hello World
 
 ```c
 #include <stdio.h>
@@ -40,15 +34,13 @@ int main() {
 }
 ```
 
-unistd.h
---------
+## unistd.h
 
 - Not part of the C standard library
 - Provides access to POSIX operating system API
 - [More info](https://en.wikipedia.org/wiki/Unistd.h)
 
-Hello World
------------
+## Hello World
 
 ```c
 #include <unistd.h>
@@ -58,8 +50,7 @@ int main() {
 }
 ```
 
-Format Strings
---------------
+## Format Strings
 
 - Allow values of various types to be interpolated into strings
 - Used by `printf`, `fprintf`, `scanf`, and others
@@ -78,8 +69,7 @@ int main() {
 }
 ```
 
-Functions
----------
+## Functions
 
 ```c
 #include <stdio.h>

@@ -1,8 +1,6 @@
-2.4 Switching Between Threads
-=============================
+# 2.4 Switching Between Threads
 
-Switching
----------
+## Switching
 
 - A single-threaded CPU can run only one thread at a time
 - A multi-threaded CPU still supports a finite number of concurrent threads
@@ -12,37 +10,36 @@ Switching
 
 ![Processor and Disk intensive tasks](media/2-6.png)
 
-Pausing
--------
+## Pausing
 
 - Stop a sequence of instructions from running
 - Start up again later
 - Something else can use the CPU in between
 
-Stopping Processes
-------------------
+## Stopping Processes
 
 - Stop the process:
-    - `kill -STOP [pid]`
+  - `kill -STOP [pid]`
 - Resume execution:
-    - `kill -CONT [pid]`
+  - `kill -CONT [pid]`
 
-New Instruction
----------------
+## New Instruction
 
 - switchFromTo(currentThread, newThread)
 - Instructs the CPU to move its execution from one thread to another
 
 ---
 
-Thread A            Thread B
-------------------- ---------
+Thread A Thread B
+
+---
+
 Instruction A1
 Instruction A2
 switchFromTo(A, B)
-                    Instruction B1
-                    Instruction B2
-                    switchFromTo(B, A)
+Instruction B1
+Instruction B2
+switchFromTo(B, A)
 Instruction A3
 Instruction A4
 
@@ -56,28 +53,24 @@ Consider:
 - Stack Pointer
 - Register Values
 
-Changing Threads
-----------------
+## Changing Threads
 
 - Store all required registers (IP, SP, data registers, etc)
 - Update instruction pointer
 
-Thread Control Block
---------------------
+## Thread Control Block
 
 - TCB
 - Kernel data structure for storing thread parameters
 - Address of block may be used to identify threads (A and B in previous examples)
 
-What about memory
------------------
+## What about memory
 
 - Each thread's memory should remain accessible and largely unchanged after switching
 - The stack should be preserved exactly
 - The stack is pushed to hold thread state when switching just like when calling a function
 
-Pseudocode
-----------
+## Pseudocode
 
 ```
   Push registers to outgoing thread's stack
@@ -93,27 +86,23 @@ restore:
 
 ![Saving registers and per-thread stack](media/2-8.png)
 
-Security
---------
+## Security
 
 - On most systems, memory protections are enforced
 - A process can't jump into another processes memory
 - The user mode thread switching described is not possible in practice
 
-Kernel
-------
+## Kernel
 
 - The kernel must be responsible for thread management and switching
 
-Yield
------
+## Yield
 
 - Simplified version of `switchFromTo`
 - Take no parameters
 - Informs the kernel that the current thread is ready to take a break
 
-Yield Implementation
---------------------
+## Yield Implementation
 
 ```
 outgoing = current
@@ -122,8 +111,7 @@ current = next // Maintain global variable
 switchFromTo(outgoing, next)
 ```
 
-Multiple processors
--------------------
+## Multiple processors
 
 - A modern system can run multiple threads simultaneously in hardware
 - We need to maintain information about the `n` running threads on our `n` processors

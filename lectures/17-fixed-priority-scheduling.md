@@ -1,8 +1,6 @@
-3.4 Fixed-priority scheduling
-=============================
+# 3.4 Fixed-priority scheduling
 
-Scheduling Mechanisms
----------------------
+## Scheduling Mechanisms
 
 - Priority
   - Fixed Priority (3.4)
@@ -15,15 +13,13 @@ Scheduling Mechanisms
 
 ![Uniform priority scheduling](media/run-queue.gif)
 
-Priority
---------
+## Priority
 
 - Number assigned to each thread
 - May be assigned by a user and not adjusted automatically by the OS
 - Note that higher priorities may be represented by lower numbers
 
-Scheduling
-----------
+## Scheduling
 
 - The runnable thread with the highest priority will be run next
 
@@ -31,8 +27,7 @@ Scheduling
 
 ![Fixed priority scheduling](media/priority.gif)
 
-Advantages
-----------
+## Advantages
 
 - Incredibly simple
 - Can help meet some limited user needs
@@ -41,62 +36,52 @@ Advantages
 
 What are some weaknesses of fixed-priority scheduling?
 
-Implementation
---------------
+## Implementation
 
 - Priority queue
 - Most simply, a queue for each priority level
 
-Ties
-----
+## Ties
 
 - Option 1 - Keep running the current thread (FIFO)
 - Option 2 - Cycle highest priority thread in round-robin fashion (RR)
 
-FIFO
-----
+## FIFO
 
 - Allows the thread to complete it's work fastest
 - Does not allow any other high priority threads to run
 
-RR
----
+## RR
 
 - Allows all highest priority threads to run
 - Delays work on one thread to service others
 
-Niche
------
+## Niche
 
 - A busy high priority thread will consume all system resources
 - In a carefully controlled system, they can be useful
 
-Hard-real-time systems
-----------------------
+## Hard-real-time systems
 
 - Data and computation must be completed on a fixed timetable
 - Aircraft
 - Control systems
 - [Rockets](https://www.youtube.com/watch?v=pmRrnyDssZc&t=360s)
 
-Theorems
---------
+## Theorems
 
 - [Liu and Layland 1973](http://web.cs.wpi.edu/~cs3013/a09/Papers/Liu%20%26%20Layland%2C%20Real-time%20Scheduling.pdf)
 - Simplify the process of analyzing systems with real-time constraints
 
-Rate-monotonic scheduling
--------------------------
+## Rate-monotonic scheduling
 
->  If the threads will meet their deadlines under any fixed priority assignment, then they will do so under an assignment that prioritizes threads with shorter periods over those with longer periods.
+> If the threads will meet their deadlines under any fixed priority assignment, then they will do so under an assignment that prioritizes threads with shorter periods over those with longer periods.
 
-Starting Together
------------------
+## Starting Together
 
 > To check that deadlines are met, it suffices to consider the worst-case situation, which is that all the threads’ periods start at the same moment.
 
-Gantt Chart
------------
+## Gantt Chart
 
 - Bar representing passage of time
 - Can be used to analyze feasibility of a real-time schedule
@@ -105,8 +90,7 @@ Gantt Chart
 
 ![Gantt Chart](media/gantt1.png){height=160px}
 
-Example
--------
+## Example
 
 - Thread 1
   - Period and deadline: 4 seconds
@@ -123,8 +107,7 @@ Can this application be serviced on a single CPU using fixed-priority scheduling
 
 ![Gantt Chart](media/gantt-ex1.png){height=160px}
 
-Example 2
----------
+## Example 2
 
 - Thread 1
   - Period and deadline: 4 seconds

@@ -1,8 +1,6 @@
-Appendix A - Stacks
-===================
+# Appendix A - Stacks
 
-Stack Data Structure
---------------------
+## Stack Data Structure
 
 - Abstract data type
 - Supports `push` and `pop`
@@ -12,27 +10,23 @@ Stack Data Structure
 
 ![Stack Operations](https://upload.wikimedia.org/wikipedia/commons/b/b4/Lifo_stack.png)
 
-Control Abstraction
-------------------
+## Control Abstraction
 
 - Create organized sections of executable code that execute in well-understood ways and can be reused
 
-Subroutine
-----------
+## Subroutine
 
 - Performs operations for the caller while the caller waits
-- Arguments, or *actual parameters*, are passed to subroutines and mapped to *formal parameters* from the subroutine definition
-- Subroutines that can return values can be called *functions*
+- Arguments, or _actual parameters_, are passed to subroutines and mapped to _formal parameters_ from the subroutine definition
+- Subroutines that can return values can be called _functions_
 
-Call Stack
-----------
+## Call Stack
 
 - Memory space for functions to use to store local variables, return addresses, and other data
 - Function calls push a new frame to the stack
 - Returns pop their frame when they are finished with it
 
-DrawSquare Example
-------------------
+## DrawSquare Example
 
 ```c
 void DrawSquare(int x, int y, int size) {
@@ -48,31 +42,26 @@ void DrawSquare(int x, int y, int size) {
 
 ![Upward-growing call stack](https://upload.wikimedia.org/wikipedia/commons/d/d3/Call_stack_layout.svg)
 
-Call stack review resources
----------------------------
+## Call stack review resources
 
 - [Short Video Lecture](https://www.youtube.com/watch?v=Q2sFmqvpBe0)
 - [Wikipedia](https://en.wikipedia.org/wiki/Call_stack)
 
-Parameter Passing
------------------
+## Parameter Passing
 
-Pass by Value
--------------
+## Pass by Value
 
 - Actual parameter values are made available to the subroutine
 - Modification of values will not impact the caller
 - This may involved making a copy in memory
 
-Pass by Reference
------------------
+## Pass by Reference
 
 - Actual parameters are references to data from the caller
 - Modification of values will impact caller
 - Should not involve copying data
 
-C
----
+## C
 
 - Pass by value
 
@@ -134,15 +123,13 @@ int main(void) {
 }
 ```
 
-Hardware
---------
+## Hardware
 
 - Most ISAs pass values using a new stack frame and/or shared registers
 - Hardware is necessarily pass by value
 - Any pass by reference implementation needs to be built on values
 
-Variable Numbers of Arguments
------------------------------
+## Variable Numbers of Arguments
 
 - It can sometimes be helpful to accept a different number of arguments
 - One example of this is `printf` in C
@@ -155,8 +142,7 @@ int printf ( const char * format, ... );
 
 ---
 
-Function Returns
-----------------
+## Function Returns
 
 - End the function
 - Return some value

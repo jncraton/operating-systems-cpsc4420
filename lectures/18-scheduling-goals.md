@@ -1,8 +1,6 @@
-3.3 Scheduling Goals
-====================
+# 3.3 Scheduling Goals
 
-Scheduling
-----------
+## Scheduling
 
 - Optimize system resources
 - Provide snappy user experience
@@ -13,27 +11,23 @@ Scheduling
 
 ---
 
-System Usage
-------------
+## System Usage
 
 - Many consumer devices (laptops, phones, etc) are idle most of the time
 - Servers in data centers often have a backlog of work to do
 
-Performance Goals
------------------
+## Performance Goals
 
 - Throughput
 - Response time
 
-Throughput
-----------
+## Throughput
 
 - Measure of work done per time
 - An example would be requests per second (RPS) for a webserver
 - Typically goes down as we change threads more quickly
 
-Context Switching
------------------
+## Context Switching
 
 - Changing threads incurs a cost
 - State has to be saved to memory when pausing a thread
@@ -47,8 +41,7 @@ Context Switching
 
 What impact does the cache hierarchy have on context switching?
 
-Cache Hierarchy
----------------
+## Cache Hierarchy
 
 - The implementation of the cache hierarchy makes context switching more expensive
 - Another thread will replace many of our cached values
@@ -57,15 +50,13 @@ Cache Hierarchy
 
 How does this effect change in multiprocessor systems?
 
-Multiprocessor Systems
-----------------------
+## Multiprocessor Systems
 
 - A context switch to another CPU will be much slower
 - The threads old cache will be inaccessible from the new CPU
 - Processor affinity is helpful to keep threads running on the same CPU
 
-Cache Coherence Protocol
-------------------------
+## Cache Coherence Protocol
 
 - Values that exist in another CPUs cache are especially slow to access
 - This further increases the cost of context switches to another CPU
@@ -74,45 +65,38 @@ Cache Coherence Protocol
 
 ![Cache locality](media/3-5.png)
 
-Response Time
--------------
+## Response Time
 
 - Time to service a single request
 - Typically goes down the faster we change contexts
 
-Control Goals
--------------
+## Control Goals
 
 - Urgency
 - Importance
 - Resource allocation
 
-Urgency
--------
+## Urgency
 
 - How soon a task needs to be completed
 - A homework assignment with a due date
 - A VOIP packet to send
 
-Importance
-----------
+## Importance
 
 - How critical the task is to complete
 - Your graduation application
 
-Urgency and Importance
-----------------------
+## Urgency and Importance
 
 - Orthogonal concepts
 - A task can be urgent without being import or important without being urgent
 
-Resource allocation
--------------------
+## Resource allocation
 
 - How to split resources between users
 
-Scheduling Goals
-----------------
+## Scheduling Goals
 
 - Performance
   - Throughput

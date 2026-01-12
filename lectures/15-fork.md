@@ -1,5 +1,4 @@
-Fork
-======
+# Fork
 
 ---
 
@@ -15,13 +14,11 @@ int main() {
 }
 ```
 
-Process
--------
+## Process
 
 - Closest to the informal idea of a running program
 
-Process
--------
+## Process
 
 - One or more threads
 - Virtual memory accessible to those threads
@@ -29,20 +26,17 @@ Process
 - Resource allocation context
 - Other context (e.g. working directory)
 
-Process Identification
-----------------------
+## Process Identification
 
 - Each process has a process ID number (PID)
 - All PIDs are positive integers
 
-Process Creation
-----------------
+## Process Creation
 
 - Processes are created as a `fork` of another
 - The only exception is the initial process created by the OS on boot
 
-Fork
-----
+## Fork
 
 - The `fork` system call can be called from a thread to create a new process
 - The parent calling `fork` sees the process ID of the child as a return value
@@ -62,15 +56,13 @@ int main() {
 }
 ```
 
-Memory
-------
+## Memory
 
 - A forked process sees a copy of its parent's memory
 - Clobbering the other processes memory is not possible
 - Communication via memory modification is not available
 
-Signals
--------
+## Signals
 
 - We need a way to communicate between processes
 - One way to do this is to send signals
