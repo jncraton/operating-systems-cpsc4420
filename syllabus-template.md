@@ -1,13 +1,11 @@
-Operating Systems
-=================
+# Operating Systems
 
 Course Number
 ~ CPSC 4420
 
 !INCLUDE "head.md"
 
-Course Catalog Description
---------------------------
+## Course Catalog Description
 
 This course focuses on the fundamentals of operating systems (OS), including how the OS manages processes,
 memory, I/O, and file management. Process and thread management are emphasized, including synchronization,
@@ -15,16 +13,14 @@ communication, races, and deadlocks. Virtual memory, virtualization/hypervisors,
 discussed. With each topic, the security implications and design considerations are thoroughly discussed.
 PREREQUISITE: CPSC 2420 and CPSC 2500.
 
-Required Resources
-------------------
+## Required Resources
 
 - [Course Lecture Notes (Free)](https://jncraton.github.io/operating-systems-cpsc4420/lectures){target=_blank}
 - [Operating Systems and Middleware (Free)](https://gustavus.edu/mcs/max/os-book/){target=_blank}
 - [ISO C Standard (Draft is free)](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf){target=_blank}
 - [C Programming (Free)](https://en.wikibooks.org/wiki/C_Programming){target=_blank}
 
-Course objectives
------------------
+## Course objectives
 
 Upon completion of this course, students will be able to:
 
@@ -44,8 +40,7 @@ the MMU, and the TLB.
 - Describe common file system structures, and the operating system's role in file system management.
 - Implement programs in C which explore issues in memory management and/or file system management.
 
-Course Overview
----------------
+## Course Overview
 
 Please refer to Canvas for a list of assignments and detailed grading breakdown.
 
