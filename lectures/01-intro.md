@@ -1,3 +1,7 @@
+---
+reading: '1.2 What is an Operating System'
+...
+
 # CPSC 4420 Operating Systems
 
 ## About Me
