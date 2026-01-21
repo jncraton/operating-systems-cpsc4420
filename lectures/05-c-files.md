@@ -1,3 +1,7 @@
+---
+reading: '[Files](https://en.wikibooks.org/wiki/C_Programming/Stream_IO)'
+...
+
 # Files in C
 
 ## What is a file?
