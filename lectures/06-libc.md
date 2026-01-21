@@ -1,3 +1,7 @@
+---
+reading: '[Standard Libraries](https://en.wikibooks.org/wiki/C_Programming/Standard_libraries)'
+...
+
 # C Types
 
 ## Common types
