@@ -1,3 +1,7 @@
+---
+reading: '[Arrays and Strings](https://en.wikibooks.org/wiki/C_Programming/Arrays_and_strings), [Pointers](https://en.wikibooks.org/wiki/C_Programming/Pointers_and_arrays)'
+...
+
 # Pointers
 
 ## Pointers
