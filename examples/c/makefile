@@ -5,4 +5,4 @@ all:
 	./$@
 
 clean:
-	rm -f hello structs
+	rm -f hello hello2 structs
