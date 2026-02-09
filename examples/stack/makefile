@@ -2,7 +2,7 @@ all:
 
 %: %.c
 	gcc $< -Wall -Wextra -o $@
-	ulimit -s 32 && ./$@
+	ulimit -s 16 && ./$@
 
 clean:
 	rm -f overflow
