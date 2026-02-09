@@ -10,6 +10,10 @@
 
 ![Stack Operations](https://upload.wikimedia.org/wikipedia/commons/b/b4/Lifo_stack.png)
 
+---
+
+![Animated Stack](media/stack.svg)
+
 ## Control Abstraction
 
 - Create organized sections of executable code that execute in well-understood ways and can be reused
