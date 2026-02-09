@@ -5,4 +5,4 @@ all:
 	ulimit -s 16 && ./$@
 
 clean:
-	rm -f overflow
+	rm -f overflow fib
