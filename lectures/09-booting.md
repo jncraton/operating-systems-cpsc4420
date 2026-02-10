@@ -37,3 +37,46 @@ Where does the first instruction come from?
 ---
 
 ![GRUB OS Selection](https://upload.wikimedia.org/wikipedia/commons/4/48/Debian_Unstable_GRUB2_%282015%29.png)
+
+## Kernel Initialization
+
+1. Bootloader transfers control to the kernel
+2. Kernel initializes memory and hardware
+3. Kernel mounts the root filesystem
+4. Kernel starts the first process
+
+## Uptime
+
+```sh
+cat /proc/uptime
+```
+
+## Processes
+
+- Running instances of programs
+- Identified by a [Process identifier](https://en.wikipedia.org/wiki/Process_identifier)
+
+## Process Tree
+
+```sh
+pstree
+```
+
+## PID 0
+
+- PID 0 is not a regular process
+- Created during kernel initialization
+- Manages power when the CPU is not busy
+
+## PID 1
+
+- PID 1 is the first user space process
+- Commonly init or systemd
+- Serves as the parent of all other processes
+- Handles system shutdown and service management
+
+## Process Status
+
+```bash
+cat /proc/1/status
+```
