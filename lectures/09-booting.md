@@ -92,5 +92,5 @@ cat /proc/1/status
 - Accessible via the filesystem at /dev/kmsg (requires root) or `dmesg`
 
 ```bash
-sudo head /dev/kmesg
+sudo head /dev/kmsg
 ```
