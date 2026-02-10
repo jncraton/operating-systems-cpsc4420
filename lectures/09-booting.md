@@ -45,6 +45,10 @@ Where does the first instruction come from?
 3. Kernel mounts the root filesystem
 4. Kernel starts the first process
 
+---
+
+![Example kernel init](media/boot.svg)
+
 ## Uptime
 
 ```sh
