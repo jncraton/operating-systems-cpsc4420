@@ -56,6 +56,10 @@ cat /proc/uptime
 - Running instances of programs
 - Identified by a [Process identifier](https://en.wikipedia.org/wiki/Process_identifier)
 
+## top
+
+`top` can be used to show an interactive list of running processes
+
 ## Process Tree
 
 ```sh
