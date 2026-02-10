@@ -80,3 +80,13 @@ pstree
 ```bash
 cat /proc/1/status
 ```
+
+## Kernel Log
+
+- The kernel ring buffer contains messages from the kernel
+- Useful for diagnosing hardware and boot issues
+- Accessible via the filesystem at /dev/kmsg (requires root) or `dmesg`
+
+```bash
+sudo head /dev/kmesg
+```
