@@ -2,58 +2,58 @@
   <rect width="100%" height="100%" fill="black" />
   <g font-family="monospace" font-size="20">
     <g>
-      <animate attributeName="opacity" values="1;1;0;0" dur="10s" keyTimes="0;0.35;0.35;1" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;1;0;0" dur="10s" keyTimes="0;0.35;0.35;1" repeatCount="indefinite" calcMode="discrete" />
       <text x="20" y="40" fill="white">Loading Linux 6.1.0-18-amd64 ...</text>
       <text x="20" y="70" fill="white">
-        <animate attributeName="opacity" values="0;1;1" dur="10s" keyTimes="0;0.05;1" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0;1;1" dur="10s" keyTimes="0;0.05;1" repeatCount="indefinite" calcMode="discrete" />
         Loading initial ramdisk ...
       </text>
       
       <g transform="translate(0, 70)">
-        <animate attributeName="opacity" values="0;1;1" dur="10s" keyTimes="0;0.15;1" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0;1;1" dur="10s" keyTimes="0;0.15;1" repeatCount="indefinite" calcMode="discrete" />
         <text x="20" y="30" fill="white">[  <tspan fill="#00FF00">OK</tspan>  ]</text>
         <text x="110" y="30" fill="white">Finished Load Kernel Modules.</text>
       </g>
       
       <g transform="translate(0, 100)">
-        <animate attributeName="opacity" values="0;1;1" dur="10s" keyTimes="0;0.18;1" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0;1;1" dur="10s" keyTimes="0;0.18;1" repeatCount="indefinite" calcMode="discrete" />
         <text x="20" y="30" fill="white">[  <tspan fill="#00FF00">OK</tspan>  ]</text>
         <text x="110" y="30" fill="white">Started udev Coldplug all Devices.</text>
       </g>
       
       <g transform="translate(0, 130)">
-        <animate attributeName="opacity" values="0;1;1" dur="10s" keyTimes="0;0.21;1" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0;1;1" dur="10s" keyTimes="0;0.21;1" repeatCount="indefinite" calcMode="discrete" />
         <text x="20" y="30" fill="white">[  <tspan fill="#00FF00">OK</tspan>  ]</text>
         <text x="110" y="30" fill="white">Started Network Time Synchronization.</text>
       </g>
       
       <g transform="translate(0, 160)">
-        <animate attributeName="opacity" values="0;1;1" dur="10s" keyTimes="0;0.24;1" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0;1;1" dur="10s" keyTimes="0;0.24;1" repeatCount="indefinite" calcMode="discrete" />
         <text x="20" y="30" fill="white">[  <tspan fill="#00FF00">OK</tspan>  ]</text>
         <text x="110" y="30" fill="white">Started System Logging Service.</text>
       </g>
       
       <g transform="translate(0, 190)">
-        <animate attributeName="opacity" values="0;1;1" dur="10s" keyTimes="0;0.27;1" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0;1;1" dur="10s" keyTimes="0;0.27;1" repeatCount="indefinite" calcMode="discrete" />
         <text x="20" y="30" fill="white">[  <tspan fill="#00FF00">OK</tspan>  ]</text>
         <text x="110" y="30" fill="white">Started Login Service.</text>
       </g>
       
       <g transform="translate(0, 220)">
-        <animate attributeName="opacity" values="0;1;1" dur="10s" keyTimes="0;0.30;1" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0;1;1" dur="10s" keyTimes="0;0.30;1" repeatCount="indefinite" calcMode="discrete" />
         <text x="20" y="30" fill="white">[  <tspan fill="#00FF00">OK</tspan>  ]</text>
         <text x="110" y="30" fill="white">Reached target Multi-User System.</text>
       </g>
     </g>
     
     <g>
-      <animate attributeName="opacity" values="0;0;1;1" dur="10s" keyTimes="0;0.35;0.35;1" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0;1;1" dur="10s" keyTimes="0;0.35;0.35;1" repeatCount="indefinite" calcMode="discrete" />
       <text x="20" y="40" fill="white">Debian GNU/Linux 12 debian tty1</text>
       <text x="20" y="80" fill="white">
-        <animate attributeName="opacity" values="0;0;1;1" dur="10s" keyTimes="0;0.4;0.4;1" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0;0;1;1" dur="10s" keyTimes="0;0.4;0.4;1" repeatCount="indefinite" calcMode="discrete" />
         debian login:
         <tspan>
-          <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" calcMode="discrete" />
           _
         </tspan>
       </text>
