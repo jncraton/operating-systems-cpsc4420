@@ -72,7 +72,7 @@ What if thread A is waiting for thread B and thread B is waiting for thread A?
 ## Transaction
 
 - Unit of computation with no externally visible internal state
-- Computation succeeds for fails as a unit
+- Computation succeeds or fails as a unit
 - Useful concurrency primitive
 
 ## Accidental Interaction
