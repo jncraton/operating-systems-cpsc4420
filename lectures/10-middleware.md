@@ -1,3 +1,5 @@
+[Windows Notepad Remote Code Execution Vulnerability](https://www.cve.org/CVERecord?id=CVE-2026-20841)
+
 # 1.3 Middleware
 
 ## Middleware
