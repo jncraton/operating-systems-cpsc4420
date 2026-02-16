@@ -53,7 +53,7 @@ What if the system goes down during a write?
 
 ---
 
-![Socket States](media/socket_states.png)
+![Socket States](media/socket-states.png)
 
 ---
 
