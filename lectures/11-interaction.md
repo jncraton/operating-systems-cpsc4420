@@ -53,6 +53,10 @@ What if the system goes down during a write?
 
 ---
 
+![Socket States](media/socket_states.png)
+
+---
+
 ```c
 if((sockfd = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
   return 1;
