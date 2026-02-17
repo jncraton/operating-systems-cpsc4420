@@ -72,21 +72,3 @@ if (n = read(sockfd, recvBuff, sizeof(recvBuff)-1)) <= 0) {
 
 printf("%s\n", recvBuff);
 ```
-
-# 1.9 Security
-
-## Threats
-
-- Operating systems need to be able to behave correctly in the face of malicious actors
-
-## Objectives
-
-- Confidentiality
-- Integrity
-- Availability
-- Accountability
-
----
-
-![CIA Triad](https://www.nist.gov/sites/default/files/images/2022/09/09/cyber-triad-1.png){height=540px}
-
