@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-void* child(void *ignored) {
+void* child(void *ignored __attribute__((unused))) {
   sleep(1);
   printf("Child is done sleeping for 1 second.\n");
   return NULL;
