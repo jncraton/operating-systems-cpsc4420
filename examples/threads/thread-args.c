@@ -7,7 +7,7 @@
 void* square(void * num) {
   long num_int = *(long*)num;
 
-  printf("Child thread computing square of %d\n", num_int);
+  printf("Child thread computing square of %ld\n", num_int);
 
   return (void*)(num_int * num_int);
 }
@@ -33,7 +33,7 @@ int main() {
     sum += squares[i];
   }
 
-  printf("Sum of squares from 1 to %d is %ld.\n", SUM_TO, sum);
+  printf("Sum of squares from 1 to %d is %lld.\n", SUM_TO, sum);
   
   return 0;
 }
