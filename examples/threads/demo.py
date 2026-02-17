@@ -33,8 +33,9 @@ t = time.time()
 threads = []
 
 for food in junk_foods:
-     threads.append(threading.Thread(target=get_desc, args=(food,)))
-     threads[-1].start()
+    thread = threading.Thread(target=get_desc, args=(food,))
+    thread.start()
+    threads.append(thread)
 
 for thread in threads:
     thread.join()
