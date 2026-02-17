@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-static void* child(void *ignored) {
+void* child(void *ignored) {
   sleep(1);
   printf("Child is done sleeping for 1 second.\n");
   return NULL;
