@@ -8,7 +8,7 @@ void* child(void *ignored) {
   return NULL;
 }
 
-int main(int argc, char *argv[]) {
+int main() {
   pthread_t child_thread;
   
   int error;
