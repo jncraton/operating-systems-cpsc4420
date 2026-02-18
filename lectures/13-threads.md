@@ -1,5 +1,3 @@
-## Lab Questions
-
 # 2.1 Introduction to Threads
 
 ## Thread
