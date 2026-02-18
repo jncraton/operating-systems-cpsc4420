@@ -45,7 +45,7 @@
 - Threads with overlapping lifetimes are running concurrently
 - A key feature of most operating systems is allow threads to run concurrently
 
-  # 2.3 Reasons for Concurrent Threads
+# 2.3 Reasons for Concurrent Threads
 
 ---
 
