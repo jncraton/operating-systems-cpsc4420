@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-void* child(void *ignored __attribute__((unused))) {
+void *child(void *ignored __attribute__((unused))) {
   sleep(1);
   printf("Child is done sleeping for 1 second.\n");
   return NULL;
@@ -10,7 +10,7 @@ void* child(void *ignored __attribute__((unused))) {
 
 int main() {
   pthread_t child_thread;
-  
+
   int error;
   error = pthread_create(&child_thread, NULL, child, NULL);
   if (error) {
