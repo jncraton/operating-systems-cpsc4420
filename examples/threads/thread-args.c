@@ -4,12 +4,12 @@
 
 #define SUM_TO 10
 
-void* square(void * num) {
-  long num_int = *(long*)num;
+void* square(void * num_ptr) {
+  long num = *(long*)num_ptr;
 
-  printf("Child thread computing square of %ld\n", num_int);
+  printf("Child thread computing square of %ld\n", num);
 
-  return (void*)(num_int * num_int);
+  return (void*)(num * num);
 }
 
 int main() {
