@@ -13,12 +13,12 @@ void* square(void * num_ptr) {
 }
 
 int main() {
-  pthread_t child_thread[SUM_TO+1];
-  long inputs[SUM_TO+1];
+  pthread_t child_thread[SUM_TO];
+  long inputs[SUM_TO];
   
   int error;
-  for (int i = 1; i<=SUM_TO; i++) {
-    inputs[i] = i;
+  for (int i = 0; i<SUM_TO; i++) {
+    inputs[i] = i+1;
     error = pthread_create(&child_thread[i], NULL, square, &inputs[i]);
     if (error) {
       fprintf(stderr, "pthread_create failed with error %d\n", error);
@@ -26,9 +26,9 @@ int main() {
   }
 
   long long sum = 0;
-  long squares[SUM_TO+1];
+  long squares[SUM_TO];
 
-  for (int i = 1; i<=SUM_TO; i++) {
+  for (int i = 0; i<SUM_TO; i++) {
     pthread_join(child_thread[i], (void*)&squares[i]);
     sum += squares[i];
   }
