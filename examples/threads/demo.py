@@ -4,22 +4,24 @@ import time
 from urllib.request import urlopen, Request
 
 junk_foods = [
-  'Pizza',
-  'Popcorn',
-  'Hamburger',
-  'Pepsi',
-  'Potato_chips',
-  'Cake',
+    "Pizza",
+    "Popcorn",
+    "Hamburger",
+    "Pepsi",
+    "Potato_chips",
+    "Cake",
 ]
 
-url = 'https://en.wikipedia.org/w/api.php?action=parse&format=json&page='
+url = "https://en.wikipedia.org/w/api.php?action=parse&format=json&page="
+
 
 def get_desc(food):
-    url = f'https://en.wikipedia.org/w/api.php?action=parse&format=json&page={food}'
-    headers = {'User-Agent': 'jncraton-pthread-demo/1.0 (User:Jncraton)'}
+    url = f"https://en.wikipedia.org/w/api.php?action=parse&format=json&page={food}"
+    headers = {"User-Agent": "jncraton-pthread-demo/1.0 (User:Jncraton)"}
     req = Request(url, headers=headers)
     contents = urlopen(req).read()
     print(f"{food}: {json.loads(contents)['parse']['properties'][0]['*']}")
+
 
 t = time.time()
 
@@ -39,7 +41,7 @@ for food in junk_foods:
 
 for thread in threads:
     thread.join()
- 
+
 print("Multi threaded time:" + str(time.time() - t))
 
 exit()
