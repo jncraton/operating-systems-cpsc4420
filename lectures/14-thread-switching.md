@@ -47,7 +47,7 @@ Consider:
 
 - TCB
 - Kernel data structure for storing thread parameters
-- Address of block may be used to identify threads (A and B in previous examples)
+- Address of block may be used to identify threads
 
 ## What about memory
 
