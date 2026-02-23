@@ -30,21 +30,6 @@
 
 ---
 
-Thread A Thread B
-
----
-
-Instruction A1
-Instruction A2
-switchFromTo(A, B)
-Instruction B1
-Instruction B2
-switchFromTo(B, A)
-Instruction A3
-Instruction A4
-
----
-
 What does it mean to switch threads?
 
 Consider:
