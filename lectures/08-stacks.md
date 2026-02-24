@@ -1,3 +1,7 @@
+---
+reading: 'Appendix A'
+...
+
 # Appendix A - Stacks
 
 ## Stack Data Structure
