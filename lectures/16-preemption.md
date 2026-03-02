@@ -10,7 +10,7 @@ reading: '2.5 Pre-emptive multitasking'
 
 ---
 
-What are some issue with cooperative multitasking?
+What are some issues with cooperative multitasking?
 
 ## Cooperative Multitasking Issues
 
