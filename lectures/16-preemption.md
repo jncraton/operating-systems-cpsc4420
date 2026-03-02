@@ -27,7 +27,7 @@ What are some issue with cooperative multitasking?
 - Devices have the ability to interrupt this flow and redirect execution to an interrupt handler
 - Using timer and interrupt handlers, the OS can build pre-emptive multitasking
 
-  # 2.6 Security and Threads
+# 2.6 Security and Threads
 
 ## DoS
 
@@ -38,7 +38,7 @@ What are some issue with cooperative multitasking?
 - If not programmed carefully, threads can lead to undefined and unexpected behavior
 - This behavior can sometimes be exploitable by an attacker
 
-  # 3.1 - 3.2 Thread States
+# 3.1 - 3.2 Thread States
 
 ## Threads
 
