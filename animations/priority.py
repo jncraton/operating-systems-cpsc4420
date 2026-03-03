@@ -42,86 +42,96 @@ class OpeningManim(Scene):
 
         text = Text("Thread A reads from file", color=BLACK)
         text.shift(DOWN*3)
-        self.add(text)
+        self.play(FadeIn(text))
+        self.wait(1)
         self.play(
             a.animate.shift(RIGHT*8, DOWN*0),
             b.animate.shift(UP*1),
         )
-        self.remove(text)
+        self.play(FadeOut(text))
 
         text = Text("Thread B reads from file", color=BLACK)
         text.shift(DOWN*3)
-        self.add(text)
+        self.play(FadeIn(text))
+        self.wait(1)
         self.play(
             b.animate.shift(RIGHT*8, DOWN*1),
         )
-        self.remove(text)
+        self.play(FadeOut(text))
 
         text = Text("Thread C reads from file", color=BLACK)
         text.shift(DOWN*3)
-        self.add(text)
+        self.play(FadeIn(text))
+        self.wait(1)
         self.play(
             c.animate.shift(RIGHT*4, DOWN*2),
         )
-        self.remove(text)
+        self.play(FadeOut(text))
 
         text = Text("Thread A read completes", color=BLACK)
         text.shift(DOWN*3)
-        self.add(text)
+        self.play(FadeIn(text))
+        self.wait(1)
         self.play(
             a.animate.shift(LEFT*8, 0),
             b.animate.shift(RIGHT*0, UP*1),
             c.animate.shift(RIGHT*0, UP*1),
         )
-        self.remove(text)
+        self.play(FadeOut(text))
 
         text = Text("Thread B read completes", color=BLACK)
         text.shift(DOWN*3)
-        self.add(text)
+        self.play(FadeIn(text))
+        self.wait(1)
         self.play(
             b.animate.shift(LEFT*8, DOWN*1),
             c.animate.shift(RIGHT*0, UP*1),
         )
-        self.remove(text)
+        self.play(FadeOut(text))
 
         text = Text("Thread C read completes", color=BLACK)
         text.shift(DOWN*3)
-        self.add(text)
+        self.play(FadeIn(text))
+        self.wait(1)
         self.play(
             c.animate.shift(LEFT*4, 0),
         )
-        self.remove(text)
+        self.play(FadeOut(text))
 
         text = Text("Thread A reads from file", color=BLACK)
         text.shift(DOWN*3)
-        self.add(text)
+        self.play(FadeIn(text))
+        self.wait(1)
         self.play(
             a.animate.shift(RIGHT*8, DOWN*0),
             b.animate.shift(UP*1),
         )
-        self.remove(text)
+        self.play(FadeOut(text))
 
         text = Text("Thread B reads from file", color=BLACK)
         text.shift(DOWN*3)
-        self.add(text)
+        self.play(FadeIn(text))
+        self.wait(1)
         self.play(
             b.animate.shift(RIGHT*8, DOWN*1),
         )
-        self.remove(text)
+        self.play(FadeOut(text))
 
         text = Text("Thread A read completes", color=BLACK)
         text.shift(DOWN*3)
-        self.add(text)
+        self.play(FadeIn(text))
+        self.wait(1)
         self.play(
             a.animate.shift(LEFT*8, 0),
             b.animate.shift(RIGHT*0, UP*1),
         )
-        self.remove(text)
+        self.play(FadeOut(text))
 
         text = Text("Thread B read completes", color=BLACK)
         text.shift(DOWN*3)
-        self.add(text)
+        self.play(FadeIn(text))
+        self.wait(1)
         self.play(
             b.animate.shift(LEFT*8, DOWN*1),
         )
-        self.remove(text)
+        self.play(FadeOut(text))
