@@ -49,6 +49,7 @@ class OpeningManim(Scene):
             b.animate.shift(UP*1),
         )
         self.remove(text)
+        self.wait(0.5)
 
         text = Text("Thread B reads from file", color=BLACK)
         text.shift(DOWN*3)
@@ -58,6 +59,7 @@ class OpeningManim(Scene):
             b.animate.shift(RIGHT*8, DOWN*1),
         )
         self.remove(text)
+        self.wait(0.5)
 
         text = Text("Thread C reads from file", color=BLACK)
         text.shift(DOWN*3)
@@ -67,6 +69,7 @@ class OpeningManim(Scene):
             c.animate.shift(RIGHT*4, DOWN*2),
         )
         self.remove(text)
+        self.wait(0.5)
 
         text = Text("Thread A read completes", color=BLACK)
         text.shift(DOWN*3)
@@ -78,6 +81,7 @@ class OpeningManim(Scene):
             c.animate.shift(RIGHT*0, UP*1),
         )
         self.remove(text)
+        self.wait(0.5)
 
         text = Text("Thread B read completes", color=BLACK)
         text.shift(DOWN*3)
@@ -88,6 +92,7 @@ class OpeningManim(Scene):
             c.animate.shift(RIGHT*0, UP*1),
         )
         self.remove(text)
+        self.wait(0.5)
 
         text = Text("Thread C read completes", color=BLACK)
         text.shift(DOWN*3)
@@ -97,6 +102,7 @@ class OpeningManim(Scene):
             c.animate.shift(LEFT*4, 0),
         )
         self.remove(text)
+        self.wait(0.5)
 
         text = Text("Thread A reads from file", color=BLACK)
         text.shift(DOWN*3)
@@ -107,6 +113,7 @@ class OpeningManim(Scene):
             b.animate.shift(UP*1),
         )
         self.remove(text)
+        self.wait(0.5)
 
         text = Text("Thread B reads from file", color=BLACK)
         text.shift(DOWN*3)
@@ -116,6 +123,7 @@ class OpeningManim(Scene):
             b.animate.shift(RIGHT*8, DOWN*1),
         )
         self.remove(text)
+        self.wait(0.5)
 
         text = Text("Thread A read completes", color=BLACK)
         text.shift(DOWN*3)
@@ -126,6 +134,7 @@ class OpeningManim(Scene):
             b.animate.shift(RIGHT*0, UP*1),
         )
         self.remove(text)
+        self.wait(0.5)
 
         text = Text("Thread B read completes", color=BLACK)
         text.shift(DOWN*3)
@@ -135,3 +144,4 @@ class OpeningManim(Scene):
             b.animate.shift(LEFT*8, DOWN*1),
         )
         self.remove(text)
+        self.wait(0.5)

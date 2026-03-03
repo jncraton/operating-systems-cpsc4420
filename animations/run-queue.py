@@ -47,6 +47,7 @@ class OpeningManim(Scene):
             b.animate.shift(UP*1),
         )
         self.remove(text)
+        self.wait(0.5)
 
         text = Text("Read completes for thread C", color=BLACK)
         text.shift(DOWN*3)
@@ -58,6 +59,7 @@ class OpeningManim(Scene):
             a.animate.shift(UP*1),
         )
         self.remove(text)
+        self.wait(0.5)
 
         text = Text("Read completes for thread D", color=BLACK)
         text.shift(DOWN*3)
@@ -68,6 +70,7 @@ class OpeningManim(Scene):
             a.animate.shift(UP*1),
         )
         self.remove(text)
+        self.wait(0.5)
 
         text = Text("Thread B reads from file", color=BLACK)
         text.shift(DOWN*3)
@@ -79,6 +82,7 @@ class OpeningManim(Scene):
             d.animate.shift(UP*1),
         )
         self.remove(text)
+        self.wait(0.5)
 
         text = Text("Thread C reads from file", color=BLACK)
         text.shift(DOWN*3)
@@ -89,6 +93,7 @@ class OpeningManim(Scene):
             d.animate.shift(UP*1),
         )
         self.remove(text)
+        self.wait(0.5)
 
         text = Text("Read completes for thread A", color=BLACK)
         text.shift(DOWN*3)
@@ -100,6 +105,7 @@ class OpeningManim(Scene):
             c.animate.shift(UP*1),
         )
         self.remove(text)
+        self.wait(0.5)
 
         text = Text("Read completes for thread B", color=BLACK)
         text.shift(DOWN*3)
@@ -110,6 +116,7 @@ class OpeningManim(Scene):
             c.animate.shift(UP*1),
         )
         self.remove(text)
+        self.wait(0.5)
 
         text = Text("Thread D reads from file", color=BLACK)
         text.shift(DOWN*3)
@@ -121,3 +128,4 @@ class OpeningManim(Scene):
             b.animate.shift(UP*1),
         )
         self.remove(text)
+        self.wait(0.5)
