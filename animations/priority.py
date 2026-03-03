@@ -1,6 +1,11 @@
 from manim import *
 
 class OpeningManim(Scene):
+    def _gap(self, duration=0.5):
+        dummy = VGroup()
+        self.add(dummy)
+        self.play(UpdateFromAlphaFunc(dummy, lambda m, a: None), run_time=duration)
+        self.remove(dummy)
     def construct(self):
         self.camera.background_color = WHITE
     
