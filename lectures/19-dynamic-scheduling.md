@@ -14,17 +14,15 @@
 
 ## Example Processes
 
-Process Execution Time Period
+| Process | Execution | Time Period |
+|---------:|:---------:|:-----------:|
+| P1      |     1     |      8      |
+| P2      |     2     |      5      |
+| P3      |     4     |     10      |
 
 ---
 
-P1 1 8
-P2 2 5
-P3 4 10
-
----
-
-![Example schedule](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/EDF_Example_Timing_Diagram.png/800px-EDF_Example_Timing_Diagram.png)
+![Example schedule](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/EDF_Example_Timing_Diagram.png/960px-EDF_Example_Timing_Diagram.png)
 
 ## Decay Usage Scheduling
 
