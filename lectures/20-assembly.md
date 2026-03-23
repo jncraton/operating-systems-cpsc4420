@@ -31,17 +31,15 @@
 
 ## System Call Registers
 
-Register Purpose
-
----
-
-%rax System call number
-%rdi 1st parameter
-%rsi 2nd parameter
-%rdx 3rd parameter
-%r10 4th parameter
-%r8 5th parameter
-%r9 6th parameter
+| Register | Purpose               |
+|---------:|-----------------------|
+| `%rax`    | System call number     |
+| `%rdi`    | 1st parameter          |
+| `%rsi`    | 2nd parameter          |
+| `%rdx`    | 3rd parameter          |
+| `%r10`    | 4th parameter          |
+| `%r8`     | 5th parameter          |
+| `%r9`     | 6th parameter          |
 
 ---
 
@@ -69,17 +67,14 @@ message:
 
 ## Common Function Registers
 
-Register Purpose
-
----
-
-%rax 1st return register
-%rdi used to pass 1st argument to functions
-%rsi used to pass 2nd argument to functions
-%rdx used to pass 3rd argument to functions
-%rcx used to pass 4th argument to functions
-%rsp stack pointer
-
+| Register | Purpose |
+|---------:|---------|
+| `%rax` | 1st return register |
+| `%rdi` | Used to pass 1st argument to functions |
+| `%rsi` | Used to pass 2nd argument to functions |
+| `%rdx` | Used to pass 3rd argument to functions |
+| `%rcx` | Used to pass 4th argument to functions |
+| `%rsp` | Stack pointer |
 ---
 
 ```asm
