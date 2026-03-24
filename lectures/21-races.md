@@ -38,7 +38,7 @@ What behaviors do we need to avoid if we have shared memory?
 
 ---
 
-![Race condition in a circuit](https://upload.wikimedia.org/wikipedia/commons/7/78/Race_condition.svg)
+![Race condition in a circuit](https://upload.wikimedia.org/wikipedia/commons/7/78/Race_condition.svg){height=540px}
 
 ## Thread Race Conditions
 
