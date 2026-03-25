@@ -42,3 +42,7 @@ pthread_mutex_unlock(&my_mutex);
 // destroy when done
 pthread_mutex_destroy(&my_mutex);
 ```
+
+## How do we build mutual exclusion?
+
+![Spinlock implementation](media/4-8.png)
