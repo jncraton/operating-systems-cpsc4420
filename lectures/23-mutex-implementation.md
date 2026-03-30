@@ -34,7 +34,7 @@
 ## Language support
 
 - Can be automatic (e.g. `class monitor`)
-- [`syncronized`](https://en.cppreference.com/w/cpp/language/transactional_memory#Synchronized_blocks) keyword provides object locking at the method level
+- [`synchronized`](https://en.cppreference.com/w/cpp/language/transactional_memory#Synchronized_blocks) keyword provides object locking at the method level
 - Can be [implemented manually](https://stackoverflow.com/a/48408987)
 
 ## Mutex Implementation
