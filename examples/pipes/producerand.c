@@ -9,6 +9,7 @@ int main(void) {
     int delay = (rand() % 3) + 1;
 
     printf("%d\n", random_val);
+    fprintf(stderr, "producerand generated %d\n", random_val);
     fflush(stdout);
 
     sleep(delay);
