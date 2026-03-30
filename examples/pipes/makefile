@@ -1,7 +1,7 @@
-all:
+all: producerand showeven
 
 %: %.c
 	gcc $< -Wall -Wextra -o $@
 
 clean:
-	rm -f hello hello2 structs
+	rm -f producerand showeven
