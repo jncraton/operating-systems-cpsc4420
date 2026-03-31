@@ -167,7 +167,7 @@ static void double_rq_lock(struct rq *rq1, struct rq *rq2) {
 - Integrate the mutex wait queue with the scheduler and avoid simple FIFO behavior
 - Allow a high-priority thread to relock a mutex it gives up even if other threads are waiting on it
 
-  # 4.10 Security and Synchronization
+# 4.10 Security and Synchronization
 
 ## Policy vs Practice
 
