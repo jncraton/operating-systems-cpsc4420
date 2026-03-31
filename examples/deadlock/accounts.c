@@ -27,8 +27,14 @@ void* transfer(void* arg) {
     if (balances[from] > 0) {
       balances[from]--;
       balances[to]++;
-      printf("Thread %ld: %d -> %d | Balances: Account %d: %d$, Account %d: %d$\n",
-             id, from, to, from, balances[from], to, balances[to]);
+
+      int sum = 0;
+
+      for (int i = 0; i < ACCOUNTS; i++) {
+        sum += balances[i];
+      }
+      printf("Thread %2ld: %2d -> %2d | Balances: Account %2d: %3d$, Account %2d: %3d$ Total Balance: $%4d\n",
+             id, from, to, from, balances[from], to, balances[to], sum);
     }
 
     pthread_mutex_unlock(&locks[to]);
