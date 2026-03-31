@@ -3,7 +3,7 @@
 ## Concurrency
 
 - Addresses problems of responsiveness and throughput
-- Creates problems with races
+- Creates problems with data races
 - Races can be resolved using synchronization patterns
 
 ---
