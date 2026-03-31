@@ -34,7 +34,7 @@ What if threads need to share data?
 
 What behaviors do we need to avoid if we have shared memory?
 
-# 4.2 Races and the Need for Mutual Exclusion
+# 4.2 Data Races and the Need for Mutual Exclusion
 
 ---
 

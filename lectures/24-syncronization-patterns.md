@@ -1,4 +1,4 @@
-# 4.4 Other Synchronization Patterns
+# 4.4 Synchronization Patterns
 
 ## Producer-consumer model
 
