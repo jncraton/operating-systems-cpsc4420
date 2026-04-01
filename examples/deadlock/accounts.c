@@ -33,7 +33,7 @@ void* transfer(void* arg) {
       for (int i = 0; i < ACCOUNTS; i++) {
         sum += balances[i];
       }
-      printf("Thread %2ld: %2d -> %2d | Balances: Account %2d: %3d$, Account %2d: %3d$ Total Balance: $%4d\n",
+      printf("Thread %2ld: %2d -> %2d | Balances: Account %2d: $%3d, Account %2d: $%3d Total Balance: $%4d\n",
              id, from, to, from, balances[from], to, balances[to], sum);
     }
 
