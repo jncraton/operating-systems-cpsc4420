@@ -44,7 +44,7 @@
 
 ---
 
-![MMU details](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/MMU_principle_updated.png/800px-MMU_principle_updated.png)
+![MMU details](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/MMU_principle_updated.png/960px-MMU_principle_updated.png)
 
 ## Uses
 
