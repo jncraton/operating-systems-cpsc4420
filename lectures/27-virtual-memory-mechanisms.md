@@ -46,7 +46,7 @@
 - Persistent storage is typically cheaper than RAM
 - Virtual memory provides the tools to move rarely used memory pages to persistent storage
 
-  # 6.3 Virtual Memory Mechanisms
+# 6.3 Virtual Memory Mechanisms
 
 ## Mapping
 
