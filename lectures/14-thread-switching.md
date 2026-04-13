@@ -8,7 +8,7 @@ reading: '2.4 Thread Switching'
 
 - A single-threaded CPU can run only one thread at a time
 - A multi-threaded CPU still supports a finite number of concurrent threads
-- We need mechanism for moving execution from one thread to another
+- We need a mechanism for moving execution from one thread to another
 
 ---
 
@@ -78,8 +78,8 @@ restore:
 ## Security
 
 - On most systems, memory protections are enforced
-- A process can't jump into another processes memory
-- The user mode thread switching described is not possible in practice
+- A process can't jump into another process's memory
+- The user-mode thread switching described is not possible in practice
 
 ## Kernel
 
