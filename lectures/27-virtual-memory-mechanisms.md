@@ -150,21 +150,6 @@
 - Easy to access and reason about
 - Waste large amounts of space for largely sparse mapping
 
----
-
-Valid Page Frame
-
----
-
-1 1
-1 0
-0 X
-0 X
-0 X
-0 X
-1 3
-0 X
-
 ## Sparse Addresses
 
 - Most virtual addresses aren't valid mappings
