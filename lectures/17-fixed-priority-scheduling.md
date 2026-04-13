@@ -48,7 +48,7 @@ What are some weaknesses of fixed-priority scheduling?
 
 ## FIFO
 
-- Allows the thread to complete it's work fastest
+- Allows the thread to complete its work fastest
 - Does not allow any other high priority threads to run
 
 ## RR
