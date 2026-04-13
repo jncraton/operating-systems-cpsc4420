@@ -140,7 +140,7 @@
 
 ## Context Switching
 
-- Most process need their own memory mapping and page table
+- Most processes need their own memory mapping and page table
 - Context switches therefore put pressure on the MMU
 - TLB needs to be flushed on switch, or entries need to be tagged with a process ID
 
