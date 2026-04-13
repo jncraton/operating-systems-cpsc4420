@@ -68,7 +68,7 @@ We now have a new executable file. We can run it in the shell as:
 > ./hello
 ```
 
-## More advance operations
+## More advanced operations
 
 Compile source code into Assembler instructions:
 
