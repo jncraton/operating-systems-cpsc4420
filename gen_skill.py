@@ -7,6 +7,7 @@ SKILL_DIRECTORY = "skill"
 SKILL_PATH = os.path.join(SKILL_DIRECTORY, "SKILL.md")
 SYLLABUS_PATH = "syllabus-template.md"
 LECTURES_DIRECTORY = "lectures"
+LECTURE_URL_BASE = "https://jncraton.github.io/operating-systems-cpsc4420/lectures"
 COURSE_SKILL_ZIP = "course.skill"
 
 
@@ -53,7 +54,12 @@ def extract_section(lines: List[str], heading: str) -> str:
     return "\n".join(section_lines).strip()
 
 
-def build_skill_content(title: str, course_number: str, catalog_description: str) -> str:
+def build_skill_content(
+    title: str,
+    course_number: str,
+    catalog_description: str,
+    lecture_url_base: str,
+) -> str:
     course_label = f"{title} ({course_number})" if course_number else title
     name_slug = course_number.lower().replace(" ", "-") if course_number else title.lower()
     name_slug = re.sub(r"[^a-z0-9-]", "-", name_slug)
@@ -67,6 +73,14 @@ def build_skill_content(title: str, course_number: str, catalog_description: str
     catalog_block = (
         f"## Course description\n\n{catalog_description}" if catalog_description else ""
     )
+
+    lecture_block = f"""## Lecture notes
+
+Lecture slides and notes are available online at {lecture_url_base}. Use the slide fragment after `#/` to jump directly to a specific slide. For example:
+`{lecture_url_base}/26-virtual-memory.html#/private-storage`
+
+This course skill also includes the lecture source directory under `references/lectures`.
+"""
 
     return f"""---
 name: {skill_name}
@@ -93,6 +107,7 @@ description: {description}
 - Summarizing course material and guiding exam preparation.
 - Helping students connect course topics to repository materials and lab exercises.
 
+{lecture_block}
 ## What this skill will not do
 - Complete assignments or lab work for students.
 - Access external systems or private course platforms.
@@ -127,7 +142,14 @@ def main() -> None:
 
     os.makedirs(SKILL_DIRECTORY, exist_ok=True)
     with open(SKILL_PATH, "w", encoding="utf-8") as skill_file:
-        skill_file.write(build_skill_content(title, course_number, catalog_description))
+        skill_file.write(
+            build_skill_content(
+                title,
+                course_number,
+                catalog_description,
+                LECTURE_URL_BASE,
+            )
+        )
 
     build_course_skill_zip(SKILL_PATH, LECTURES_DIRECTORY, COURSE_SKILL_ZIP)
 
