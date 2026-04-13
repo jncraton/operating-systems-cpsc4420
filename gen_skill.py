@@ -1,18 +1,78 @@
 import os
+import re
+from typing import List
 
 SKILL_DIRECTORY = "skill"
 SKILL_PATH = os.path.join(SKILL_DIRECTORY, "SKILL.md")
+SYLLABUS_PATH = "syllabus-template.md"
 
-SKILL_CONTENT = """---
-name: operating-systems-course-assistant
-description: Help students with labs, assignments, review, and troubleshooting for the operating systems course.
+
+def read_lines(path: str) -> List[str]:
+    with open(path, encoding="utf-8") as reader:
+        return [line.rstrip("\n") for line in reader]
+
+
+def extract_course_title(lines: List[str]) -> str:
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith("# "):
+            return stripped[2:].strip()
+    return "Course"
+
+
+def extract_course_number(lines: List[str]) -> str:
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith("~ "):
+            return stripped[2:].strip()
+    return ""
+
+
+def extract_section(lines: List[str], heading: str) -> str:
+    target = heading.lower().strip()
+    capturing = False
+    section_lines: List[str] = []
+
+    for line in lines:
+        if capturing:
+            if re.match(r"^##\s+", line):
+                break
+            section_lines.append(line)
+        elif line.strip().lower().startswith(target):
+            capturing = True
+
+    section_lines = [line for line in section_lines if not line.strip().startswith("!INCLUDE")]
+    while section_lines and not section_lines[0].strip():
+        section_lines.pop(0)
+    while section_lines and not section_lines[-1].strip():
+        section_lines.pop()
+
+    return "\n".join(section_lines).strip()
+
+
+def build_skill_content(title: str, course_number: str, catalog_description: str) -> str:
+    course_label = f"{title} ({course_number})" if course_number else title
+    name_slug = course_number.lower().replace(" ", "-") if course_number else title.lower()
+    name_slug = re.sub(r"[^a-z0-9-]", "-", name_slug)
+    name_slug = re.sub(r"-+", "-", name_slug).strip("-")
+    skill_name = f"{name_slug}-assistant"
+
+    description = (
+        f"Help students with labs, assignments, review, and troubleshooting for {course_label}."
+    )
+
+    catalog_block = (
+        f"## Course description\n\n{catalog_description}" if catalog_description else ""
+    )
+
+    return f"""---
+name: {skill_name}
+description: {description}
 ---
 
-# Operating Systems Course Assistant
+# {title} Course Assistant
 
-## When to use this skill
-
-Use this skill when a student needs help with course labs, assignments, review, debugging, or understanding core operating systems concepts.
+{catalog_block}
 
 ## How to request help
 
@@ -24,11 +84,11 @@ Use this skill when a student needs help with course labs, assignments, review, 
 
 ## What this skill can help with
 
-- Explaining operating systems concepts such as processes, threads, synchronization, memory management, file systems, and scheduling.
+- Explaining course concepts and terminology.
 - Reviewing lab requirements and assignment goals.
 - Offering debugging strategies and troubleshooting common errors.
-- Summarizing lecture material and guiding exam preparation.
-- Helping students connect course topics to the repository structure and lab exercises.
+- Summarizing course material and guiding exam preparation.
+- Helping students connect course topics to repository materials and lab exercises.
 
 ## What this skill will not do
 
@@ -38,14 +98,20 @@ Use this skill when a student needs help with course labs, assignments, review, 
 - Violate academic integrity policies.
 
 ## Notes for students
+
 Provide the most context you can. The better the description and evidence of effort, the more useful the guidance will be.
 """
 
 
 def main() -> None:
+    lines = read_lines(SYLLABUS_PATH)
+    title = extract_course_title(lines)
+    course_number = extract_course_number(lines)
+    catalog_description = extract_section(lines, "## Course Catalog Description")
+
     os.makedirs(SKILL_DIRECTORY, exist_ok=True)
     with open(SKILL_PATH, "w", encoding="utf-8") as skill_file:
-        skill_file.write(SKILL_CONTENT)
+        skill_file.write(build_skill_content(title, course_number, catalog_description))
 
 
 if __name__ == "__main__":
