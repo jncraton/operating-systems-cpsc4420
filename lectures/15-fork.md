@@ -63,7 +63,7 @@ int main() {
 ## Memory
 
 - A forked process sees a copy of its parent's memory
-- Clobbering the other processes memory is not possible
+- Clobbering another process's memory is not possible
 - Communication via memory modification is not available
 
 ## Signals
