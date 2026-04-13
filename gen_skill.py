@@ -6,7 +6,7 @@ from typing import List
 
 SYLLABUS_PATH = "syllabus-template.md"
 LECTURES_DIRECTORY = "lectures"
-COURSE_SKILL_ZIP = "course.skill"
+COURSE_SKILL_ZIP = "course-assistant.skill"
 
 
 def read_lines(path: str) -> List[str]:
@@ -110,7 +110,7 @@ def build_skill_content(
 Lecture slides and notes are available online at {lecture_url_base}. Use the slide fragment after `#/` to jump directly to a specific slide. For example:
 `{lecture_url_base}/26-virtual-memory.html#/private-storage`
 
-This course skill also includes the lecture source directory under `references/lectures`.
+This course-assistant.skill also includes the lecture source directory under `references/lectures`.
 """
 
     return f"""---
@@ -150,7 +150,7 @@ Provide the most context you can. The better the description and evidence of eff
 """
 
 
-def build_course_skill_zip(skill_content: str, lecture_dir: str, output_path: str) -> None:
+def build_course-assistant.skill_zip(skill_content: str, lecture_dir: str, output_path: str) -> None:
     with zipfile.ZipFile(output_path, "w", compression=zipfile.ZIP_DEFLATED) as archive:
         archive.writestr("SKILL.md", skill_content)
 
@@ -178,7 +178,7 @@ def main() -> None:
         get_lecture_url_base(),
     )
 
-    build_course_skill_zip(skill_content, LECTURES_DIRECTORY, COURSE_SKILL_ZIP)
+    build_course-assistant.skill_zip(skill_content, LECTURES_DIRECTORY, COURSE_SKILL_ZIP)
 
 
 if __name__ == "__main__":

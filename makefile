@@ -137,7 +137,7 @@ clean:
 	rm -rf figures
 	rm -rf __pycache__
 	rm -f netlifyctl
-	rm -f course.skill
+	rm -f course-assistant.skill
 	rm -rf revealjs
 	rm -rf lectures/reveal.js
 	rm -f readme-template.md
