@@ -48,17 +48,17 @@ What impact does the cache hierarchy have on context switching?
 
 ---
 
-How does this effect change in multiprocessor systems?
+How does this change in multiprocessor systems?
 
 ## Multiprocessor Systems
 
 - A context switch to another CPU will be much slower
-- The threads old cache will be inaccessible from the new CPU
+- The thread's old cache will be inaccessible from the new CPU
 - Processor affinity is helpful to keep threads running on the same CPU
 
 ## Cache Coherence Protocol
 
-- Values that exist in another CPUs cache are especially slow to access
+- Values that exist in another CPU's cache are especially slow to access
 - This further increases the cost of context switches to another CPU
 
 ---
