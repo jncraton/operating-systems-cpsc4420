@@ -25,7 +25,7 @@ What are some issues with cooperative multitasking?
 
 - CPUs generally execute the next instruction
 - Devices have the ability to interrupt this flow and redirect execution to an interrupt handler
-- Using timer and interrupt handlers, the OS can build pre-emptive multitasking
+- Using timer and interrupt handlers, the OS can implement pre-emptive multitasking
 
 # 2.6 Security and Threads
 
