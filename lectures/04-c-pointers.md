@@ -42,7 +42,7 @@ int main() {
 }
 ```
 
-Dereferening a pointer
+Dereferencing a pointer
 
 ---
 
