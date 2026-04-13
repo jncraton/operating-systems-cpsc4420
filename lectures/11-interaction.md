@@ -22,7 +22,7 @@ reading: '1.7 - 1.8'
 ## Databases
 
 - Provide persistent storage
-- Allows related data to be access easily
+- Allows related data to be accessed easily
 
 ---
 
@@ -30,7 +30,7 @@ What if the system goes down during a write?
 
 ## Crashes
 
-- Any operation should be immediately interruptable without leaving persistent storage in a degraded state
+- Any operation should be immediately interruptible without leaving persistent storage in a degraded state
 - Atomic transactions and journaling may be a solution to this
 
 # 1.8 Supporting Interactions Across Space
