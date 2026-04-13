@@ -1,10 +1,13 @@
 import os
 import re
+import zipfile
 from typing import List
 
 SKILL_DIRECTORY = "skill"
 SKILL_PATH = os.path.join(SKILL_DIRECTORY, "SKILL.md")
 SYLLABUS_PATH = "syllabus-template.md"
+LECTURES_DIRECTORY = "lectures"
+COURSE_SKILL_ZIP = "course.skill"
 
 
 def read_lines(path: str) -> List[str]:
@@ -91,16 +94,29 @@ description: {description}
 - Helping students connect course topics to repository materials and lab exercises.
 
 ## What this skill will not do
-
 - Complete assignments or lab work for students.
 - Access external systems or private course platforms.
 - Grade student work.
 - Violate academic integrity policies.
 
 ## Notes for students
-
 Provide the most context you can. The better the description and evidence of effort, the more useful the guidance will be.
 """
+
+
+def build_course_skill_zip(skill_path: str, lecture_dir: str, output_path: str) -> None:
+    with zipfile.ZipFile(output_path, "w", compression=zipfile.ZIP_DEFLATED) as archive:
+        archive.write(skill_path, arcname=os.path.basename(skill_path))
+
+        lecture_files = sorted(
+            f
+            for f in os.listdir(lecture_dir)
+            if re.match(r"^[0-9].*\.md$", f)
+        )
+        for lecture_file in lecture_files:
+            source_path = os.path.join(lecture_dir, lecture_file)
+            arcname = os.path.join("references", "lectures", lecture_file)
+            archive.write(source_path, arcname=arcname)
 
 
 def main() -> None:
@@ -112,6 +128,8 @@ def main() -> None:
     os.makedirs(SKILL_DIRECTORY, exist_ok=True)
     with open(SKILL_PATH, "w", encoding="utf-8") as skill_file:
         skill_file.write(build_skill_content(title, course_number, catalog_description))
+
+    build_course_skill_zip(SKILL_PATH, LECTURES_DIRECTORY, COURSE_SKILL_ZIP)
 
 
 if __name__ == "__main__":
