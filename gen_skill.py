@@ -150,7 +150,7 @@ Provide the most context you can. The better the description and evidence of eff
 """
 
 
-def build_course-assistant.skill_zip(skill_content: str, lecture_dir: str, output_path: str) -> None:
+def build_skill_zip(skill_content: str, lecture_dir: str, output_path: str) -> None:
     with zipfile.ZipFile(output_path, "w", compression=zipfile.ZIP_DEFLATED) as archive:
         archive.writestr("SKILL.md", skill_content)
 
@@ -178,7 +178,7 @@ def main() -> None:
         get_lecture_url_base(),
     )
 
-    build_course-assistant.skill_zip(skill_content, LECTURES_DIRECTORY, COURSE_SKILL_ZIP)
+    build_skill_zip(skill_content, LECTURES_DIRECTORY, COURSE_SKILL_ZIP)
 
 
 if __name__ == "__main__":
