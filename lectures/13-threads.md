@@ -45,7 +45,7 @@ reading: '2.1 Introduction to Threads'
 
 - Threads exist from the time their first instruction begins executing until the time of last instruction execution
 - Threads with overlapping lifetimes are running concurrently
-- A key feature of most operating systems is allow threads to run concurrently
+- A key feature of most operating systems is to allow threads to run concurrently
 
 # 2.3 Reasons for Concurrent Threads
 
@@ -61,7 +61,7 @@ Why is it desirable for the computer to execute multiple threads concurrently, r
 ## Resource Utilization
 
 - The computer has many hardware resources (CPU, memory, disks, etc)
-- We want use all of these resources efficiently
+- We want to use all of these resources efficiently
 - We need to be able to pause a thread waiting on I/O to allow the CPU to be used for other tasks
 
 ## Modularization
