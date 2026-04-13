@@ -1,5 +1,6 @@
 import os
 import re
+import subprocess
 import zipfile
 from typing import List
 
@@ -7,7 +8,6 @@ SKILL_DIRECTORY = "skill"
 SKILL_PATH = os.path.join(SKILL_DIRECTORY, "SKILL.md")
 SYLLABUS_PATH = "syllabus-template.md"
 LECTURES_DIRECTORY = "lectures"
-LECTURE_URL_BASE = "https://jncraton.github.io/operating-systems-cpsc4420/lectures"
 COURSE_SKILL_ZIP = "course.skill"
 
 
@@ -52,6 +52,39 @@ def extract_section(lines: List[str], heading: str) -> str:
         section_lines.pop()
 
     return "\n".join(section_lines).strip()
+
+
+def get_lecture_url_base() -> str:
+    try:
+        remote_url = subprocess.check_output(
+            ["git", "remote", "get-url", "origin"],
+            encoding="utf-8",
+            stderr=subprocess.DEVNULL,
+        ).strip()
+    except subprocess.CalledProcessError as exc:
+        raise RuntimeError(
+            "Unable to determine the lecture base URL from git remote origin."
+        ) from exc
+
+    remote_url = re.sub(r"\.git$", "", remote_url)
+    if remote_url.startswith("git@github.com:"):
+        path = remote_url.split(":", 1)[1]
+    elif remote_url.startswith("ssh://git@github.com/"):
+        path = remote_url.split("github.com/", 1)[1]
+    elif re.match(r"https?://github.com/", remote_url):
+        path = remote_url.split("github.com/", 1)[1]
+    else:
+        raise RuntimeError(
+            "Git remote origin is not a recognized GitHub repository URL."
+        )
+
+    if "/" not in path:
+        raise RuntimeError(
+            "Git remote origin does not contain a valid owner/repository path."
+        )
+
+    owner, repo = path.split("/", 1)
+    return f"https://{owner}.github.io/{repo}/lectures"
 
 
 def build_skill_content(
@@ -147,7 +180,7 @@ def main() -> None:
                 title,
                 course_number,
                 catalog_description,
-                LECTURE_URL_BASE,
+                get_lecture_url_base(),
             )
         )
 
