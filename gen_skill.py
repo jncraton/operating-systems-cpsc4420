@@ -4,8 +4,6 @@ import subprocess
 import zipfile
 from typing import List
 
-SKILL_DIRECTORY = "skill"
-SKILL_PATH = os.path.join(SKILL_DIRECTORY, "SKILL.md")
 SYLLABUS_PATH = "syllabus-template.md"
 LECTURES_DIRECTORY = "lectures"
 COURSE_SKILL_ZIP = "course.skill"
@@ -152,9 +150,9 @@ Provide the most context you can. The better the description and evidence of eff
 """
 
 
-def build_course_skill_zip(skill_path: str, lecture_dir: str, output_path: str) -> None:
+def build_course_skill_zip(skill_content: str, lecture_dir: str, output_path: str) -> None:
     with zipfile.ZipFile(output_path, "w", compression=zipfile.ZIP_DEFLATED) as archive:
-        archive.write(skill_path, arcname=os.path.basename(skill_path))
+        archive.writestr("SKILL.md", skill_content)
 
         lecture_files = sorted(
             f
@@ -173,18 +171,14 @@ def main() -> None:
     course_number = extract_course_number(lines)
     catalog_description = extract_section(lines, "## Course Catalog Description")
 
-    os.makedirs(SKILL_DIRECTORY, exist_ok=True)
-    with open(SKILL_PATH, "w", encoding="utf-8") as skill_file:
-        skill_file.write(
-            build_skill_content(
-                title,
-                course_number,
-                catalog_description,
-                get_lecture_url_base(),
-            )
-        )
+    skill_content = build_skill_content(
+        title,
+        course_number,
+        catalog_description,
+        get_lecture_url_base(),
+    )
 
-    build_course_skill_zip(SKILL_PATH, LECTURES_DIRECTORY, COURSE_SKILL_ZIP)
+    build_course_skill_zip(skill_content, LECTURES_DIRECTORY, COURSE_SKILL_ZIP)
 
 
 if __name__ == "__main__":
