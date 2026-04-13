@@ -14,7 +14,7 @@
 
 1. High priority thread waits on I/O
 2. Low priority runs and acquires mutex
-3. I/O completes an the high priority thread preempts the other
+3. I/O completes and the high priority thread preempts the other
 4. High priority thread can't acquire mutex
 5. Low priority thread resumes
 
