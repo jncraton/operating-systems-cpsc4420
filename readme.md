@@ -50,19 +50,14 @@ PREREQUISITE: CPSC 2420 and CPSC 2500.
 
 Upon completion of this course, students will be able to:
 
-- Describe low level operating system concepts, including kernel mode vs. user mode and the roles of the
-CPU, memory, busses, I/O and other hardware concepts.
+- Describe low level operating system concepts, including kernel mode vs. user mode and the roles of the CPU, memory, busses, I/O and other hardware concepts.
 - Write programs using the C language to create new processes and perform interprocess communication.
 - Write C programs to utilize parallelism, including thread creation and interthread communication.
-- Identify race conditions, and describe how to use mutual exclusion, semaphores, mutexes, and condition
-variables to address this issue.
-- Describe classical interprocess communication problems, including the Producer-Consumer problem, the
-Dining Philosopher problem, and the Readers and Writers problem.
-- Identify the operating system's role in scheduling processes and threads, including common scheduling
-algorithms.
+- Identify race conditions, and describe how to use mutual exclusion, semaphores, mutexes, and condition variables to address this issue.
+- Describe classical interprocess communication problems, including the Producer-Consumer problem, the Dining Philosopher problem, and the Readers and Writers problem.
+- Identify the operating system's role in scheduling processes and threads, including common scheduling algorithms.
 - Describe memory abstractions, including base and limit registers, swapping, and virtual memory.
-- Examine the operating system's role in memory management, including the function of multi-level caching,
-the MMU, and the TLB.
+- Examine the operating system's role in memory management, including the function of multi-level caching, the MMU, and the TLB.
 - Describe common file system structures, and the operating system's role in file system management.
 - Implement programs in C which explore issues in memory management and/or file system management.
 
