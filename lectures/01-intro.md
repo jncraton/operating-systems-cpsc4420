@@ -81,5 +81,5 @@ Can we have a computer without an operating system?
 ## Desktop Environments
 
 - Creates a graphical shell for the user
-- Provides similar features as a text-based shell
+- Provides similar features to a text-based shell
 - `KDE`, `GNOME`, `Explorer`
