@@ -1,8 +1,8 @@
 SHELL := bash -O nullglob
 
-all: index.html syllabus.md syllabus.html syllabus.docx syllabus.txt syllabus.pdf env.html lectures/index.html examples/index.html
+all: index.html syllabus.md syllabus.html syllabus.docx syllabus.txt syllabus.pdf env.html lectures/index.html examples/index.html skill
 
-.PHONY: clean lectures
+.PHONY: clean lectures skill
 
 syllabus.md: syllabus-template.md head.md tail.md
 	cp -f $< $@
@@ -120,6 +120,13 @@ update:
 
 	make readme.md
 
+skill:
+	mkdir -p skill/references/lectures
+	cp lectures/[0-9]*.md skill/references/lectures
+	cd skill && zip -r course.skill .
+	mv skill/*.skill .
+	rm -rf skill/references/lectures
+
 format:
 	npx prettier@3.6.2 --write **.md style.css
 	pipx run --spec black==25.12.0 black gen_lecture_index.py gen_dates.py
@@ -134,6 +141,7 @@ clean:
 	rm -rf figures
 	rm -rf __pycache__
 	rm -f netlifyctl
+	rm -f course.skill
 	rm -rf revealjs
 	rm -rf lectures/reveal.js
 	rm -f readme-template.md
