@@ -61,12 +61,12 @@ void DrawSquare(int x, int y, int size) {
 
 - Actual parameter values are made available to the subroutine
 - Modification of values will not impact the caller
-- This may involved making a copy in memory
+- This may involve making a copy in memory
 
 ## Pass by Reference
 
 - Actual parameters are references to data from the caller
-- Modification of values will impact caller
+- Modification of values will impact the caller
 - Should not involve copying data
 
 ## C
@@ -79,7 +79,7 @@ void DrawSquare(int x, int y, int size) {
 #include <stdio.h>
 
 void increment(int i) {
-  // This will not change the callers value
+  // This will not change the caller's value
   i = i + 1;
 }
 
@@ -93,7 +93,7 @@ int main(void) {
 ---
 
 - If we want to be able to modify values, we need to pass values by reference
-- We can't do this is C, but we can use pointers passed by value to emulate it
+- We can't do this in C, but we can use pointers passed by value to emulate it
 
 ---
 
@@ -101,7 +101,7 @@ int main(void) {
 #include <stdio.h>
 
 void increment(int* i) {
-  // This will change the callers value
+  // This will change the caller's value
   *i = *i + 1;
 }
 
@@ -120,7 +120,7 @@ If we allow C++, we can use a proper pass by reference mode.
 #include <stdio.h>
 
 void increment(int &i) {
-  // This will change the callers value
+  // This will change the caller's value
   i = i + 1;
 }
 
