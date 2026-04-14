@@ -120,7 +120,7 @@ If available, use search to find appropriate documentation to assist with this i
 
 ## Images
 
-If appropriate, include images that were used in slides. External links can be safely and appropriately hotlinked. Internal relative image paths can be translated to public urls as:
+If appropriate, include images that were used in slides. External images can be safely and appropriately hotlinked. Internal relative image paths can be translated to public urls as:
 
 `media/5-2.png` becomes `{lecture_url_base}/media/5-2.png`
 
