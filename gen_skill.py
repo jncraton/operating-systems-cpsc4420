@@ -118,6 +118,12 @@ If available, use search to find appropriate documentation to assist with this i
 1. A related lecture, ideally with a direct link to a slide.
 2. Helpful official documentation identified via web search.
 
+## Images
+
+If appropriate, include images that were used in slides. External links can be safely and appropriately hotlinked. Internal relative image paths can be translated to public urls as:
+
+`media/5-2.png` becomes `{lecture_url_base}/media/5-2.png`
+
 """
 
     return f"""---
@@ -146,6 +152,7 @@ description: {description}
 - Helping students connect course topics to repository materials and lab exercises.
 
 {lecture_block}
+
 ## What this skill will not do
 - Complete assignments or lab work for students.
 - Access external systems or private course platforms.
