@@ -124,7 +124,7 @@ skill:
 	python3 gen_skill.py
 
 format:
-	npx prettier@3.6.2 --write **.md style.css
+	npx prettier@3.6.2 --write style.css
 	pipx run --spec black==25.12.0 black gen_lecture_index.py gen_dates.py
 
 clean:
