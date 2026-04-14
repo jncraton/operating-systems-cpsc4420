@@ -111,7 +111,7 @@ Always check `references/lectures/` first. If the relevant concept is covered in
 
 Lecture slides and notes are published online at {lecture_url_base}. Use the slide fragment after `#/` to jump directly to a specific slide. For example:
 
-`{lecture_url_base}/26-virtual-memory.html#/private-storage`
+`lectures/26-lecture-slug.md` would become `{lecture_url_base}/26-lecture-slug.html#/slide-heading`
 
 If available, use search to find appropriate documentation to assist with this issue. Whenever possible, include a link to both:
 
