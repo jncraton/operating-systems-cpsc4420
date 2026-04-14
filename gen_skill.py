@@ -107,10 +107,17 @@ def build_skill_content(
 
     lecture_block = f"""## Lecture notes
 
-Lecture slides and notes are available online at {lecture_url_base}. Use the slide fragment after `#/` to jump directly to a specific slide. For example:
+Always check `references/lectures/` first. If the relevant concept is covered in a lecture file there, quote or paraphrase from it before going elsewhere. This reinforces the course material the student already encountered.
+
+Lecture slides and notes are published online at {lecture_url_base}. Use the slide fragment after `#/` to jump directly to a specific slide. For example:
+
 `{lecture_url_base}/26-virtual-memory.html#/private-storage`
 
-This course-assistant.skill also includes the lecture source directory under `references/lectures`.
+If available, use search to find appropriate documentation to assist with this issue. Whenever possible, include a link to both:
+
+1. A related lecture, ideally with a direct link to a slide.
+2. Helpful official documentation identified via web search.
+
 """
 
     return f"""---
