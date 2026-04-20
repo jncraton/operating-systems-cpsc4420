@@ -43,7 +43,7 @@
 - Used by OS X, Windows, Linux, etc
 - Memory mappings are used to control permissions and access
 
-  # 7.4 Representing Access Rights
+# 7.4 Representing Access Rights
 
 ## Protection system
 
