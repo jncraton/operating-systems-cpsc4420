@@ -19,7 +19,7 @@
 
 ---
 
-![Process Memory Layout](https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Program_memory_layout.pdf/page1-234px-Program_memory_layout.pdf.jpg)
+![Process Memory Layout](https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Program_memory_layout.pdf/page1-960px-Program_memory_layout.pdf.jpg){height=540px}
 
 ---
 
@@ -124,3 +124,44 @@ int main() {
   }
 }
 ```
+
+# Kernel Fork Steps
+
+## Fork
+
+- Requires the kernel to create a nearly identical replica of the calling process
+- Involves several mechanical steps to ensure the new process has its own isolated memory and a properly initialized execution state
+
+## Finding a Process Slot
+
+- The kernel must iterate through `ptable` to find an entry where the state is `P_FREE`
+- Slot 0 is typically reserved for the kernel and is never used for a new process
+
+## Allocating a Page Table
+
+- The kernel allocates a new page table for the child process using `kalloc_pagetable`
+- This new page table must initially include the kernel's identity mappings so that the child can still execute kernel code during system calls and interrupts
+
+## Copying Memory Content
+
+- The kernel iterates through the parent's virtual address space using an iterator like `vmiter`
+- For every page that is user-accessible (code, data, stack, and heap):
+    1. Allocate a new physical page
+    2. Copy the data from the parent's physical page to the child's new physical page
+    3. Map this new physical page into the child's page table at the same virtual address used by the parent
+
+## Initializing the Execution State
+
+- The child process must begin execution at the exact same point where the parent called `fork`
+- The kernel copies the saved register state from parent to child
+
+## Return Values
+
+- To distinguish the two processes, the kernel modifies the return value register in the child's saved state
+  - On x86-64, this means setting `reg_rax` to 0
+- The parent's return value is set to the PID of the child
+
+## Marking the Process as Runnable
+
+- The process state is changed from `P_FREE` to `P_RUNNABLE`
+- On the next timer interrupt or schedule event, the kernel's scheduler may select the child process to run
