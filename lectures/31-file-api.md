@@ -55,6 +55,7 @@
 - Less penalty for random reads
 - Generally lower latency and high bandwidth than spinning drives
 - Currently more expensive per byte
+
 # 8.3 POSIX File API
 
 ## Standardization
