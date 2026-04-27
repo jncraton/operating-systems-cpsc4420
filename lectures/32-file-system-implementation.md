@@ -82,7 +82,7 @@
 - `read` and `write` update a stored position in a file
 - `lseek` can be used to adjust this stored position
 
-  # 8.4 Disk Space Allocation
+# 8.4 Disk Space Allocation
 
 ## Virtual Memory
 
