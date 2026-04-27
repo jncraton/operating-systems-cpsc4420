@@ -25,7 +25,7 @@
 - Hierarchical directories mapping names to objects
 - Indexes providing access based on contents
 
-  8.2 Storage Technology
+# 8.2 Storage Technology
 
 ---
 
