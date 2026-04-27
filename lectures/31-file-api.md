@@ -40,7 +40,7 @@
 
 ---
 
-![Disk drive hardware](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Laptop-hard-drive-exposed.jpg/627px-Laptop-hard-drive-exposed.jpg)
+![Disk drive hardware](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Laptop-hard-drive-exposed.jpg/500px-Laptop-hard-drive-exposed.jpg)
 
 ## Disk drive performance
 
