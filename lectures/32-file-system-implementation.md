@@ -62,7 +62,7 @@
 ## Delayed Allocation
 
 - File size is not generally known at creation time
-- Writes to files a buffered to RAM before being written to disk
+- Writes to files are buffered to RAM before being written to disk
 - The OS may choose to buffer many writes in order to determine appropriate file size before performing allocation
 
 # 8.5 Metadata
