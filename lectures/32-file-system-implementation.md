@@ -130,7 +130,7 @@ Double and Triple Indirection
 ## Sparse Files
 
 - It is not necessary for empty blocks to be backed by actual storage
-- A large file use sparsely need not take up the full file size on disk
+- A large file used sparsely need not take up the full file size on disk
 
 ## Example
 
