@@ -255,7 +255,7 @@ Access Control Metadata
 - Commonly used for directory storage
 - Used by NTFS (Microsoft), HFS (Apple), and XFS (open source)
 
-  # 8.7 Metadata Integrity
+# 8.7 Metadata Integrity
 
 ## Buffering Writes
 
