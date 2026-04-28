@@ -209,7 +209,7 @@ Access Control Metadata
 - Modified, written, accessed times
 - Count of names referencing this file
 
-  # 8.6 Directories and Indexing
+# 8.6 Directories and Indexing
 
 ## Files
 
