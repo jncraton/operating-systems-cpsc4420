@@ -1,6 +1,24 @@
 Last Lecture
 ============
 
+---
+
+![SWE Jobs](https://hai.stanford.edu/_next/image?url=https%3A%2F%2Fhai.stanford.edu%2Fassets%2Fimages%2Ffig_4.4.29.jpg&w=2048&q=100)
+
+---
+
+[Job Postings](https://fred.stlouisfed.org/series/IHLIDXUS)
+
+---
+
+[SWE Job Postings](https://fred.stlouisfed.org/series/IHLIDXUSTPSOFTDEVE)
+
+---
+
+![Github Growth](https://github.blog/wp-content/uploads/2026/04/record-accelleration-1920x1080-2.png?w=1024)
+
+---
+
 Follow Your Dreams
 ------------------
 
