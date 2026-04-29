@@ -101,7 +101,7 @@ Work just enough
 
 ---
 
-What does man gain by all the toil at which he toils under the sun? A generation goes, and a generation comes, but the earth remains forever.
+What do people gain from all their labors at which they toil under the sun? Generations come and generations go,    but the earth remains forever.
 
 Ecclesiastes 1:3-4
 
