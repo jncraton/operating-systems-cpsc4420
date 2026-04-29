@@ -101,9 +101,9 @@ Work just enough
 
 ---
 
-> Normal is getting dressed in clothes that you buy for work and driving through traffic in a car that you are still paying for - in order to get to the job you need to pay for the clothes and the car, and the house you leave vacant all day so you can afford to live in it.
-> 
-> Ellen Goodman 
+What does man gain by all the toil at which he toils under the sun? A generation goes, and a generation comes, but the earth remains forever.
+
+Ecclesiastes 1:3-4
 
 ---
 
