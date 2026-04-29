@@ -107,6 +107,6 @@ Work just enough
 
 ---
 
-For none of us lives to himself, and none of us dies to himself.
+For none of us lives for ourselves alone, and none of us dies for ourselves alone.
 
-Romans 14:7 ESV
+Romans 14:7
